@@ -1,0 +1,24 @@
+
+#out {
+  position:absolute;
+  top:9px;
+  left:7px;
+  height:930px;
+  width:1200px;
+  background-color:white;
+  border:10px solid black;
+}
+
+#in {
+  position:relative;
+  top:1px;
+  left:-1px;
+  height:950px;
+  width:1220px;
+  background-color:white;
+  border-radius: 150px;
+}
+
+.pic1{
+  border: 2px solid lightblue;
+}
