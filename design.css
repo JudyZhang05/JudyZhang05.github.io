@@ -1,0 +1,36 @@
+.order{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+#last{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#last_subtitle{
+    padding-bottom: 2%;
+}
+
+.judy{
+    text-align: center;
+}
+
+.zhang{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.clickables{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
