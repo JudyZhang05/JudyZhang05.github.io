@@ -1,0 +1,28 @@
+.title{
+    text-align: center;
+}
+
+.cover{
+    text-align: center;
+}
+
+.section{
+    padding-top: 5%;
+}
+
+.artwork{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+.piece{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.piece > img{
+    border: solid 2px black;
+    object-fit: cover;
+    width: 100%;
+}
