@@ -19,10 +19,12 @@
 .piece{
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 10%;
 }
 
 .piece > img{
     border: solid 2px black;
     object-fit: cover;
     width: 100%;
+    border-radius: 10%;
 }

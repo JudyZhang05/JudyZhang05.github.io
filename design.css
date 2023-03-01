@@ -3,16 +3,6 @@
     padding-bottom: 30%;
 }
 
-#last{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.link:hover{
-    transition: transform .3s ease-in-out;
-    transform: scale(120%);
-}
-
 .back{
     margin: 0px;
     background-image: url("./assests/backdrop.png");
@@ -21,12 +11,12 @@
     background-attachment: fixed;
 }
 
-#last_subtitle{
-    padding-bottom: 2%;
-}
-
 .judy{
     text-align: center;
+}
+
+.judy > img{
+    border-radius: 50%;
 }
 
 .zhang{
@@ -46,4 +36,18 @@
 .socials{
     display: flex;
     justify-content: space-evenly;
+}
+
+#last{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#last_subtitle{
+    padding-bottom: 2%;
+}
+
+.link:hover{
+    transition: transform .3s ease-in-out;
+    transform: scale(120%);
 }
