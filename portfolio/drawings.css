@@ -9,11 +9,18 @@
 .section{
     padding-top: 5%;
 }
-
+/* 
 .artwork{
     display: flex;
     justify-content: space-evenly;
     padding-top: 5%;
+} */
+
+.artwork{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
 }
 
 .piece{
