@@ -1,14 +1,24 @@
 .title{
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: peachpuff;
+}
+body{
+    margin: 0%;
 }
 
 .cover{
     text-align: center;
 }
 
-.section{
-    padding-top: 5%;
+.name{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* border: solid salmon 2px; */
+    background-color: rgb(255, 239, 220);    
 }
+
 /* 
 .artwork{
     display: flex;
@@ -17,6 +27,7 @@
 } */
 
 .artwork{
+    background-color: peachpuff;
     display: grid;
     column-gap: 10px;
     grid-template-columns: auto auto auto;
@@ -34,4 +45,8 @@
     object-fit: cover;
     width: 100%;
     border-radius: 10%;
+}
+
+.piece > img:hover{
+    cursor: pointer;
 }
