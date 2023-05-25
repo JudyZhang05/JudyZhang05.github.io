@@ -7,3 +7,4 @@ function scrollFunction() {
     document.getElementById('info').style.top ='-50px';
   }
 }
+
