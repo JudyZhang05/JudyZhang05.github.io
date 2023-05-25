@@ -1,4 +1,4 @@
-~Welcome to Judy Zhang's Portfolio Website!~
+Welcome to Judy Zhang's Portfolio Website!
 As of right now, this project is a WIP, publication is yet to be determined; however,
 
 This website will feature Judy's HTML,CSS, and possibly JavaScript Skills
