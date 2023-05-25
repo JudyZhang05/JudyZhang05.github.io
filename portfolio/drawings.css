@@ -1,0 +1,51 @@
+.title{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: whitesmoke;  
+}
+body{
+    margin: 0%;
+}
+
+.cover{
+    text-align: center;
+}
+
+.name{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(255, 232, 203); 
+}
+
+/* 
+.artwork{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+} */
+
+.artwork{
+    background-color: whitesmoke;  
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.piece{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+
+.piece > img{
+    border: solid 2px black;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.piece > img:hover{
+    cursor: pointer;
+}

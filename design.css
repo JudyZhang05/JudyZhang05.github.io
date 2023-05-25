@@ -1,0 +1,57 @@
+.order{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.back{
+    margin: 0px;
+    background-image: url("./assests/backdrop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.judy{
+    text-align: center;
+}
+
+.judy > img{
+    border-radius: 50%;
+}
+
+.zhang{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.clickables{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#last{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#last_subtitle{
+    padding-bottom: 2%;
+}
+
+.link:hover{
+    transition: transform .3s ease-in-out;
+    transform: scale(120%);
+}
+/* 
+#cover{
+    background-color: #fff4eb;
+} */
