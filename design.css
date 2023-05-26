@@ -3,11 +3,22 @@
     padding-bottom: 30%;
 }
 
+/* .welcome > h1{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url(./portfolio/instagram/2piece.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
+    color: white
+} */
+
 .back{
     margin: 0px;
     background-image: url("./assests/backdrop.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -17,10 +28,22 @@
 
 .judy > img{
     border-radius: 50%;
+    animation: opening 2s forwards;
+}
+
+@keyframes opening{
+    from {opacity: 0%; transform: translateY(-50px);}
+    to {transform: translateY(10px);}
 }
 
 .zhang{
     text-align: center;
+    animation: openwith 2s forwards;
+}
+
+@keyframes openwith{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 .subtitle{
@@ -31,6 +54,28 @@
 .clickables{
     display: flex;
     justify-content: space-evenly;
+}
+
+.section > a > img{
+    border: solid black 2px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.section > a > h3{
+    margin-top: 0px;
+    text-align: center;
+    cursor: pointer;
+    animation: release 2s forwards;
+}
+
+@keyframes release{
+    from {transform: translateY(-100px); opacity: 0%;}
+    to {transform: translateY(10px);}
+}
+
+a{
+    all:unset;
 }
 
 .socials{
@@ -48,10 +93,7 @@
 }
 
 .link:hover{
+    cursor: pointer;
     transition: transform .3s ease-in-out;
     transform: scale(120%);
 }
-/* 
-#cover{
-    background-color: #fff4eb;
-} */
