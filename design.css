@@ -60,6 +60,11 @@
     border: solid black 2px;
     border-radius: 100px;
     cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.section > a > img:hover, .section > a > img:focus{
+    transform:scale(110%);
 }
 
 .section > a > h3{
@@ -71,7 +76,7 @@
 
 @keyframes release{
     from {transform: translateY(-100px); opacity: 0%;}
-    to {transform: translateY(10px);}
+    to {transform: translateY(15px);}
 }
 
 a{
@@ -92,8 +97,11 @@ a{
     padding-bottom: 2%;
 }
 
-.link:hover{
+.link{
     cursor: pointer;
     transition: transform .3s ease-in-out;
+}
+
+.link:hover, .link:focus{
     transform: scale(120%);
 }
