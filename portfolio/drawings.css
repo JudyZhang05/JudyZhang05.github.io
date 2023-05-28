@@ -1,8 +1,8 @@
-/* body{
+body{
     background-image: url(../assests/backdrop.png);
     background-repeat: no-repeat;
     background-size: cover;
-} */
+}
 
 .title{
     text-align: center;
@@ -17,12 +17,9 @@
 
     padding-top: 2%;
     padding-bottom: 2%;
-    background-image: url(../assests/backdrop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     color: rgb(0, 0, 0);
     text-shadow: whitesmoke 2px 2px;
-    background-color: whitesmoke;
     
 }
 
@@ -54,12 +51,31 @@ body{
     column-gap: 10px;
     grid-template-columns: auto auto auto;
     padding: 10px;
+    border: solid 10px whitesmoke;
+    
+}
+
+.artwork:hover{
+    background-color:lightgray;
 }
 
 .piece{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10%;
+}
+
+.piece > img, .piece > a > img{
+    background-color: whitesmoke;
+    border: solid 2px black;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.piece > img:hover, .piece > img:focus, .piece > a > img:hover, .piece > a > img:focus{
+    transform: scale(105%);
 }
 
 .section{
@@ -69,15 +85,4 @@ body{
 @keyframes uplift{
     from {opacity: 0%; transform: translateY(100px);}
     to {opacity: 100%; transform: translateY(0px);}
-}
-
-.piece > img, .piece > a > img{
-    border: solid 2px black;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 10%;
-}
-
-.piece > img:hover{
-    cursor: pointer;
 }
