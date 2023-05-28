@@ -32,8 +32,8 @@
 }
 
 @keyframes opening{
-    from {opacity: 0%; transform: translateY(-50px);}
-    to {transform: translateY(10px);}
+    from {opacity: 0%; transform: translateY(50px);}
+    to {transform: translateY(-10px);}
 }
 
 .zhang{
@@ -42,14 +42,20 @@
 }
 
 @keyframes openwith{
-    from {opacity: 0%;}
-    to {opacity: 100%;}
+    from {opacity: 0%; transform: translateY(50px);}
+    to {transform: translateY(-10px);}
 }
 
 .subtitle{
     text-align: center;
     padding-bottom: 5%;
 }
+
+/* .subtitle > h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: whitesmoke;
+} */
 
 .clickables{
     display: flex;

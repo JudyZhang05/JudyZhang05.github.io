@@ -1,24 +1,37 @@
+/* body{
+    background-image: url(../assests/backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 .title{
     text-align: center;
-    padding-top: 30%;
+    /* padding-top: 30%;
     padding-bottom: 40%; 
     background-image: url(./other/temp\ cover.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    border: solid 10px rgb(165, 190, 192);
+    background-size: cover;*/
+    border: solid 10px rgb(233, 201, 180);
     border-bottom: solid 10px whitesmoke;
-    border-top: solid 10px whitesmoke;
-}
+    border-top: solid 10px whitesmoke; 
 
-.title>h1{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-image: url(../assests/backdrop.png);
-    background-position: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(0, 0, 0);
     text-shadow: whitesmoke 2px 2px;
+    background-color: whitesmoke;
+    
+}
+
+.title > h1{
+    animation: artshow 2s forwards;
+}
+
+@keyframes artshow{
+    from {transform: translateX(-1500px);}
 }
 
 body{
@@ -32,11 +45,11 @@ body{
 .name{
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: rgb(255, 232, 203); 
+    background-color: rgb(248, 221, 203); 
 }
 
 .artwork{
-    background-color: whitesmoke;  
+    background-color: whitesmoke;   
     display: grid;
     column-gap: 10px;
     grid-template-columns: auto auto auto;
@@ -49,7 +62,16 @@ body{
     border-radius: 10%;
 }
 
-.piece > img{
+.section{
+    animation: uplift 2s forwards;
+}
+
+@keyframes uplift{
+    from {opacity: 0%; transform: translateY(100px);}
+    to {opacity: 100%; transform: translateY(0px);}
+}
+
+.piece > img, .piece > a > img{
     border: solid 2px black;
     object-fit: cover;
     width: 100%;
