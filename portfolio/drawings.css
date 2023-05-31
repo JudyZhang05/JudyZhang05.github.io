@@ -74,7 +74,7 @@ body{
     cursor: pointer;
 }
 
-.piece > img:hover, .piece > img:focus, .piece > a > img:hover, .piece > a > img:focus{
+.piece > img:hover, .piece > a > img:hover{
     transform: scale(105%);
 }
 
