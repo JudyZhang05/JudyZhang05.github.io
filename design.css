@@ -69,15 +69,18 @@
 }
 
 .section > a > h3{
-    margin-top: 0px;
+    /* margin-top: 10px; */
     text-align: center;
     cursor: pointer;
+/* }
+
+.section > a > img:hover > .section > a > h3{ */
     animation: release 2s forwards;
 }
 
 @keyframes release{
-    from {transform: translateY(-100px); opacity: 0%;}
-    to {transform: translateY(15px);}
+    from {transform: translateY(-50px); opacity: 0%;}
+    to {transform: translateY(10px);}
 }
 
 a{
