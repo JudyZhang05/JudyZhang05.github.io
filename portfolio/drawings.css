@@ -20,6 +20,14 @@ body{
 
     color: rgb(0, 0, 0);
     text-shadow: whitesmoke 2px 2px;
+
+    opacity: 0%;
+    animation: withartshow 1.5s forwards;
+}
+
+@keyframes withartshow {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 .title > h1{
@@ -27,7 +35,7 @@ body{
 }
 
 @keyframes artshow{
-    from {opacity: 0%;; transform: translateY(50px);}
+    from {opacity: 0%;; transform: translateY(20px);}
     to {opacity: 100%;}
 }
 
@@ -79,7 +87,7 @@ body{
 }
 
 #insta > .name{
-    animation: inst 2s forwards .5s;
+    animation: inst 2s forwards 1s;
     opacity: 0%;
 }
 
@@ -90,7 +98,7 @@ body{
 
 #insta > .artwork{
     opacity: 0%;
-    animation: instag 2s forwards 1s;
+    animation: instag 2s forwards 1.5s;
 }
 
 @keyframes instag {
@@ -99,7 +107,7 @@ body{
 }
 
 #free > .name{
-    animation: fre 2s forwards 1.5s;
+    animation: fre 2s forwards 2s;
     opacity: 0%;
 }
 
@@ -110,7 +118,7 @@ body{
 
 #free > .artwork{
     opacity: 0%;
-    animation: freelan 2s forwards 2s;
+    animation: freelan 2s forwards 2.5s;
 }
 
 @keyframes freelan{
@@ -120,7 +128,7 @@ body{
 
 #figma > .name{
     opacity: 0%;
-    animation: fig 2s forwards 2.5s;
+    animation: fig 2s forwards 3s;
 }
 
 @keyframes fig{
@@ -130,7 +138,7 @@ body{
 
 #figma > .artwork{
     opacity: 0%;
-    animation: figmao 2s forwards 3s;
+    animation: figmao 2s forwards 3.5s;
 }
 
 @keyframes figmao{

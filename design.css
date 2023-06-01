@@ -27,6 +27,7 @@
 }
 
 .judy > img{
+    border: solid 2px black;
     border-radius: 50%;
     animation: opening 2s forwards;
 }
@@ -57,31 +58,50 @@
     justify-content: space-evenly;
 }
 
-.section > a > img{
+/* test */
+
+.section > a > img, .clickimage > a > img{
     border: solid black 2px;
     border-radius: 100px;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    
 }
 
-.section > a > img:hover, .section > a > img:focus{
-    transform:scale(110%);
+.section > a > img:hover , .section > a > img:focus, .clickimage > a > img:hover, .clickimage > a > img:focus{ 
+    transform: scale(110%);
 }
 
-.section > a > h3{
-    /* margin-top: 10px; */
+.section > a > h3, .clicksub > a > h3{
+    margin-top: -30px; 
     text-align: center;
     cursor: pointer;
-/* }
-
-.section > a > img:hover > .section > a > h3{ */
-    animation: release 2s forwards;
+    
 }
+
+.clickimage > a > h3{
+    transition: transform 1s forwards;
+    opacity: 0%;
+}
+
+.clickimage:hover ~ .clicksub, .section > a > img:hover ~ .section > a > h3{
+    /* animation: release 1s forwards; */
+    transform: translateY(30px);
+    opacity: 100%;
+}
+
+
+
+/* .section > a > img:hover ~ .section > a > h3{
+    animation: release 2s forwards;
+} */
 
 @keyframes release{
-    from {transform: translateY(-50px); opacity: 0%;}
-    to {transform: translateY(10px);}
+    from {opacity: 0%;}
+    to {opacity: 100%; transform: translateY(50px);}
 }
+
+/* test */
 
 a{
     all:unset;
