@@ -24,20 +24,23 @@ li a{
 
 
 .navbar{
+    background-color: whitesmoke;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .navbar a {
+    float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px 22px;
     text-decoration: none;
     cursor: pointer;
-    /* font-size: 20px; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .options a {
@@ -49,7 +52,7 @@ li a{
 } */
 
 .navbar a:hover:not(.myname){
-    background: rgba(255, 218, 185, 0.562);
+    background: rgba(185, 241, 255, 0.459);
 }
 
 
@@ -113,6 +116,7 @@ li a{
 .clickables{
     display: flex;
     justify-content: space-evenly;
+    -webkit-box-reflect: below -35px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2));
 }
 
 /* test */
@@ -147,7 +151,7 @@ li a{
     border-radius: 100px;
     cursor: pointer;
     transition: transform 0.5s ease-out;
-    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2));
+    
 
 }
 
