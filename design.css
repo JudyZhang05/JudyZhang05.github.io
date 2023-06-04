@@ -1,7 +1,57 @@
-.order{
-    padding-top: 25%;
-    padding-bottom: 30%;
+/* ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
 }
+
+li{
+    float: left;
+    cursor: pointer;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+}
+
+.option li a:hover{
+    background-color: rgba(255, 218, 185, 0.582);
+} */
+
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    cursor: pointer;
+    /* font-size: 20px; */
+}
+
+.options a {
+    float: right;
+}
+
+/* .myname a {
+    float: left;
+} */
+
+.navbar a:hover:not(.myname){
+    background: rgba(255, 218, 185, 0.562);
+}
+
 
 /* .welcome > h1{
     text-align: center;
@@ -13,6 +63,13 @@
     background-position: 0px -100px;
     color: white
 } */
+
+.order{
+    padding-top: 25%;
+    padding-bottom: 30%;
+}
+
+
 
 .back{
     margin: 0px;
@@ -60,48 +117,55 @@
 
 /* test */
 
-.section > a > img, .clickimage > a > img{
+/* .clickimage > a > img{
     border: solid black 2px;
     border-radius: 100px;
     cursor: pointer;
     transition: transform 0.5s ease-out;
-    
-}
+} */
 
-.section > a > img:hover , .section > a > img:focus, .clickimage > a > img:hover, .clickimage > a > img:focus{ 
+/* .clickimage > a > img:hover, .clickimage > a > img:focus{ 
     transform: scale(110%);
-}
+} */
 
-.section > a > h3, .clicksub > a > h3{
+/* .clicksub > a > h3{
     margin-top: -30px; 
     text-align: center;
     cursor: pointer;
-    
-}
-
-.clickimage > a > h3{
-    transition: transform 1s forwards;
-    opacity: 0%;
-}
-
-.clickimage:hover ~ .clicksub, .section > a > img:hover ~ .section > a > h3{
-    /* animation: release 1s forwards; */
-    transform: translateY(30px);
-    opacity: 100%;
-}
-
-
-
-/* .section > a > img:hover ~ .section > a > h3{
-    animation: release 2s forwards;
 } */
+
+/* 
+.clickimage > a > img:hover ~ .clicksub, .section > a > img:hover ~ .section > a > h3{
+    animation: release 1s forwards;
+} */
+
+/* test */
+
+
+.section > a > img{
+    border: solid black 2px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2));
+
+}
+
+.section > a > img:hover, .section > a > img:focus{ 
+    transform: scale(110%);
+}    
+
+.section > a > h3{
+    margin-top: -10px; 
+    text-align: center;
+    cursor: pointer;
+    animation: release 1s forwards;
+}
 
 @keyframes release{
     from {opacity: 0%;}
-    to {opacity: 100%; transform: translateY(50px);}
+    to {opacity: 100%; transform: translateY(30px);}
 }
-
-/* test */
 
 a{
     all:unset;
