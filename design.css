@@ -30,31 +30,40 @@ li a{
     top: 0;
     width: 100%;
     z-index: 100;
-}
 
-.navbar a {
-    float: left;
-    display: block;
+    display:flex;
+    justify-content: space-around;
     color: black;
     text-align: center;
-    padding: 20px 22px;
     text-decoration: none;
-    cursor: pointer;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.options a {
+/* .navbar a {
+    float: right;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.options{
+    cursor: pointer;
+    border: solid black 2px;
     float: right;
 }
 
-/* .myname a {
+.myname{
+    margin-left: -20%;
+    cursor: pointer;
+    border: solid red 2px;
     float: left;
-} */
+}
 
 .navbar a:hover:not(.myname){
     background: rgba(185, 241, 255, 0.459);
 }
 
+.options, .myname{
+
+}
 
 /* .welcome > h1{
     text-align: center;
