@@ -32,7 +32,7 @@ li a{
     z-index: 100;
 
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -40,21 +40,25 @@ li a{
 
 /* .navbar a {
     float: right;
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} */
-
-.options{
-    cursor: pointer;
-    border: solid black 2px;
-    float: right;
-}
+} 
 
 .myname{
     margin-left: -20%;
     cursor: pointer;
     border: solid red 2px;
     float: left;
+} */
+
+.myname, .navbar a{
+    font-size: 15px;
+    cursor: pointer;
+    /* font-family: 'Courier New', Courier, monospace; */
+    padding: 1.5%;
+}
+
+.navbar a:not(.myname){
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .navbar a:hover:not(.myname){

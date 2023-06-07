@@ -5,12 +5,11 @@ body{
 
 .title > h1{
     text-align: center;
-    padding-top: 1%;
 }
 
-.title{
+/* .title{
     border: solid black 10px;
-}
+} */
 
 .project > h2{
     margin-top: 5%;
@@ -65,17 +64,22 @@ body{
 }
 
 .explain{
-    padding-bottom:2%;
+    padding-bottom: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .explain > h4{
     opacity: 0%;
-    animation: appear 2s forwards 1.2s;
+    animation: appear 2s forwards 1s;
 }
 
 .explain > p{
+    padding: 2%;
+    border-radius: 50px;
+    border: solid black 3px;
     opacity: 0%;
-    animation: appearagain 2s forwards 1.6s;
+    animation: appearagain 2s forwards 1.5s;
 }
 
 @keyframes appear{
@@ -139,9 +143,15 @@ body{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-
+    animation: lastone 2s forwards 2s;
+    opacity: 0%;
  }
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+@keyframes lastone{
+    from {opacity: 0%; transform:translateY(10);}
+    to {opacity: 100%; transform:translateY(-10px);}
 }
