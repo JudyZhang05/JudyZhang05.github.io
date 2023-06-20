@@ -22,22 +22,6 @@ li a{
     background-color: rgba(255, 218, 185, 0.582);
 } */
 
-
-.navbar{
-    background-color: whitesmoke;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-
-    display:flex;
-    justify-content: space-evenly;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-
 /* .navbar a {
     float: right;
 } 
@@ -49,20 +33,44 @@ li a{
     float: left;
 } */
 
-.myname, .navbar a{
+.navbar{
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    display:flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    top: -60px;
+    transition: top 0.3s;
+
+    border: solid black 3px;
+}
+
+.myname a, .navbar a{
     font-size: 15px;
     cursor: pointer;
     /* font-family: 'Courier New', Courier, monospace; */
     padding: 1.5%;
+    
 }
 
 .navbar a:not(.myname){
     padding-left: 7%;
     padding-right: 7%;
+    /* border-right: solid 3px white;
+    border-left: solid 3px white; */
 }
 
 .navbar a:hover:not(.myname){
-    background: rgba(185, 241, 255, 0.459);
+    /* border-color: black; */
+    color: white;
+    background: black;
+    /* background: rgba(255, 199, 185, 0.568); */
 }
 
 /* .welcome > h1{
@@ -80,8 +88,6 @@ li a{
     padding-top: 25%;
     padding-bottom: 30%;
 }
-
-
 
 .back{
     margin: 0px;

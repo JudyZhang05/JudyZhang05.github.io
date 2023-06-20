@@ -1,3 +1,49 @@
+a{
+    all: unset;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    display:flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    top: -65px;
+    transition: top 0.3s;
+
+    border: solid black 3px;
+}
+
+.myname a, .navbar a{
+    font-size: 15px;
+    cursor: pointer;
+    /* font-family: 'Courier New', Courier, monospace; */
+    padding: 1.5%;
+    
+}
+
+.navbar a:not(.myname){
+    padding-left: 7%;
+    padding-right: 7%;
+    /* border-right: solid 3px white;
+    border-left: solid 3px white; */
+}
+
+.navbar a:hover:not(.myname){
+    /* border-color: black; */
+    color: white;
+    background: black;
+    /* background: rgba(255, 199, 185, 0.568); */
+}
+
+/* NAVBAR TEST */
+
 body{
     background-image: url(../assests/backdrop.png);
     background-repeat: no-repeat;
