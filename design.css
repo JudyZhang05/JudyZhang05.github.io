@@ -54,23 +54,19 @@ li a{
 .myname a, .navbar a{
     font-size: 15px;
     cursor: pointer;
-    /* font-family: 'Courier New', Courier, monospace; */
     padding: 1.5%;
+    /* font-family: 'Courier New', Courier, monospace; */
     
 }
 
 .navbar a:not(.myname){
     padding-left: 7%;
     padding-right: 7%;
-    /* border-right: solid 3px white;
-    border-left: solid 3px white; */
 }
 
 .navbar a:hover:not(.myname){
-    /* border-color: black; */
     color: white;
     background: black;
-    /* background: rgba(255, 199, 185, 0.568); */
 }
 
 /* .welcome > h1{
@@ -131,7 +127,7 @@ li a{
 .clickables{
     display: flex;
     justify-content: space-evenly;
-    -webkit-box-reflect: below -35px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2));
+    /* -webkit-box-reflect: below -35px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2)); */
 }
 
 /* test */
@@ -141,19 +137,19 @@ li a{
     border-radius: 100px;
     cursor: pointer;
     transition: transform 0.5s ease-out;
-} */
+} 
 
-/* .clickimage > a > img:hover, .clickimage > a > img:focus{ 
+.clickimage > a > img:hover, .clickimage > a > img:focus{ 
     transform: scale(110%);
-} */
+}
 
-/* .clicksub > a > h3{
+.clicksub > a > h3{
     margin-top: -30px; 
     text-align: center;
     cursor: pointer;
-} */
+}
 
-/* 
+
 .clickimage > a > img:hover ~ .clicksub, .section > a > img:hover ~ .section > a > h3{
     animation: release 1s forwards;
 } */
@@ -165,20 +161,24 @@ li a{
     border: solid black 2px;
     border-radius: 100px;
     cursor: pointer;
-    transition: transform 0.5s ease-out;
-    
-
+    transition: transform 0.2s ease-out;
 }
 
 .section > a > img:hover, .section > a > img:focus{ 
     transform: scale(110%);
-}    
+}
 
 .section > a > h3{
+    display: none;
+    transition: transform 0.2s ease-out;
+}
+
+.section:hover > a > h3, .section:focus > a > h3{
+    display: block;
     margin-top: -10px; 
     text-align: center;
     cursor: pointer;
-    animation: release 1s forwards;
+    animation: release 0.5s forwards;
 }
 
 @keyframes release{
