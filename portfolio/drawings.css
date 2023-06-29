@@ -132,8 +132,8 @@ body{
     transform: scale(105%);
 }
 
-#insta > .name{
-    animation: inst 2s forwards 1s;
+#insta > .name h3{
+    animation: inst 1.5s forwards .5s;
     opacity: 0%;
 }
 
@@ -142,9 +142,19 @@ body{
     to {opacity: 100%;}
 }
 
+#insta > .name{
+    opacity: 0%;
+    animation: bacin 1.5s forwards .5s;
+}
+
+@keyframes bacin{
+    from{}
+    to {opacity: 100%;}
+}
+
 #insta > .artwork{
     opacity: 0%;
-    animation: instag 2s forwards 1.5s;
+    animation: instag 1.5s forwards 1s;
 }
 
 @keyframes instag {
@@ -152,8 +162,8 @@ body{
     to {opacity: 100%;}
 }
 
-#free > .name{
-    animation: fre 2s forwards 2s;
+#free > .name h3{
+    animation: fre 1.5s forwards 1.5s;
     opacity: 0%;
 }
 
@@ -162,9 +172,19 @@ body{
     to {opacity: 100%;}
 }
 
+#free > .name{
+    opacity: 0%;
+    animation: bacfree 1.5s forwards 1.5s;
+}
+
+@keyframes bacfree{
+    from{}
+    to {opacity: 100%;}
+}
+
 #free > .artwork{
     opacity: 0%;
-    animation: freelan 2s forwards 2.5s;
+    animation: freelan 1.5s forwards 2s;
 }
 
 @keyframes freelan{
@@ -172,9 +192,9 @@ body{
     to {opacity: 100%;}
 }
 
-#figma > .name{
+#figma > .name h3{
     opacity: 0%;
-    animation: fig 2s forwards 3s;
+    animation: fig 1.5s forwards 2.5s;
 }
 
 @keyframes fig{
@@ -182,9 +202,19 @@ body{
     to {opacity: 100%;}
 }
 
+#figma > .name{
+    opacity: 0%;
+    animation: bacfig 1.5s forwards 2.5s;
+}
+
+@keyframes bacfig{
+    from{}
+    to {opacity: 100%;}
+}
+
 #figma > .artwork{
     opacity: 0%;
-    animation: figmao 2s forwards 3.5s;
+    animation: figmao 1.5s forwards 3s;
 }
 
 @keyframes figmao{

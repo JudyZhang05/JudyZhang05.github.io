@@ -1,18 +1,62 @@
 body{
-    zoom: 90%;
+    /* zoom: 90%; */
     margin: 0px;
+}
+
+a{
+    all: unset;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    display:flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    top: 0px;
+    transition: top 0.3s;
+
+    border: solid black 2px;
+}
+
+.myname a, .navbar a{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1.5%;
+    /* font-family: 'Courier New', Courier, monospace; */
+    
+}
+
+.navbar a:not(.myname){
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.navbar a:hover:not(.myname){
+    color: white;
+    background: black;
 }
 
 .title > h1{
     text-align: center;
 }
 
-/* .title{
-    border: solid black 10px;
-} */
+/*test
+@keyframes opening{
+    from {opacity: 0%; transform:translateY(50px);}
+    50% {opacity: 100%; transform:translateY(20px);}
+    to {opacity: 0%; transform:translateY(-10px);}
+}
+*/
 
 .project > h2{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     animation: popoff 2s forwards;
 }
 
@@ -35,7 +79,7 @@ body{
 .evidence > a > img{
     animation: side 2s forwards .5s;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     cursor: pointer;
     transition: transform .3s ease-in-out;
     opacity: 0%;
@@ -53,7 +97,7 @@ body{
 .show > img{
     margin-top: 2px;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     animation: gifpreview 2s forwards .5s;
     opacity: 0%;
 }
@@ -77,7 +121,7 @@ body{
 .explain > p{
     padding: 2%;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     opacity: 0%;
     animation: appearagain 2s forwards 1.5s;
 }

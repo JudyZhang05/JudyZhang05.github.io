@@ -173,13 +173,19 @@ li a{
     transition: transform 0.2s ease-out;
 }
 
-.section:hover > a > h3, .section:focus > a > h3{
+.section:hover > a > h3{
     display: block;
     margin-top: -10px; 
     text-align: center;
     cursor: pointer;
     animation: release 0.5s forwards;
+    
+    /* transition: transform 0.5s ease-out; */
 }
+
+/* .section:hover > a > h3, .section:focus > a > h3{
+    transform: translateY(30px);
+} */
 
 @keyframes release{
     from {opacity: 0%;}
