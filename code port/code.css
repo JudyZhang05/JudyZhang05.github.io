@@ -19,10 +19,10 @@ a{
     color: black;
     text-align: center;
     text-decoration: none;
-    top: 0px;
+    top: -100px;
     transition: top 0.3s;
 
-    border: solid black 2px;
+    border: solid black 3px;
 }
 
 .myname a, .navbar a{

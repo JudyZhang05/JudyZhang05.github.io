@@ -45,7 +45,7 @@ li a{
     color: black;
     text-align: center;
     text-decoration: none;
-    top: -60px;
+    top: -100px;
     transition: top 0.3s;
 
     border: solid black 3px;
