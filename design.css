@@ -1,27 +1,3 @@
-/* ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;    
-}
-
-li{
-    float: left;
-    cursor: pointer;
-}
-
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 22px;
-    text-decoration: none;
-}
-
-.option li a:hover{
-    background-color: rgba(255, 218, 185, 0.582);
-} */
-
 /* .navbar a {
     float: right;
 } 
@@ -68,17 +44,6 @@ li a{
     color: white;
     background: black;
 }
-
-/* .welcome > h1{
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    background-image: url(./portfolio/instagram/2piece.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -100px;
-    color: white
-} */
 
 .order{
     padding-top: 25%;
