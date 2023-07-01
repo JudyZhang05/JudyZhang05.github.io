@@ -1,5 +1,4 @@
 body{
-    /* zoom: 90%; */
     margin: 0px;
 }
 
@@ -30,7 +29,6 @@ a{
     cursor: pointer;
     padding: 1.5%;
     /* font-family: 'Courier New', Courier, monospace; */
-    
 }
 
 .navbar a:not(.myname){
@@ -47,16 +45,7 @@ a{
     text-align: center;
 }
 
-/*test
-@keyframes opening{
-    from {opacity: 0%; transform:translateY(50px);}
-    50% {opacity: 100%; transform:translateY(20px);}
-    to {opacity: 0%; transform:translateY(-10px);}
-}
-*/
-
 .project > h2{
-    /* margin-top: 5%; */
     animation: popoff 2s forwards;
 }
 
@@ -72,11 +61,11 @@ a{
     padding-right: 7%;
 }
 
-.evidence{
+.evidence, .linkslide, .linkgit{
     display: block;
 }
 
-.evidence > a > img{
+.evidence > a > img, .linkslide > a > img, .linkgit > a > img{
     animation: side 2s forwards .5s;
     border-radius: 50px;
     border: solid black 2px;
@@ -90,7 +79,7 @@ a{
     to {opacity: 100%;}
 }
 
-.evidence > a > img:hover{
+.evidence > a > img:hover, .linkslide > a > img:hover, .linkgit > a > img:hover{
     transform: scale(101%);
 }
 
@@ -173,7 +162,7 @@ a{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgb(250, 219, 194);
+    background-color:  rgb(253, 166, 166);
     color: white;
 }
 

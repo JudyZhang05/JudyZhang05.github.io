@@ -1,0 +1,18 @@
+.temp{
+    background-color: paleturquoise;
+    border: solid 2px black;
+    padding:5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.test{
+    display: none;
+    background-color: pink;
+    border: solid 2px red;
+}
+
+.temp:hover > .test{
+    display: hidden;
+}
+
