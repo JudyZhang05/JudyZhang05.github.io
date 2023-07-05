@@ -2,6 +2,12 @@ a{
     all: unset;
 }
 
+body{
+    background-image: url(../assests/backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .navbar{
     background-color: whitesmoke;
     overflow: hidden;
@@ -43,12 +49,6 @@ a{
 }
 
 /* NAVBAR TEST */
-
-body{
-    background-image: url(../assests/backdrop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .title{
     text-align: center;
