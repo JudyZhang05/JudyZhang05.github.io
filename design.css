@@ -1,270 +1,379 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', 'Arial', sans-serif;
-  }
-
-.navwrap{
-    z-index: 50;
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-}
-
-.gradient-bar{
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(-45deg, #A6D0E4, #9AD0EC, #99E1E5, #D4A5A5, #F4BFBF, #FFD9C0);
-    background-size: 400% 400%;
-    -webkit-animation: gradbar 15s ease infinite;
-    -moz-animation: gradbar 15s ease infinite;
-    animation: gradbar 15s ease infinite;
-}
-
-@keyframes gradbar {
-	0% {background-position: 0% 50%}
-	50% {background-position: 100% 50%}
-	100% {background-position: 0% 50%}
-}
-
-@-moz-keyframes gradbar {
-	0% {background-position: 0% 50%}
-	50% {background-position: 100% 50%}
-	100% {background-position: 0% 50%}
-}
-
-/* TEST NOT NAVIGATION */
-
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    height: 50px;
-    overflow: hidden;
-  }
-
-  #headname {
-    color: black;
-    height: 16px;
-    width: auto;
-    justify-self: start;
-    margin-left: 40px;
-    list-style: none;
-  }
-
-  #headname:hover{
-    cursor: pointer;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .nav-item a, #headname {
-    color: #000;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 0.3s ease-out;
-  }
-  
-  .nav-item a:hover {
-    color: #3498db;
-    cursor: pointer;
-    
-  }
-
-  .menu-toggle, .bar{
-    width: 25px;
-    height: 3px;
-    background-color: #3f3f3f;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .menu-toggle {
-    justify-self: end;
-    margin-right: 25px;
-    display: none;
-  }
-  
-
-  /*MY NAV*/
-
-/* .navbar{
-    background-color: whitesmoke;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    z-index: 50;
-
-    display:flex;
-    justify-content: space-evenly;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    top: -100px;
-    transition: top 0.3s;
-}
-
-.myname a, .navbar a:not(.skip){
-    font-size: 15px;
-    cursor: pointer;
-    padding: 1.5%;
-}
-
-.navbar a:not(.myname){
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
-.navbar a:hover:not(.myname,.skip){
-    color: whitesmoke;
-    background: black;
-} */
-
-.order{
-    padding-top: 25%;
-    padding-bottom: 30%;
-}
-
-.back{
-    margin: 0px;
-    background-image: url("./assests/backdrop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.judy{
-    text-align: center;
-}
-
-.judy > img{
-    border: solid 2px black;
-    border-radius: 50%;
-    animation: opening 2s forwards;
-}
-
-@keyframes opening{
-    from {opacity: 0%; transform: translateY(50px);}
-    to {transform: translateY(-10px);}
-}
-
-.zhang{
-    text-align: center;
-    animation: openwith 2s forwards;
-}
-
-@keyframes openwith{
-    from {opacity: 0%; transform: translateY(50px);}
-    to {transform: translateY(-10px);}
-}
-
-.subtitle{
-    text-align: center;
-    padding-bottom: 5%;
-}
-
-
-.clickables{
-    display: flex;
-    justify-content: space-evenly;
-    /* -webkit-box-reflect: below -35px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.2)); */
-}
-
-/* test */
-
-/* .clickimage > a > img{
-    border: solid black 2px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: transform 0.5s ease-out;
-} 
-
-.clickimage > a > img:hover, .clickimage > a > img:focus{ 
-    transform: scale(110%);
-}
-
-.clicksub > a > h3{
-    margin-top: -30px; 
-    text-align: center;
-    cursor: pointer;
-}
-
-
-.clickimage > a > img:hover ~ .clicksub, .section > a > img:hover ~ .section > a > h3{
-    animation: release 1s forwards;
-} */
-
-/* test */
-
-
-.section > a > img{
-    border: solid black 2px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: transform 0.2s ease-out;
-}
-
-.section > a > img:hover, .section > a > img:focus{ 
-    transform: scale(110%);
-}
-
-.section > a > h3{
-    display: none;
-    transition: transform 0.2s ease-out;
-}
-
-.section:hover > a > h3{
-    display: block;
-    margin-top: -10px; 
-    text-align: center;
-    cursor: pointer;
-    animation: release 0.5s forwards;
-    
-    /* transition: transform 0.5s ease-out; */
-}
-
-/* .section:hover > a > h3, .section:focus > a > h3{
-    transform: translateY(30px);
-} */
-
-@keyframes release{
-    from {opacity: 0%;}
-    to {opacity: 100%; transform: translateY(30px);}
-}
-
 a{
     all:unset;
 }
 
-.socials{
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.back{
+    overflow-y: hidden;
+    margin: 0px;
+    background-image: url(./assests/backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#judyzhang{
+    padding: 3.5%;       /*Alterations required*/
+    background-color: rgba(25, 25, 48, 0.884);
+    display: flex;
+    justify-content: space-evenly;
+    transition: background-color .3s ease-in-out;
+}
+
+#judyzhang:hover, #judyzhang:hover > .zhang{
+    color: rgba(25, 25, 48, 0.884);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.judy > img{
+    margin-left: 30%;
+    border: rgba(25, 25, 48, 0.884) solid 5px;
+    border-radius: 100%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    text-align: center;
+    width: 300px;
+    opacity: 0%;
+    animation: judy 1.5s forwards 2s;
+}
+
+@keyframes judy {
+    from {opacity: 0%; transform: translateY(-40px);}
+    to {opacity: 100%;}
+}
+
+.welcome{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.welcome > h2{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.greetings > h3{
+    opacity: 0%;
+    animation: introtojudy 2s forwards 2s;    
+}
+
+@keyframes introtojudy{
+    from {transform: translateY(20px);}
+    to {opacity: 100%;}
+}
+
+#w{
+    opacity: 0%;
+    animation: w 1.5s forwards;
+}
+#e{
+    opacity: 0%;
+    animation: e 1.5s forwards .5s;
+}
+#l{
+    opacity: 0%;
+    animation: l 1.5s forwards 1s;
+}
+#c{
+    opacity: 0%;
+    animation: c 1.5s forwards 1.5s;
+}
+@keyframes w{
+    from {opacity: 0%; transform: translateY(-40px);}
+    to {opacity: 100%;}
+}
+@keyframes e{
+    from {opacity: 0%; transform: translateY(-40px);}
+    to {opacity: 100%;}
+}
+@keyframes l{
+    from {opacity: 0%; transform: translateY(-40px);}
+    to {opacity: 100%;}
+}
+@keyframes c{
+    from {opacity: 0%; transform: translateY(-40px);}
+    to {opacity: 100%;}
+}
+
+
+.zhang{
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    transition: color .3s ease-in-out;
+}
+
+.order{
+    background-color: rgba(25, 25, 48, 0.884);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.order:hover{
+    background-color: rgba(25, 25, 48, 0);
+}
+
+.clickables{
+    padding: 2%;
+    padding-bottom: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#last{
-    padding-top: 5%;
-    padding-bottom: 5%;
+.section{
+    margin-top: 1.5%;
+    border-radius: 100px;
 }
 
-#last_subtitle{
-    padding-bottom: 2%;
-}
-
-.link{
+.section > a > img{
+    width: 200px;
+    border-radius: 20%;
     cursor: pointer;
-    transition: transform .3s ease-in-out;
+    transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
 }
 
-.link:hover, .link:focus{
-    transform: scale(120%);
+.section > a > img:hover{ 
+    transform: scale(110%);
+}
+
+.section > a > h2{
+    opacity: 0;
+	transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    color: rgba(25, 25, 48, 0.884);
+    text-align: center;
+}
+
+.section:hover > a > h2{
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(20px);
+    color: rgba(25, 25, 48, 0.884);
+}
+
+#first{
+    opacity: 0%;
+    animation: first 1.5s forwards 2.4s;
+}
+#second{
+    opacity: 0%;
+    animation: second 1.5s forwards 3s;
+}
+#third{
+    opacity: 0%;
+    animation: third 1.5s forwards 3.4s;
+}
+
+@keyframes first{
+    from {opacity: 0%; transform:translateY(40px);}
+    to {opacity: 100%;}
+}
+@keyframes second{
+    from {opacity: 0%; transform:translateY(40px);}
+    to {opacity: 100%;}
+}
+@keyframes third{
+    from {opacity: 0%; transform:translateY(40px);}
+    to {opacity: 100%;}
+}
+
+
+
+
+/*RESPONSIVE TESTING*/
+/* when screen is smaller do this*/
+
+@media only screen and (max-width:1400px) and (max-height:665px){  
+    a{
+        all:unset;
+    }
+    
+    * {
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+    .back{
+        overflow-y: hidden;
+        margin: 0px;
+        background-image: url(./assests/backdrop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #judyzhang{
+        
+        padding: 3.5%;                         /*Alterations required*/
+        /* background-color: rgba(25, 25, 48, 0.884); */
+        background-color: rgb(61, 29, 29);  /*Alterations required*/
+
+        display: flex;
+        justify-content: space-evenly;
+        transition: background-color .3s ease-in-out;
+    }
+    
+    #judyzhang:hover, #judyzhang:hover > .zhang{
+        color: rgba(25, 25, 48, 0.884);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .judy > img{
+        margin-left: 30%;
+        border: rgba(25, 25, 48, 0.884) solid 5px;
+        border-radius: 100%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        text-align: center;
+        width: 300px;
+        opacity: 0%;
+        animation: judy 1.5s forwards 2s;
+    }
+    
+    @keyframes judy {
+        from {opacity: 0%; transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    
+    .welcome{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 30px;
+    }
+    
+    .welcome > h2{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .greetings > h3{
+        opacity: 0%;
+        animation: introtojudy 2s forwards 2s;    
+    }
+    
+    @keyframes introtojudy{
+        from {transform: translateY(20px);}
+        to {opacity: 100%;}
+    }
+    
+    #w{
+        opacity: 0%;
+        animation: w 1.5s forwards;
+    }
+    #e{
+        opacity: 0%;
+        animation: e 1.5s forwards .5s;
+    }
+    #l{
+        opacity: 0%;
+        animation: l 1.5s forwards 1s;
+    }
+    #c{
+        opacity: 0%;
+        animation: c 1.5s forwards 1.5s;
+    }
+    @keyframes w{
+        from {opacity: 0%; transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes e{
+        from {opacity: 0%; transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes l{
+        from {opacity: 0%; transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes c{
+        from {opacity: 0%; transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    
+    
+    .zhang{
+        text-align: center;
+        margin: auto;
+        color: whitesmoke;
+        transition: color .3s ease-in-out;
+    }
+    
+    .order{
+        background-color: rgba(25, 25, 48, 0.884);
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .order:hover{
+        background-color: rgba(25, 25, 48, 0);
+    }
+    
+    .clickables{
+        padding: 2%;
+        padding-bottom: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .section{
+        margin-top: 1.5%;
+        border-radius: 100px;
+    }
+    
+    .section > a > img{
+        width: 200px;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
+    }
+    
+    .section > a > img:hover{ 
+        transform: scale(110%);
+    }
+    
+    .section > a > h2{
+        opacity: 0;
+        transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+        color: rgba(25, 25, 48, 0.884);
+        text-align: center;
+    }
+    
+    .section:hover > a > h2{
+        text-align: center;
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(20px);
+        color: rgba(25, 25, 48, 0.884);
+    }
+    
+    #first{
+        opacity: 0%;
+        animation: first 1.5s forwards 2.4s;
+    }
+    #second{
+        opacity: 0%;
+        animation: second 1.5s forwards 3s;
+    }
+    #third{
+        opacity: 0%;
+        animation: third 1.5s forwards 3.4s;
+    }
+    
+    @keyframes first{
+        from {opacity: 0%; transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes second{
+        from {opacity: 0%; transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes third{
+        from {opacity: 0%; transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+
 }

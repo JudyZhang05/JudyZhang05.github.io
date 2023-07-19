@@ -6,13 +6,52 @@ a{
     all: unset;
 }
 
-.navbar{
+/* NAV BEGIN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navwrap{
+    z-index: 50;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  
+  .gradient-bar{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg,#99E1E5, #F4BFBF);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+  }
+  
+  @keyframes gradbar {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+  }
+  
+  @-moz-keyframes gradbar {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+  }
+  
+  .navbar{
+    margin-top:5px;
     background-color: whitesmoke;
     overflow: hidden;
     position: fixed;
     width: 100%;
-    z-index: 100;
-
+    z-index: 50;
+  
     display:flex;
     justify-content: space-evenly;
     color: black;
@@ -20,33 +59,35 @@ a{
     text-decoration: none;
     top: -100px;
     transition: top 0.3s;
-
-    border: solid black 3px;
-}
-
-.myname a, .navbar a{
-    font-size: 15px;
+  }
+  
+  .myname a, .navbar a:not(.skip){
+    font-size: 14px;
     cursor: pointer;
-    padding: 1.5%;
-    /* font-family: 'Courier New', Courier, monospace; */
-}
-
-.navbar a:not(.myname){
+    padding: 1%;
+  }
+  
+  .navbar a:not(.myname){
     padding-left: 7%;
     padding-right: 7%;
-}
-
-.navbar a:hover:not(.myname){
-    color: white;
-    background: black;
-}
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .navbar a:hover:not(.myname,.skip){
+    color: whitesmoke;
+    background-color: black;
+  }
+  /* NAV END */
 
 .title > h1{
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .project > h2{
     animation: popoff 2s forwards;
+    margin-bottom: 2%;
 }
 
 @keyframes popoff{
@@ -97,7 +138,7 @@ a{
 }
 
 .explain{
-    padding-bottom: 2%;
+    margin-top: 1%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -108,6 +149,7 @@ a{
 }
 
 .explain > p{
+    margin-top: 1%;
     padding: 2%;
     border-radius: 50px;
     border: solid black 2px;
@@ -171,7 +213,7 @@ a{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin-top: 2%;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
