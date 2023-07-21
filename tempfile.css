@@ -1,0 +1,195 @@
+/* MOBILE WEBPAGE */
+
+@media only screen and (max-width: 375){
+    a{
+        all:unset;
+    }
+
+    * {
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .back{
+        margin: auto;
+        overflow-y: auto;
+        margin: 0px;
+        background-image: url(./assests/backdrop.png);
+        background-size: cover;
+    }
+
+    #judyzhang{
+        background-color: rgba(25, 25, 48, 0.884);
+        margin: auto;
+        padding-bottom: 180%;
+        transition: background-color .3s ease-in-out;
+    }
+
+    #judyzhang:hover, #judyzhang:hover > .zhang > .greetings > .welcome, #judyzhang:hover > .zhang > .greetings > h3{
+        color: rgba(25, 25, 48, 0.884);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .judy > img{
+        margin-top: -2%;
+        border: rgba(25, 25, 48, 0.884) solid 5px;
+        border-radius: 100%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        text-align: center;
+        width: 300px;
+        opacity: 0%;
+        animation: judy 2s forwards 2s;
+        transform: translateY(650px);
+    }
+
+    @keyframes judy {
+        from {transform: translateY(700px);}
+        to {opacity: 100%;}
+    }
+
+    .welcome{
+        color: whitesmoke;
+        font-size: 30px;
+        transition: color .3s ease-in-out;
+    }
+
+    .welcome > h2{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .greetings > h3{
+        color: whitesmoke;
+        opacity: 0%;
+        animation: introtojudy 2s forwards 2s;    
+        transform: translateY(500px);
+        transition: color .3s ease-in-out;
+    }
+
+    @keyframes introtojudy{
+        from {transform: translateY(550px);}
+        to {opacity: 100%;}
+    }
+
+    .shorten{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 45%;
+        padding-right: 45%;
+        margin-bottom: 2%;
+    }
+
+    #w{
+        margin-bottom: 2%;
+        opacity: 0%;
+        animation: w 1.5s forwards;
+    }
+    .shorten > #e{
+        margin-right: 10%;
+        opacity: 0%;
+        animation: e 1.5s forwards .5s;
+    }
+    .shorten > #l{
+        margin-left: 10%;
+        opacity: 0%;
+        animation: l 1.5s forwards 1s;
+    }
+    #c{
+        opacity: 0%;
+        animation: c 1.5s forwards 1.5s;
+    }
+    @keyframes w{
+        from {transform: translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes e{
+        from {transform: translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes l{
+        from {transform: translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes c{
+        from {transform: translateY(40px);}
+        to {opacity: 100%;}
+    }
+
+    .zhang{
+        text-align: center;
+        margin: auto;
+        color: whitesmoke;
+        transition: color .3s ease-in-out;
+    }
+
+    .order{
+        background-color: rgba(25, 25, 48, 0.884);
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .order:hover{
+        background-color: rgba(25, 25, 48, 0);
+    }
+
+    .clickables{
+        padding: 2%;
+        padding-bottom: 100%;
+    }
+
+    .section{
+        border-radius: 100px;
+        margin-top: 50%;
+    }
+
+    .section > a > img{
+        width: 200px;
+        border: rgba(25, 25, 48, 0.884) solid 5px;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
+    }
+
+    .section > a > h2{
+        text-align: center;
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(20px);
+        transition: color .3s ease-in-out;
+        color: whitesmoke;
+    }
+
+    .clickables:hover > .section > a > h2{
+        color: rgba(25, 25, 48, 0.884);
+    }
+
+    #first{
+        margin-top: 50%;
+        opacity: 0%;
+        animation: first 1.5s forwards 2.4s;
+    }
+    #second{
+        opacity: 0%;
+        animation: second 1.5s forwards 3s;
+    }
+    #third{
+        opacity: 0%;
+        animation: third 1.5s forwards 3.4s;
+    }
+
+    @keyframes first{
+        from {transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes second{
+        from {transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+    @keyframes third{
+        from {transform:translateY(40px);}
+        to {opacity: 100%;}
+    }
+} 
