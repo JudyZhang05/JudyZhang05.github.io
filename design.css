@@ -1,5 +1,5 @@
 /* MOBILE SIZE */
-/* @media only screen and (max-width: 375){ */
+@media only screen and (max-width: 375){
     a{
         all:unset;
     }
@@ -161,6 +161,14 @@
         color: whitesmoke;
     }
 
+    .section:hover > a > h2{
+        text-align: center;
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(20px);
+        color: rgba(25, 25, 48, 0.884);
+    }
+
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
@@ -191,11 +199,11 @@
         from {transform:translateY(40px);}
         to {opacity: 100%;}
     }
-/* }  */
+} 
 
 /* FROM MOBILE TO SMOL TABLET MAX-WIDTH: 620px */
 @media only screen and (min-width: 376px) and (max-width: 620px){
-    a{
+     a{
         all:unset;
     }
 
@@ -359,6 +367,14 @@
         color: whitesmoke;
     }
 
+    .section:hover > a > h2{
+        text-align: center;
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(20px);
+        color: rgba(25, 25, 48, 0.884);
+    }
+
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
@@ -394,7 +410,7 @@
 
 /* FROM SMOL TABLET TO BIGGER TABLET MAX-WIDTH: 740px */
 @media only screen and (min-width: 621px) and (max-width: 720px){
-    a{
+     a{
         all:unset;
     }
 
@@ -449,13 +465,13 @@
         display: flex;
         justify-content: space-evenly;
         font-size: 30px;
-        margin-left: 48%;
-        margin-right: 48%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .welcome > h2{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .greetings > h3{
@@ -555,6 +571,14 @@
         color: whitesmoke;
     }
 
+    .section:hover > a > h2{
+        text-align: center;
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(20px);
+        color: rgba(25, 25, 48, 0.884);
+    }
+
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
@@ -590,7 +614,7 @@
 /* FROM TABLET TO SMOL LAPTOP MAX-WIDTH: 1209px */
 
 @media only screen and (min-width: 721px) and (max-width: 1209px){
-    a{
+     a{
         all:unset;
     }
 
@@ -1002,7 +1026,7 @@
 /* BIGGER YET NORMALER SCREEN SIZE OF min of 1920 and min of 1080 */
 
 @media only screen and (min-width: 1920px) and (min-height: 1080px){
-    a{
+     a{
         all:unset;
     }
     
