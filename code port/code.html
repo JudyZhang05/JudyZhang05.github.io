@@ -7,21 +7,38 @@
     <title>Judy Zhang Code Showcase</title>
     <link href="../code port/code.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+
+    <div class="navwrap">
+        <div class="gradient-bar"></div>
+        <div class="navbar" id="navbar">
+          <a class="myname" href="../index.html">Judy Zhang</a>
+          <a class="skip"></a>
+          <a href="../portfolio/drawings.html">Art</a>
+          <a href="../code port/code.html">Code</a>
+          <a href="../contact/contact.html">Contact</a>
+        </div>
+    </div>
+
     <div class="title">
         <h1>CODE SHOWCASE</h1>
     </div>
     <div class="order">
         <div class="project">
-            <h2>KLICKY</h2>
+            <h2>Project: KLICKY</h2>
             <div class="case">
                 <div class="show">
                     <img src="../code port/linklicky.gif" width="650" alt="project 1"> 
                 </div>
                 <div class="show">
                     <div class="evidence">
-                        <a href="https://docs.google.com/presentation/d/1Zzm7Qs5_9GTFmAKwpQTvHf3G5OM4vOT1EWolWaOZswM/edit?usp=sharing" target="_blank"> <img src="../code port/link.png" width="250"></a>
-                        <a href="https://github.com/gschultz49/klicky" target="_blank"> <img src="../code port/linkgit.png" width="250"> </a>              
+                        <div class="linkslide" id="linkshow"> 
+                            <a href="https://docs.google.com/presentation/d/1Zzm7Qs5_9GTFmAKwpQTvHf3G5OM4vOT1EWolWaOZswM/edit?usp=sharing" target="_blank"> <img src="../code port/link.png" width="250"></a> 
+                        </div> 
+                        <div class="linkgit" id="linkhub"> 
+                            <a href="https://github.com/gschultz49/klicky" target="_blank"> <img src="../code port/linkgit.png" width="250"> </a> 
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -50,7 +67,7 @@
                 <p>3Project this and that</p>
             </div>
         </div>
-        <!-- test -->
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
@@ -59,9 +76,9 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    
-    <script src="../code port/code.js"></script>
+    </div>
+
+<script src="../code port/code.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,157 @@
+/* NAV BEGIN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navwrap{
+  z-index: 50;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.gradient-bar{
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg,#99E1E5, #F4BFBF);
+  background-size: 400% 400%;
+  -webkit-animation: gradbar 15s ease infinite;
+  -moz-animation: gradbar 15s ease infinite;
+  animation: gradbar 15s ease infinite;
+}
+
+@keyframes gradbar {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+
+@-moz-keyframes gradbar {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+
+.navbar{
+  margin-top:5px;
+  background-color: whitesmoke;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+
+  display:flex;
+  justify-content: space-evenly;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  top: -1px;
+  transition: top 0.3s;
+}
+
+.myname a, .navbar a:not(.skip){
+  font-size: 18px;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.navbar a:not(.myname){
+  padding-left: 7%;
+  padding-right: 7%;
+  transition: background-color 0.3s ease-out;
+}
+
+.navbar a:hover:not(.myname,.skip){
+  color: whitesmoke;
+  background-color: black;
+}
+/* NAV END */
+
+body{
+  text-align: center;
+  margin: auto;
+}
+
+#title{
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+
+.email{
+  margin: auto;
+  border: solid rgba(25, 25, 48, 0.884) 2px;
+  border-radius: 25px;
+  width: 50%;
+  margin-bottom: 1%;
+}
+
+.whotoandfrom:not(.except){
+  border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.border{
+  border-right: solid rgba(25, 25, 48, 0.884) 2px;
+}
+
+#message{
+  all: unset;
+  margin-bottom: 1%;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  resize: none;
+  text-align: left;
+  padding: 1.5% 2%;
+}
+
+button{
+  all: unset;
+}
+
+.buttons{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#copybutton, #gobutton, #sendbutton{
+  all:unset;
+  border: solid rgba(25, 25, 48, 0.884) 2px;
+  border-radius: 10px;
+  max-width: 100px;
+  padding: .2% 1.5%;
+  cursor: pointer;
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+#copybutton:hover, #gobutton:hover, #sendbutton:hover{
+  transform: scale(115%);
+  box-shadow: black 1px 1px;
+  background-color: rgba(26, 9, 65, 0.137);
+}
+
+a{
+  all: unset;
+}
+
+@media only screen and (max-width:900px){
+
+  .whotoandfrom:not(.except){
+    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+    padding: 1%;
+    display: block;
+  }
+
+  .border{
+    margin-top: 1%;
+    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+  }  
+  
+}

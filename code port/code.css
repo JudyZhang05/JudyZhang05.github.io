@@ -1,19 +1,93 @@
 body{
-    zoom: 90%;
     margin: 0px;
 }
 
-.title > h1{
-    text-align: center;
+a{
+    all: unset;
 }
 
-/* .title{
-    border: solid black 10px;
-} */
+/* NAV BEGIN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navwrap{
+    z-index: 50;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  
+  .gradient-bar{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg,#99E1E5, #F4BFBF);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+  }
+  
+  @keyframes gradbar {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+  }
+  
+  @-moz-keyframes gradbar {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+  }
+  
+  .navbar{
+    margin-top:5px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+  
+    display:flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    top: -100px;
+    transition: top 0.3s;
+  }
+  
+  .myname a, .navbar a:not(.skip){
+    font-size: 14px;
+    cursor: pointer;
+    padding: 1%;
+  }
+  
+  .navbar a:not(.myname){
+    padding-left: 7%;
+    padding-right: 7%;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .navbar a:hover:not(.myname,.skip){
+    color: whitesmoke;
+    background-color: black;
+  }
+  /* NAV END */
+
+.title > h1{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
 
 .project > h2{
-    margin-top: 5%;
     animation: popoff 2s forwards;
+    margin-bottom: 2%;
 }
 
 @keyframes popoff{
@@ -28,14 +102,14 @@ body{
     padding-right: 7%;
 }
 
-.evidence{
+.evidence, .linkslide, .linkgit{
     display: block;
 }
 
-.evidence > a > img{
+.evidence > a > img, .linkslide > a > img, .linkgit > a > img{
     animation: side 2s forwards .5s;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     cursor: pointer;
     transition: transform .3s ease-in-out;
     opacity: 0%;
@@ -46,14 +120,14 @@ body{
     to {opacity: 100%;}
 }
 
-.evidence > a > img:hover{
+.evidence > a > img:hover, .linkslide > a > img:hover, .linkgit > a > img:hover{
     transform: scale(101%);
 }
 
 .show > img{
     margin-top: 2px;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     animation: gifpreview 2s forwards .5s;
     opacity: 0%;
 }
@@ -64,7 +138,7 @@ body{
 }
 
 .explain{
-    padding-bottom: 2%;
+    margin-top: 1%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -75,9 +149,10 @@ body{
 }
 
 .explain > p{
+    margin-top: 1%;
     padding: 2%;
     border-radius: 50px;
-    border: solid black 3px;
+    border: solid black 2px;
     opacity: 0%;
     animation: appearagain 2s forwards 1.5s;
 }
@@ -129,7 +204,7 @@ body{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgb(250, 219, 194);
+    background-color:  rgb(253, 166, 166);
     color: white;
 }
 
@@ -138,7 +213,7 @@ body{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin-top: 2%;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
