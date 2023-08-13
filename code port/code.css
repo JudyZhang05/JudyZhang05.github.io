@@ -54,6 +54,28 @@ a{
     color: whitesmoke;
     background-color: black;
   }
+
+  @media only screen and (min-width: 53px) and (max-width: 530px){
+    .skip {
+        display: none;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar a:not(.myname){
+        padding: 2%;
+        padding-top: 3%;
+    }
+
+    .myname a, .navbar a:not(.skip){
+        padding-top: 3%;
+        padding-bottom: 2%;
+      }
+  
+  }
+  
   /* NAV END */
 
 .title > h1{
