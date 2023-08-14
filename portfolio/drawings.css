@@ -65,7 +65,11 @@
         padding-top: 3%;
         padding-bottom: 2%;
       }
-  
+  }
+  @media only screen and (min-width: 1440px) and (max-width: 5000px){
+    .myname a, .navbar a:not(.skip){
+        font-size: 20px;
+      }
   }
 
   /* NAV END */
@@ -191,7 +195,7 @@ body{
     bottom: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(25, 25, 48, 0.884);
+    background: rgba(25, 25, 48, 0.932);
 }
 
 #enLargeStructure{
@@ -203,9 +207,17 @@ body{
     display: block;
     text-align: center;
     color: whitesmoke;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     opacity: 0%;
     animation: seeMore 1s forwards;
+}
+
+.calledTop{
+    margin: auto;
+}
+
+.space{
+    padding: 1%;
 }
 
 .thisOne{
@@ -219,7 +231,7 @@ body{
 }
 
 #details{
-    min-width: 500px;
+    min-width: 600px;
     max-width: 600px;
     padding: 2%;
     text-align: center;
@@ -227,7 +239,6 @@ body{
     border-radius: 10px;
     color: whitesmoke;
     margin: auto;
-    margin-left: 2%;
     opacity: 0%;
     animation: seeMore 1s forwards;
 }
@@ -243,6 +254,7 @@ body{
     font-size: 45px;
     color: whitesmoke;
     position: absolute;
+    z-index: 100;
     right: 0;
     top: 3%;
     margin-right: 4%;
@@ -254,9 +266,48 @@ body{
     transform: scale(1.1)
 }
 
+/* BIG */
+@media only screen and (min-width:1930px) and (max-width:5000px){
+    #enLarge{
+        padding-top: 10%;
+    }
+    #thisCalled{
+        font-size: 50px;
+    }
+    .thisOne{
+        width: 100%;
+    }
+    #details{
+        font-size: 30px;
+        margin: auto;
+        min-width: 800px;
+        max-width: 900px;
+        border-width: 4px;
+    }
+    #closeThis{
+        font-size: 70px;
+    }
+}
 
-/* Artwork close up responsive */
-@media only screen and (min-width: 56px) and (max-width: 1330px){
+/* regular laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1330px){
+    #enLarge{
+        padding-top: 8%;
+    }
+    .thisOne{
+        min-width: 600px;
+        max-width: 700px;
+    }
+    #details{
+        min-width: 400px; 
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
     #thisCalled{
         display: none;
     }
@@ -264,18 +315,102 @@ body{
         display: block;
     }
     #thisOne{
-        width: 60%;
+        min-width: 600px;
+        max-width: 600px;
     }
     #details{
         margin-left: auto;
         margin-right: auto;
         margin-top: 1.5%;
+        min-width: 500px;
+        max-width: 600px;
     }
 }
-/* End of artwork responsive */
+
+/* tablet */
+@media only screen and (min-width: 550px) and (max-width: 767px){
+    #enLarge{
+        padding-top: 12%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 500px;
+        max-width: 600px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 500px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
+
+/* mobile phone */
+@media only screen and (min-width: 375px) and (max-width: 549px){
+    #enLarge{
+        padding: 0px;
+        padding-top: 18%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 400px;
+        max-width: 500px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
+
+/* small mobile */
+@media only screen and (min-width: 56px) and (max-width: 374px){
+    #enLarge{
+        padding: 0px;
+        padding-top: 20%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 200px;
+        max-width: 300px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
 
 
-@media only screen and (min-width: 56px) and (max-width: 768px){
+/* End Of Enlarging Moment */
+
+@media only screen and (min-width: 56px) and (max-width: 1023px){
     .artwork{
         display: block;
     }
@@ -293,5 +428,14 @@ body{
 
     .title > h1{
         font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 5000px){
+    .title{
+        font-size: 15px;
+    }
+    .name{
+        font-size: 20px;
     }
 }

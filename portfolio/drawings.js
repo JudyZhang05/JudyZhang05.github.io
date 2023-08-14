@@ -11,22 +11,22 @@ function scrollFunction() {
 // Artwork Details
 const allDetails = [
   details1 = {
-    title: "Reacher",
+    title: "Dreamer",
     software: "Adobe Photoshop",
     date: "June 2021",
-    description: ""
+    description: "The piece 'Dreamer' was one of the first works I created when I transitioned into a digital artist. Needless to say, I am still an amateur when it comes to digital illustrations and was very ambitious in my practice pieces. I call this work the 'Dreamer'. After all, like the subject in the artwork, I am weary of how sometimes my enthusiastic nature hinders me from actual progress because I restrict myself to small irrelevant details. As much as this drawing was a practice, it was also a reflection of myself and from it, I was able to grow both mentally and artistically. In this piece, I used a very muted color palette giving off solemn emotions. The distressed subject with the skewed rubble in the background compliments the atmosphere. The illuminating golden hair shares the emotional turmoil the subject is feeling, almost as if representing their yearning for freedom with it blowing freely in the air."
   },
   details2 = {
     title: "Friends",
     software: "Adobe Photoshop",
     date: "September 2021",
-    description: ""
+    description: "The illustration 'Friends' was a study on emotion and reflected light. The main subject is drawn laying on her side facing an illuminated lock screen with the notification of 'no new messages' signaling that they are waiting for some sort of response or update. The sorrowful facial expression paired with the dull hues conveys to the audience its dreary atmosphere and foreboding tone. The light that is emanating from the phone's screen is hyper-highlighted throughout the subject because of the dark and gloomy surroundings. The face and pillow are especially taken into consideration due to its closer distance from the light source."
   },
   details3 = {
-    title: "High End",
+    title: "Revelation Day",
     software: "Adobe Photoshop",
     date: "August 2021",
-    description: ""
+    description: "The artwork 'Revelation Day' is fan art of the popular webtoon 'Remarried Empress'. The subject in the piece is the character named 'Navier', her most identifying features being her stern demeanor, emerald green eyes, and lustrous golden hair fit for an empress of two nations. Her signature appearance is red velvet ball gowns adorned with heavy flamboyant jewelry and of course, a golden crown to represent her royalty. With all these elements in mind, I composed the illustration in a perspective where it seems as though she is looking down from the high rank she is in along with a fitting expression to show how sophisticated and regal she is. In the portrait, her eyes are the only green element within the piece, this grabs the viewer's attention to it first. Attached to the red gown is a fluffy of white fur akin to those on a royal cape. Additionally, her body and hair are adorned with pearls and golden red gems to further enhance her unreachable status. Last but not least, the background is designed to sort of abstractly to not bring away any attention from the main subject."
   },
   details4 = {
     title: "New Year Motivation",
@@ -50,18 +50,21 @@ const allDetails = [
     title: "Granted",
     software: "Figma",
     date: "March 2023",
-    description: ""
+    link: "https://www.figma.com/file/sCQhQaf3LQ5B2hulXQC0Nb/Granted?type=design&node-id=0%3A1&t=93jyY9FluiX3rxTw-1",
+    description: "The 'Granted' design was meant to stimulate the transaction between charities and sponsors. This piece was illustrated with a very minimalistic aesthetic in mind. The reason for this is to represent the humbleness of its sponsors and their charity work. The goal behind this practice piece was to obtain and maintain legitimate charities all in one website. In retrospect, this website would over time generate enough money to provide more substantial enough funds to the charities themselves. The concept of this website is unique in its way. The introduction to the webpage is unlike others, whereas the scroll wheel will be inverted and viewers see through the perspective of a paper airplane sent from an envelope."
   },  
   details8 = {
     title: "Jolly",
     software: "Figma",
     date: "June 2022",
-    description: ""
+    link: "https://www.figma.com/file/M9MvJdaK19Hvd9Vbf0Zown/Jolly-Design-Prototype?type=design&node-id=0%3A1&t=qx9VoE17ZlJoMMMC-1",
+    description: "The 'Jolly' design was created for a potential family start-up company temporarily named 'Jolly'.  The layout has yet to be finalized, however, it incorporates a homepage, game selection, game demo page, shop site, and socials page. The color palette applies a warm pastel hue to the website bringing forth a cozy and comfortable visualization to the audience. This color scheme is designed with smooth transitions between each section. These aspects give the illusion of a more modern yet intriguing aura. Additionally, animated backgrounds and images are implemented within the format for a more active interaction for the viewers."
   },
   details9 = {
     title: "TBD",
     software: "",
     date: "",
+    link: "",
     description: ""
   },
 ]
@@ -74,7 +77,7 @@ var whatThis = document.getElementById("details")
 var thisCalled = document.getElementById("thisCalled")
 
 // Media Responsive
-const webSize = window.matchMedia("(max-width: 1330px)")
+const webSize = window.matchMedia("(max-width: 1023px)")
 
 // conditional locks
 var titleAppeared = false
@@ -102,16 +105,36 @@ function openEnlargement(){
 }
 
 
+function linkNeeded(number){
+  if (number >= 6){
+    whatThis.innerHTML += `<br /><span style="font-weight: bold;">Figma Link:</span> <a style="cursor:pointer;" onmouseover="figmaLink(this)" onmouseout="noFigmaLink(this)" href=${allDetails[number].link} target="_blank">View ${allDetails[number].title}.Design</a>`
+  }
+}
+
+function figmaLink(link){
+  link.style.transition = "text-decoration .3s, color .3s"
+  link.style.textDecoration = "underline #b9ade6 2px"
+  link.style.color = "#b9ade6"
+}
+
+function noFigmaLink(link){
+  link.style.transition = "text-decoration .3s, color .3s"
+  link.style.color = "whitesmoke"
+  link.style.textDecoration = "none"
+}
+
 function alignDetails(number, webSize){
   titleAppearance()
   if (webSize.matches){
-    whatThis.innerHTML = `<h2>Title: ${allDetails[number].title}</h2> <br /><h3>Details</h3>`
+    whatThis.innerHTML = `<h2>Title: ${allDetails[number].title}</h2><br />`
   }
   else{
     whatThis.innerHTML = `<h2>Details</h2><br />`
   }
   thisCalled.innerHTML = `Title: ${allDetails[number].title}`
-  whatThis.innerHTML += `<span style="font-weight: bold;">Software Used:</span> ${allDetails[number].software} <br /> <span style="font-weight: bold;">Date Published:</span> ${allDetails[number].date} <h4>Description:</h4> ${allDetails[number].description}`
+  whatThis.innerHTML += `<span style="font-weight: bold;">Software Used:</span> ${allDetails[number].software} <br /> <span style="font-weight: bold;">Date Published:</span> ${allDetails[number].date}`
+  linkNeeded(number)
+  whatThis.innerHTML += `<h4>Description:</h4> ${allDetails[number].description}`
   titleAppeared = true
 }
 
