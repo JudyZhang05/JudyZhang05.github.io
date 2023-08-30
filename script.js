@@ -5,3 +5,7 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "0";
   }
 }
+
+addEventListener("resize", () =>{
+  window.scrollTo(0,0)
+})
