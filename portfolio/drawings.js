@@ -61,11 +61,11 @@ const allDetails = [
     description: "The 'Jolly' design was created for a potential family start-up company temporarily named 'Jolly'.  The layout has yet to be finalized, however, it incorporates a homepage, game selection, game demo page, shop site, and socials page. The color palette applies a warm pastel hue to the website bringing forth a cozy and comfortable visualization to the audience. This color scheme is designed with smooth transitions between each section. These aspects give the illusion of a more modern yet intriguing aura. Additionally, animated backgrounds and images are implemented within the format for a more active interaction for the viewers."
   },
   details9 = {
-    title: "TBD",
-    software: "",
-    date: "",
-    link: "",
-    description: ""
+    title: "Portfolio Slides",
+    software: "Google Slides",
+    date: "N/A",
+    link: "https://docs.google.com/presentation/d/1PtG3YzIniPluCiE7PbIvrOfJ0qA8bfIwLWQxtRnlXUc/edit?usp=sharing",
+    description: "More Showcases"
   },
 ]
 
@@ -88,7 +88,7 @@ function titleAppearance(){
     thisCalled.style.opacity = "100%"
   }
   else{
-    thisCalled.style.animation = "seeMore 1s forwards"
+    thisCalled.style.animation = "seeMore .5s forwards"
     thisCalled.style.opacity = "0%"
   }
 }

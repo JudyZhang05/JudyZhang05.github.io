@@ -80,28 +80,25 @@ a{
     color: rgba(25, 25, 48, 0.884);
 }
 
-#first{
+#w,#e,#l,#c{
     opacity: 0%;
-    animation: first 1.5s forwards 2.4s;
-}
-#second{
-    opacity: 0%;
-    animation: second 1.5s forwards 3s;
-}
-#third{
-    opacity: 0%;
-    animation: third 1.5s forwards 3.4s;
 }
 
-@keyframes first{
-    from {transform:translateY(40px);}
-    to {opacity: 100%;}
+#first, #second, #third{
+    opacity: 0%;
 }
-@keyframes second{
-    from {transform:translateY(40px);}
-    to {opacity: 100%;}
+
+#first{
+    animation: descend 1.5s forwards 2.4s;
 }
-@keyframes third{
+#second{
+    animation: descend 1.5s forwards 3s;
+}
+#third{
+    animation: descend 1.5s forwards 3.4s;
+}
+
+@keyframes descend{
     from {transform:translateY(40px);}
     to {opacity: 100%;}
 }
@@ -171,36 +168,21 @@ a{
 
     #w{
         margin-bottom: 2%;
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 10%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 10%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+    
+    @keyframes welcome{
         from {transform: translateY(40px);}
         to {opacity: 100%;}
     }
@@ -292,36 +274,21 @@ a{
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 10%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 10%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -416,36 +383,21 @@ a{
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 3%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 3%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -542,36 +494,21 @@ a{
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 3%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 3%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -662,36 +599,21 @@ a{
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -781,36 +703,21 @@ a{
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+    
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -901,36 +808,20 @@ a{
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -1022,36 +913,20 @@ a{
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
@@ -1141,36 +1016,21 @@ a{
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .5s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards 1s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards 1.5s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
+
+    @keyframes welcome{
         from {transform: translateY(-40px);}
         to {opacity: 100%;}
     }
