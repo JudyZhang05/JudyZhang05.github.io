@@ -106,19 +106,6 @@ a{
     to {opacity: 100%;}
 }
 
-/* HEIGHT ISSUE */
-@media only screen and (min-width: 721px) and (max-width: 1209px) and (min-height: 700px) and (max-height: 5000px){
-    .clickables{
-        padding-top: 10%;
-    }
-}
-@media only screen and (min-width: 1210px) and (max-width: 1400px) and (min-height: 700px) and (max-height: 5000px){
-    .clickables{
-        padding-top: 10%;
-    }
-}
-
-
 /* MOBILE SIZE */
 @media only screen and (min-width:0px) and (max-width: 375px){
 
@@ -1074,5 +1061,20 @@ a{
     
     #first{
         margin-top: 1.5%;
+    }
+}
+
+/* HEIGHT ISSUE */
+@media only screen and (min-width: 721px) and (max-width: 1209px) and (min-height: 700px) and (max-height: 5000px){
+    .clickables{
+        padding-top: 10%;
+    }
+}
+@media only screen and (min-width: 1210px) and (max-width: 1400px) and (min-height: 700px) and (max-height: 5000px){
+    #judyzhang{
+        padding-top: 10%;
+    }
+    .clickables{
+        padding-top: 10%;
     }
 }

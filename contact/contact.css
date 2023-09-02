@@ -79,17 +79,17 @@ body{
   margin: auto; 
 }
 
-.contactWrapper{
-  display: flex;
-  justify-content: space-evenly;
+.allChoices{
+  margin-top: 5%;
 }
 
-/* .reachOpt{
-  text-align: center;
+.reachOpt{
+  display: flex;
+  justify-content: space-evenly;
   margin: auto;
-} */
+}
 
-#choiceGithub, #choiceEmail, #choiceLinkedIn{
+#githubChoice, #emailChoice, #linkedinChoice{
   text-align: center;
   margin: auto;
 }
@@ -97,9 +97,30 @@ body{
 .sub{
   cursor: pointer;
   border: black solid 2px;
-  border-radius: 25px;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  border-radius: 20px;
+  padding: .5%;
+  margin: auto;
+  user-select: none;
+}
+
+@keyframes slideawayL{  /*Email to Linkedin | LinkedIn to Github */
+  from {}
+  to {opacity: 0%; transform: translateX(-20px);}
+}
+
+@keyframes slideawayR{  /*Email to Github | Github to Linkedin */
+  from {}
+  to {opacity: 0%; transform: translateX(20px);}
+}
+
+@keyframes slideinL{  /*From Email to Github  | From Github to Linkedin */
+  from {opacity: 0%; transform: translateX(-20px);}
+  to {}
+}
+
+@keyframes slideinR{  /*From Email to Linkedin | From LinkedIn to Github*/
+  from {opacity: 0%; transform: translateX(20px);}
+  to{}
 }
 
 /* GitHub Section */
@@ -114,29 +135,29 @@ body{
 
 /* Email Section */
 
-#title{
+.title{
   margin-top: 8%;
   margin-bottom: 4%;
 }
 
 .email{
   margin: auto;
-  border: solid rgba(25, 25, 48, 0.884) 2px;
-  border-radius: 25px;
+  border: solid rgba(48, 25, 25, 0.884) 2px;
+  border-radius: 20px;
   min-width: 600px;
   margin-bottom: 1%;
-  box-shadow: rgb(67, 9, 122) 1px 1px
+  box-shadow: rgb(122, 9, 9) 1px 1px;
 }
 
 .whotoandfrom:not(.except){
-  border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+  border-bottom: solid rgba(48, 25, 25, 0.884) 2px;
   padding: 1%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .border{
-  border-right: solid rgba(25, 25, 48, 0.884) 2px;
+  border-right: solid rgba(48, 25, 25, 0.884) 2px;
 }
 
 #message{
@@ -152,6 +173,7 @@ body{
 
 button{
   all: unset;
+  user-select: none;
 }
 
 #gobutton{
@@ -166,13 +188,13 @@ button{
   padding: .2% 1.5%;
   cursor: pointer;
   transition: transform .2s ease-in-out, box-shadow .2s ease-in-out, background-color .2s ease-in-out;
-  box-shadow: rgb(67, 9, 122) 1px 1px;
+  box-shadow: rgb(122, 9, 9) 1px 1px;
 }
 
 #gobutton:hover, #sendbutton:hover{
   transform: scale(115%);
   box-shadow: none;
-  background-color: rgba(26, 9, 65, 0.137);
+  background-color: rgba(65, 9, 9, 0.137);
 }
 
 a{
@@ -182,14 +204,14 @@ a{
 @media only screen and (min-width: 630px) and (max-width:900px){
 
   .whotoandfrom:not(.except){
-    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+    border-bottom: solid rgba(48, 25, 25, 0.884) 2px;
     padding: 1%;
     display: block;
   }
 
   .border{
     margin-top: 1%;
-    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+    border-bottom: solid rgba(48, 25, 25, 0.884) 2px;
   }  
 
   .email{
@@ -201,14 +223,14 @@ a{
 @media only screen and (min-width: 58px) and (max-width:629px){
 
   .whotoandfrom:not(.except){
-    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+    border-bottom: solid rgba(48, 25, 25, 0.884) 2px;
     padding: 1%;
     display: block;
   }
 
   .border{
     margin-top: 1%;
-    border-bottom: solid rgba(25, 25, 48, 0.884) 2px;
+    border-bottom: solid rgba(48, 25, 25, 0.884) 2px;
   }  
 
   .email{
@@ -261,6 +283,6 @@ a{
   cursor: pointer;
 }
 
-/* #choiceGithub, #choiceLinkedIn, #choiceEmail{
+#githubChoice, #linkedinChoice{
   display: none;
-} */
+}
