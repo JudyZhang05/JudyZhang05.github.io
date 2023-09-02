@@ -45,7 +45,18 @@ const email = document.getElementById("emailChoice")
 const linkedin = document.getElementById("linkedinChoice")
 const github = document.getElementById("githubChoice")
 
-const contact = ["email","linkedin", "github"]
+const contact = ["email", "linkedin", "github"]
+
+const slide = {"right": ["linkedinSub1", "githubSub2", "emailSub2"], "left": ["githubSub1", "emailSub1", "linkedInSub2"]}
+// console.log(slide.right)
+
+// for (let two = 0; two < 2; two++){
+//     var which = slide.right
+//     for (sides of which){
+//         console.log(sides)
+//     }
+//     which = slide.left
+// }
 
 function getElement(id){
     return document.getElementById(id) 
@@ -54,18 +65,35 @@ function getElement(id){
 for (let choice of contact){
     for (let sub = 0; sub < 2; sub++){
         getElement(`${choice + 'Sub' + [sub+1]}`).addEventListener("click", () => {
-            alterDisplays(choice)
+            alterDisplays(choice, sub+1)   //linkedin
+            // animatedSeq(this, choice, sub+1)
         })
     }
 }
 
-// function animatedSeq(){
-    
-// }
+function animatedSeq(goneSection, incomingSection, directing){
+    for (sides of slide.left){
+        if (`${incomingSection+'Sub'+directing}` === sides){
+            goawayStyle = "fadeout .3s forwards"
+            moveinStyle = "fadein .3s forwards"
+        }
+        else{
+            goawayStyle = "fadeout .3s forwards"
+            moveinStyle = "fadein .3s forwards"
+        }
+    }
+    getElement(`${goneSection + 'Choice'}`).style.animation = goawayStyle
+    getElement(`${incomingSection + 'Choice'}`).style.animation = moveinStyle
+}
 
-function alterDisplays(section){
+function alterDisplays(section, num){
     for (let each of contact){
-        getElement(`${each + 'Choice'}`).style.display = "none"
+    //     if (getElement(`${each + 'Choice'}`).style.display === "flex"){
+    //         animatedSeq(each, section, num)
+    //     }
+    //     else{
+            getElement(`${each + 'Choice'}`).style.display = "none"
+        // }
     }
     getElement(`${section + 'Choice'}`).style.display = "flex"
 }
