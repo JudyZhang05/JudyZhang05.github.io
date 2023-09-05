@@ -196,6 +196,7 @@ body{
     width: 100%;
     z-index: 100;
     background: rgba(25, 25, 48, 0.932);
+    user-select: none;
 }
 
 #enLargeStructure{

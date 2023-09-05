@@ -88,10 +88,10 @@ function animatedSeq(goneSection, incomingSection, directing){
 
 function alterDisplays(section, num){
     for (let each of contact){
-    //     if (getElement(`${each + 'Choice'}`).style.display === "flex"){
-    //         animatedSeq(each, section, num)
-    //     }
-    //     else{
+        // if (getElement(`${each + 'Choice'}`).style.display === "flex"){
+        //     animatedSeq(each, section, num)
+        // }
+        // else{
             getElement(`${each + 'Choice'}`).style.display = "none"
         // }
     }
