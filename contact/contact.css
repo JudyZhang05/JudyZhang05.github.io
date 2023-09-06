@@ -78,7 +78,8 @@ body{
   text-align: center;
   margin: auto; 
   user-select: none;
-  overflow-y: auto;
+  overflow-y: auto;   
+  background-color: rgba(230, 230, 238, 0.884);
 }
 
 .allChoices{
@@ -99,6 +100,13 @@ body{
 .title{
   margin-top: 8%;
   margin-bottom: 4%;
+  animation: spoke 5s forwards;
+  opacity: 0%;
+}
+
+@keyframes spoke{
+  from {}
+  to {opacity: 100%;}
 }
 
 .sub{
@@ -109,6 +117,7 @@ body{
   border-radius: 15px;
   padding: .5%;
   margin: auto;
+  opacity: 0%;
 }
 
 .sub:hover{
@@ -124,6 +133,24 @@ body{
 @keyframes fadein{
   from {opacity: 0%;}
   to {}
+}
+
+#githubSub1, #emailSub1, #linkedinSub2{
+  animation: uppie 1s forwards; 
+}
+
+#githubSection, #emailSection, #linkedInSection{
+  opacity: 0%;
+  animation: uppie 1s forwards .2s;
+}
+
+#githubSub2, #emailSub2, #linkedinSub1{
+  animation: uppie 1s forwards .4s; 
+}
+
+@keyframes uppie{
+  from {transform: translateY(-20px);}
+  to {opacity: 100%;}
 }
 
 
@@ -218,7 +245,8 @@ body{
   border-radius: 15px;
   min-width: 600px;
   margin-bottom: 1%;
-  box-shadow: rgb(122, 9, 9) 1px 1px;
+  box-shadow: rgba(25, 25, 48, 0.884) 1px 1px;
+  background-color: white;
 }
 
 .whotoandfrom:not(.except){
@@ -263,13 +291,13 @@ button{
   padding: .2% 1.5%;
   cursor: pointer;
   transition: transform .2s ease-in-out, box-shadow .2s ease-in-out, background-color .2s ease-in-out;
-  box-shadow: rgb(122, 9, 9) 1px 1px;
+  box-shadow: rgba(25, 25, 48, 0.884) 1px 1px;
+  background-color: whitesmoke;
 }
 
 #gobutton:hover, #sendbutton:hover{
   transform: scale(115%);
   box-shadow: none;
-  background-color: whitesmoke;
 }
 
 a{
