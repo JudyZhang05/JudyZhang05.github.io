@@ -1,13 +1,3 @@
-a{
-    all: unset;
-}
-
-body{
-    background-image: url(../assests/backdrop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* NAV BEGIN */
 * {
     margin: 0;
@@ -23,31 +13,8 @@ body{
     top: 0;
     background-color: #fff;
   }
-  
-  .gradient-bar{
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(-45deg,#99E1E5, #F4BFBF);
-    background-size: 400% 400%;
-    -webkit-animation: gradbar 15s ease infinite;
-    -moz-animation: gradbar 15s ease infinite;
-    animation: gradbar 15s ease infinite;
-  }
-  
-  @keyframes gradbar {
-  0% {background-position: 0% 50%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 50%}
-  }
-  
-  @-moz-keyframes gradbar {
-  0% {background-position: 0% 50%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 50%}
-  }
-  
+    
   .navbar{
-    margin-top:5px;
     background-color: whitesmoke;
     overflow: hidden;
     position: fixed;
@@ -79,31 +46,60 @@ body{
     color: whitesmoke;
     background-color: black;
   }
+
+  @media only screen and (min-width: 53px) and (max-width: 540px){
+    .skip {
+        display: none;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar a:not(.myname){
+        padding: 2%;
+        padding-top: 3%;
+    }
+
+    .myname a, .navbar a:not(.skip){
+        padding-top: 3%;
+        padding-bottom: 2%;
+      }
+  }
+  @media only screen and (min-width: 1440px) and (max-width: 5000px){
+    .myname a, .navbar a:not(.skip){
+        font-size: 20px;
+      }
+  }
+
   /* NAV END */
 
-/* NAVBAR TEST */
+a{
+    all: unset;
+}
+
+body{
+    background-image: url(../assests/backdrop.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .title{
     text-align: center;
-    border-bottom: solid whitesmoke 10px;
-
     padding-top: 2%;
     padding-bottom: 2%;
-
     color: rgb(0, 0, 0);
-    text-shadow: whitesmoke 2px 2px;
-
     opacity: 0%;
     animation: withartshow 1.5s forwards;
 }
 
 @keyframes withartshow {
-    from {opacity: 0%;}
+    from {}
     to {opacity: 100%;}
 }
 
 .title > h1{
-    animation: artshow 1.5s forwards;
+    animation: artshow 1s forwards;
 }
 
 @keyframes artshow{
@@ -122,130 +118,325 @@ body{
 .name{
     padding-top: 2%;
     padding-bottom: 2%;
-    /* background-color: rgba(248, 221, 203, 0.596);  */
 }
 
 .artwork{
-    background-color: whitesmoke;   
     display: grid;
     column-gap: 10px;
     grid-template-columns: auto auto auto;
     padding: 10px;
-    border: solid 10px whitesmoke;
     border-left: none;
     border-right: none; 
-    
-}
-
-.artwork:hover{
-    background-color:rgba(211, 211, 211, 0.425);
+    transition: background-color .2s;
 }
 
 .piece{
+    user-select: none;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 10%;
 }
 
 .piece > img, .piece > a > img{
-    background-color: whitesmoke;
-    border: solid 2px black;
     object-fit: cover;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 5px;
     cursor: pointer;
+    transition: transform .2s, background-color .2s;
 }
 
 .piece > img:hover, .piece > a > img:hover{
     transform: scale(105%);
+    background-color: rgba(226, 223, 223, 0.63);
 }
 
-#insta > .name h3{
-    animation: inst 1.5s forwards .5s;
+#insta > .name {
     opacity: 0%;
-}
-
-@keyframes inst{
-    from {transform: translateY(50px);}
-    to {opacity: 100%;}
-}
-
-#insta > .name{
-    opacity: 0%;
-    animation: bacin 1.5s forwards .5s;
-}
-
-@keyframes bacin{
-    from{}
-    to {opacity: 100%;}
+    animation: upNshow 1.5s forwards .2s;
 }
 
 #insta > .artwork{
     opacity: 0%;
-    animation: instag 1.5s forwards 1s;
+    animation: upNshow 1.5s forwards .4s;
 }
 
-@keyframes instag {
-    from {transform: translateY(50px);}
-    to {opacity: 100%;}
-}
-
-#free > .name h3{
-    animation: fre 1.5s forwards 1.5s;
+#free > .name {
     opacity: 0%;
-}
-
-@keyframes fre{
-    from {transform: translateY(50px);}
-    to {opacity: 100%;}
-}
-
-#free > .name{
-    opacity: 0%;
-    animation: bacfree 1.5s forwards 1.5s;
-}
-
-@keyframes bacfree{
-    from{}
-    to {opacity: 100%;}
+    animation: upNshow 1.5s forwards .6s;
 }
 
 #free > .artwork{
     opacity: 0%;
-    animation: freelan 1.5s forwards 2s;
-}
-
-@keyframes freelan{
-    from {transform: translateY(50px);}
-    to {opacity: 100%;}
-}
-
-#figma > .name h3{
-    opacity: 0%;
-    animation: fig 1.5s forwards 2.5s;
-}
-
-@keyframes fig{
-    from {transform: translateY(50px);}
-    to {opacity: 100%;}
+    animation: upNshow 1.5s forwards .8s;
 }
 
 #figma > .name{
     opacity: 0%;
-    animation: bacfig 1.5s forwards 2.5s;
-}
-
-@keyframes bacfig{
-    from{}
-    to {opacity: 100%;}
+    animation: upNshow 1.5s forwards 1s;
 }
 
 #figma > .artwork{
     opacity: 0%;
-    animation: figmao 1.5s forwards 3s;
+    animation: upNshow 1.5s forwards 1.2s;
 }
 
-@keyframes figmao{
-    from {transform: translateY(50px);}
+@keyframes upNshow{
+    from {transform: translateY(20px);}
     to {opacity: 100%;}
+}
+
+/* Enlarging Moment */
+
+.enLarge{
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    padding: 5%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(25, 25, 48, 0.932);
+    user-select: none;
+}
+
+#enLargeStructure{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#thisCalled{
+    display: block;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 1%;
+    opacity: 0%;
+    animation: seeMore .5s forwards;
+}
+
+.calledTop{
+    margin: auto;
+}
+
+.space{
+    padding: 1%;
+}
+
+.thisOne{
+    user-select: none;
+    width: 80%;
+    margin: auto;
+    min-width: 700px;
+    display: block;
+    opacity: 0%;
+    animation: seeMore .5s forwards;
+}
+
+#details{
+    min-width: 600px;
+    max-width: 600px;
+    padding: 2%;
+    text-align: center;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin: auto;
+    opacity: 0%;
+    animation: seeMore .5s forwards;
+}
+
+@keyframes seeMore{
+    from {opacity: 0%; filter: blur(4px) ;}
+    to {opacity: 100%;}
+}
+
+#closeThis{
+    user-select: none;
+    cursor: pointer;
+    font-size: 45px;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 3%;
+    margin-right: 4%;
+    transition: transform .3s, opacity .3s;
+}
+
+#closeThis:hover{
+    opacity: 70%;
+    transform: scale(1.1)
+}
+
+/* BIG */
+@media only screen and (min-width:1930px) and (max-width:5000px){
+    #enLarge{
+        padding-top: 10%;
+    }
+    #thisCalled{
+        font-size: 50px;
+    }
+    .thisOne{
+        width: 100%;
+    }
+    #details{
+        font-size: 30px;
+        margin: auto;
+        min-width: 800px;
+        max-width: 900px;
+        border-width: 4px;
+    }
+    #closeThis{
+        font-size: 70px;
+    }
+}
+
+/* regular laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1330px){
+    #enLarge{
+        padding-top: 8%;
+    }
+    .thisOne{
+        min-width: 600px;
+        max-width: 700px;
+    }
+    #details{
+        min-width: 400px; 
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 600px;
+        max-width: 600px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5%;
+        min-width: 500px;
+        max-width: 600px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 550px) and (max-width: 767px){
+    #enLarge{
+        padding-top: 12%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 500px;
+        max-width: 600px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 500px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
+
+/* mobile phone */
+@media only screen and (min-width: 375px) and (max-width: 549px){
+    #enLarge{
+        padding: 0px;
+        padding-top: 18%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 400px;
+        max-width: 500px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
+
+/* small mobile */
+@media only screen and (min-width: 56px) and (max-width: 374px){
+    #enLarge{
+        padding: 0px;
+        padding-top: 20%;
+    }
+    #thisCalled{
+        display: none;
+    }
+    #enLargeStructure{
+        display: block;
+    }
+    #thisOne{
+        min-width: 200px;
+        max-width: 300px;
+    }
+    #details{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    #closeThis{
+        Top: 1%;
+    }
+}
+
+
+/* End Of Enlarging Moment */
+
+@media only screen and (min-width: 56px) and (max-width: 1023px){
+    .artwork{
+        display: block;
+    }
+
+    .piece > img, .piece > a > img{
+        width: 60%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .name {
+        border-bottom: solid 2px;
+        border-image: linear-gradient(90deg, rgba(0,0,0,0), #000000da, rgba(0,0,0,0)) 1;
+    }
+
+    .title > h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 5000px){
+    .title{
+        font-size: 15px;
+    }
+    .name{
+        font-size: 20px;
+    }
 }

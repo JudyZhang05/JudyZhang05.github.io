@@ -1,30 +1,123 @@
-/* MOBILE SIZE */
-@media only screen and (min-width:300px) and (max-width: 375px){
-    a{
-        all:unset;
-    }
+/* Default */
+html{
+    scroll-behavior: smooth;
+}
+a{
+    all:unset;
+}
 
-    * {
-        text-align: center;
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.back{
+    margin: auto;
+    overflow-y: auto;
+    background-image: url(./assests/backdrop.png);
+    background-size: cover;
+}
+
+#judyzhang{
+    background-color: rgba(25, 25, 48, 0.884);
+    transition: background-color .3s ease-in-out;
+}
+
+#judyzhang:hover, #judyzhang:hover > .zhang{
+    color: rgba(25, 25, 48, 0.884);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.judy > img{
+    border: rgba(25, 25, 48, 0.884) solid 5px; 
+    border-radius: 100%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    opacity: 0%;
+}
+
+.zhang{
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    transition: color .3s ease-in-out;
+}
+
+.order{
+    background-color: rgba(25, 25, 48, 0.884);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.order:hover{
+    background-color: rgba(25, 25, 48, 0);
+}
+
+.clickables{
+    padding: 2%;
+    padding-bottom: 100%;
+}
+
+.section{
+    border-radius: 100px;
+}
+
+.section > a > img{
+    border: rgba(25, 25, 48, 0.884) solid 5px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+.section > a > img:hover{ 
+    transform: scale(110%);
+}
+
+.section:hover > a > h2{
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(20px);
+    color: rgba(25, 25, 48, 0.884);
+}
+
+#w,#e,#l,#c{
+    opacity: 0%;
+}
+
+#first, #second, #third{
+    opacity: 0%;
+}
+
+#first{
+    animation: descend 1.5s forwards 1.3s;
+}
+#second{
+    animation: descend 1.5s forwards 1.6s;
+}
+#third{
+    animation: descend 1.5s forwards 1.9s;
+}
+
+@keyframes descend{
+    from {transform:translateY(40px);}
+    to {opacity: 100%;}
+}
+
+/* MOBILE SIZE */
+@media only screen and (min-width:0px) and (max-width: 375px){
 
     .back{
         margin: auto;
         overflow-y: auto;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
 
     #judyzhang{
-        background-color: rgba(25, 25, 48, 0.884);
         margin: auto;
         padding-bottom: 180%;
-        transition: background-color .3s ease-in-out;
     }
 
     #judyzhang:hover, #judyzhang:hover > .zhang > .greetings > .welcome, #judyzhang:hover > .zhang > .greetings > h3{
@@ -34,14 +127,9 @@
 
     .judy > img{
         margin-top: -2%;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         text-align: center;
         width: 300px;
-        opacity: 0%;
-        animation: judy 2s forwards 2s;
+        animation: judy 2s forwards 1.2s;
         transform: translateY(650px);
     }
 
@@ -64,7 +152,7 @@
     .greetings > h3{
         color: whitesmoke;
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
         transform: translateY(500px);
         transition: color .3s ease-in-out;
     }
@@ -84,72 +172,31 @@
 
     #w{
         margin-bottom: 2%;
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 10%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 10%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards .9s;
     }
-    @keyframes w{
-        from {transform: translateY(40px);}
+    
+    @keyframes welcome{
+        from {transform: translateY(20px);}
         to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(40px);}
-        to {opacity: 100%;}
-    }
-
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
-    }
-
-    .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
     }
 
     .section{
-        border-radius: 100px;
         margin-top: 50%;
     }
 
     .section > a > img{
         width: 200px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
     }
 
     .section > a > h2{
@@ -161,75 +208,24 @@
         color: whitesmoke;
     }
 
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
 
     #first{
         margin-top: 50%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
     }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-} 
+}
 
 /* FROM MOBILE TO SMOL TABLET MAX-WIDTH: 620px */
 @media only screen and (min-width: 376px) and (max-width: 620px){
-     a{
-        all:unset;
-    }
-
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
     .back{
         overflow-y: auto;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
 
     #judyzhang{
         padding: 3.5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color .3s ease-in-out;
-    }
-
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
     }
 
     .judy{
@@ -240,13 +236,8 @@
         margin-top: 20%;     
         margin-bottom: 5%;
         transform: translateY(0px);
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         width: 300px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
 
     @keyframes judy {
@@ -271,7 +262,7 @@
         margin-right: 10%;
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
 
     @keyframes introtojudy{
@@ -287,74 +278,35 @@
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 10%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 10%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
-    }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
+        animation: welcome 1.5s forwards .9s;
     }
 
-
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
     }
 
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         text-align: center;
     }
 
     .section{
         margin-top: 20%;
-        border-radius: 100px;
     }
 
     .section > a > img{
         width: 250px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
     }
 
     .section > a > h2{
@@ -367,76 +319,25 @@
         color: whitesmoke;
     }
 
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
 
     #first{
         margin-top: 20%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
-    }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
     }
 }
 
 
 /* FROM SMOL TABLET TO BIGGER TABLET MAX-WIDTH: 740px */
 @media only screen and (min-width: 621px) and (max-width: 720px){
-     a{
-        all:unset;
-    }
-
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
     .back{
         overflow-y: auto;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
 
     #judyzhang{
         padding: 3.5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color .3s ease-in-out;
-    }
-
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
     }
 
     .judy{
@@ -447,13 +348,8 @@
         margin-top: 20%;         
         margin-bottom: 5%;
         transform: translateY(0px);
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         width: 300px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
 
     @keyframes judy {
@@ -477,7 +373,7 @@
     .greetings > h3{
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
 
     @keyframes introtojudy{
@@ -491,74 +387,35 @@
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 3%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 3%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
-    }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
+        animation: welcome 1.5s forwards .9s;
     }
 
-
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
     }
 
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         text-align: center;
     }
 
     .section{
         margin-top: 20%;
-        border-radius: 100px;
     }
 
     .section > a > img{
         width: 250px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out, filter 0.1s ease-out, animation .2s ease-out;
     }
 
     .section > a > h2{
@@ -571,76 +428,25 @@
         color: whitesmoke;
     }
 
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-
     .clickables:hover > .section > a > h2{
         color: rgba(25, 25, 48, 0.884);
     }
 
     #first{
         margin-top: 20%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
-    }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
     }
 }
 
 /* FROM TABLET TO SMOL LAPTOP MAX-WIDTH: 1209px */
 
 @media only screen and (min-width: 721px) and (max-width: 1209px){
-     a{
-        all:unset;
-    }
-
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
     .back{
         overflow-y: hidden;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
 
     #judyzhang{
         padding: 3.5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color .3s ease-in-out;
-    }
-
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
     }
 
     .judy{
@@ -651,13 +457,8 @@
         margin-top: 5%;    
         margin-bottom: 2%;
         transform: translateY(0px);
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         width: 250px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
 
     @keyframes judy {
@@ -681,7 +482,7 @@
     .greetings > h3{
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
 
     @keyframes introtojudy{
@@ -697,79 +498,36 @@
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 3%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 3%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
-    }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
+        animation: welcome 1.5s forwards .9s;
     }
 
-
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
     }
 
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 
     .section{
         margin-top: 1.5%;
-        border-radius: 100px;
     }
 
     .section > a > img{
         width: 200px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out;
-    }
-
-    .section > a > img:hover{ 
-        transform: scale(110%);
     }
 
     .section > a > h2{
@@ -779,39 +537,8 @@
         text-align: center;
     }
 
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-
     #first{
         margin-top: 1.5%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
-    }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
     }
 }
 
@@ -821,50 +548,24 @@
 
 @media only screen and (min-width:1210px) and (max-width: 1400px){  
 
-    a{
-        all:unset;
-    }
-
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     .back{
         overflow-y: hidden;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
 
     #judyzhang{
         
         padding: 3.5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
 
         display: flex;
         justify-content: space-evenly;
-        transition: background-color .3s ease-in-out;
-    }
-
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
     }
 
     .judy > img{
         transform: translateY(0px);
         margin-left: 30%;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         text-align: center;
         width: 300px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
 
     @keyframes judy {
@@ -886,7 +587,7 @@
     .greetings > h3{
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
 
     @keyframes introtojudy{
@@ -902,79 +603,36 @@
     }
 
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
-    }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
+        animation: welcome 1.5s forwards .9s;
     }
 
-
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
     }
 
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 
     .section{
         margin-top: 1.5%;
-        border-radius: 100px;
     }
 
     .section > a > img{
-        width: 200px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out;
-    }
-
-    .section > a > img:hover{ 
-        transform: scale(110%);
+        width: 205px;
     }
 
     .section > a > h2{
@@ -984,90 +642,33 @@
         text-align: center;
     }
 
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-
     #first{
         margin-top: 1.5%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
     }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-
-} 
+}
 
 /* FROM SMOL LAPTOP TO NORMAL LAPTOP */
 
 @media only screen and (min-width: 1401px) and (max-width: 1600px){
-    a{
-        all:unset;
-    }
-    
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     
     .back{
         overflow-y: hidden;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
     
     #judyzhang{
         
         padding: 5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
     
         display: flex;
         justify-content: space-evenly;
-        transition: background-color .3s ease-in-out;
     }
-    
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
-    }
-    
+        
     .judy > img{
         transform: translateY(0px);
         margin-left: 15%;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         text-align: center;
         width: 350px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
     
     @keyframes judy {
@@ -1090,7 +691,7 @@
         font-size: 25px;
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
     
     @keyframes introtojudy{
@@ -1106,171 +707,73 @@
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
-    }
-    @keyframes w{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
+        animation: welcome 1.5s forwards .9s;
     }
     
-    
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-    
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
     }
     
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         display: flex;
         justify-content: space-evenly;
     }
     
     .section{
         margin-top: 1.5%;
-        border-radius: 100px;
     }
     
     .section > a > img{
         width: 250px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out;
-    }
-    
-    .section > a > img:hover{ 
-        transform: scale(110%);
     }
     
     .section > a > h2{
+        font-size: 30px;
         opacity: 0;
         transition: transform .3s ease-in-out, opacity .3s ease-in-out;
         color: rgba(25, 25, 48, 0.884);
         text-align: center;
     }
-    
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-    
+
     #first{
         margin-top: 1.5%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
-    }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-    
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
     }
 }
 
 /* FROM NORMAL SIZE GETTING BIGGER */
 
 @media only screen and (min-width: 1601px) and (max-width: 1919px){
-    a{
-        all:unset;
-    }
-    
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     
     .back{
         overflow-y: hidden;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-size: cover;
     }
     
     #judyzhang{
         
         padding: 7%;                         
-        background-color: rgba(25, 25, 48, 0.884);
     
         display: flex;
         justify-content: space-evenly;
-        transition: background-color .3s ease-in-out;
     }
-    
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
-    }
-    
+        
     .judy > img{
         transform: translateY(0px);
         margin-left: 30%;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         text-align: center;
         width: 350px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
     
     @keyframes judy {
@@ -1293,7 +796,7 @@
         font-size: 25px;
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
     
     @keyframes introtojudy{
@@ -1309,173 +812,73 @@
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards .9s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
         to {opacity: 100%;}
-    }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    
-    
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-    
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
     }
     
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         display: flex;
         justify-content: space-evenly;
     }
     
     .section{
         margin-top: 1.5%;
-        border-radius: 100px;
     }
     
     .section > a > img{
         width: 250px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out;
-    }
-    
-    .section > a > img:hover{ 
-        transform: scale(110%);
     }
     
     .section > a > h2{
+        font-size: 30px;
         opacity: 0;
         transition: transform .3s ease-in-out, opacity .3s ease-in-out;
         color: rgba(25, 25, 48, 0.884);
         text-align: center;
     }
     
-    .section:hover > a > h2{
-        text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
-        color: rgba(25, 25, 48, 0.884);
-    }
-    
     #first{
         margin-top: 1.5%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
-    }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
-    }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
-    }
-    
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
     }
 }
 
 
 /* BIGGER YET NORMALER SCREEN SIZE OF min of 1920 and min of 1080 */
 
-@media only screen and (min-width: 1920px) and (min-height: 1080px){
-     a{
-        all:unset;
-    }
-    
-    * {
-        font-family: 'Work Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+@media only screen and (min-width: 1920px) and (max-width: 2271px){
     
     .back{
         overflow-y: hidden;
-        margin: 0px;
-        background-image: url(./assests/backdrop.png);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     
     #judyzhang{
         
-        padding: 7.5%;                         
-        background-color: rgba(25, 25, 48, 0.884);
+        padding: 5%;                         
     
         display: flex;
         justify-content: space-evenly;
-        transition: background-color .3s ease-in-out;
-    }
-    
-    #judyzhang:hover, #judyzhang:hover > .zhang{
-        color: rgba(25, 25, 48, 0.884);
-        background-color: rgba(255, 255, 255, 0);
     }
     
     .judy > img{
         transform: translateY(0px);
         margin-left: 30%;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 100%;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
         text-align: center;
         width: 400px;
-        opacity: 0%;
-        animation: judy 1.5s forwards 2s;
+        animation: judy 1.5s forwards 1.2s;
     }
     
     @keyframes judy {
@@ -1498,7 +901,7 @@
         font-size: 25px;
         transform: translateY(0px);
         opacity: 0%;
-        animation: introtojudy 2s forwards 2s;    
+        animation: introtojudy 2s forwards 1.2s;    
     }
     
     @keyframes introtojudy{
@@ -1514,120 +917,165 @@
     }
     
     #w{
-        opacity: 0%;
-        animation: w 1.5s forwards;
+        animation: welcome 1.5s forwards;
     }
     .shorten > #e{
         margin-right: 5%;
-        opacity: 0%;
-        animation: e 1.5s forwards .5s;
+        animation: welcome 1.5s forwards .3s;
     }
     .shorten > #l{
         margin-left: 5%;
-        opacity: 0%;
-        animation: l 1.5s forwards 1s;
+        animation: welcome 1.5s forwards .6s;
     }
     #c{
-        opacity: 0%;
-        animation: c 1.5s forwards 1.5s;
+        animation: welcome 1.5s forwards .9s;
     }
-    @keyframes w{
-        from {transform: translateY(-40px);}
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
         to {opacity: 100%;}
     }
-    @keyframes e{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes l{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes c{
-        from {transform: translateY(-40px);}
-        to {opacity: 100%;}
-    }
-    
-    
-    .zhang{
-        text-align: center;
-        margin: auto;
-        color: whitesmoke;
-        transition: color .3s ease-in-out;
-    }
-    
-    .order{
-        background-color: rgba(25, 25, 48, 0.884);
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    .order:hover{
-        background-color: rgba(25, 25, 48, 0);
-    }
-    
+
     .clickables{
-        padding: 2%;
-        padding-bottom: 100%;
         display: flex;
         justify-content: space-evenly;
     }
     
     .section{
         margin-top: 1.5%;
-        border-radius: 100px;
     }
     
     .section > a > img{
         width: 300px;
-        border: rgba(25, 25, 48, 0.884) solid 5px;
-        border-radius: 20%;
-        cursor: pointer;
-        transition: transform 0.2s ease-out;
-    }
-    
-    .section > a > img:hover{ 
-        transform: scale(110%);
     }
     
     .section > a > h2{
+        font-size: 35px;
         opacity: 0;
         transition: transform .3s ease-in-out, opacity .3s ease-in-out;
         color: rgba(25, 25, 48, 0.884);
         text-align: center;
     }
     
-    .section:hover > a > h2{
+    #first{
+        margin-top: 1.5%;
+    }
+}
+
+
+@media only screen and (min-width: 2272px) and (max-width: 5000px){
+    
+    .back{
+        overflow-y: hidden;
+    }
+    
+    #judyzhang{
+        
+        padding: 2%;                         
+    
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .judy > img{
+        transform: translateY(0px);
+        margin-left: 30%;
         text-align: center;
-        cursor: pointer;
-        opacity: 1;
-        transform: translateY(20px);
+        width: 490px;
+        animation: judy 1.5s forwards 1.2s;
+    }
+    
+    @keyframes judy {
+        from {transform: translateY(-40px);}
+        to {opacity: 100%;}
+    }
+    
+    .welcome{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 55px;
+    }
+    
+    .welcome > h2{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .greetings > h3{
+        font-size: 25px;
+        transform: translateY(0px);
+        opacity: 0%;
+        animation: introtojudy 2s forwards 1.2s;    
+    }
+    
+    @keyframes introtojudy{
+        from {transform: translateY(20px);}
+        to {opacity: 100%;}
+    }
+    
+    .shorten{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #w{
+        animation: welcome 1.5s forwards;
+    }
+    .shorten > #e{
+        margin-right: 5%;
+        animation: welcome 1.5s forwards .3s;
+    }
+    .shorten > #l{
+        margin-left: 5%;
+        animation: welcome 1.5s forwards .6s;
+    }
+    #c{
+        animation: welcome 1.5s forwards .9s;
+    }
+
+    @keyframes welcome{
+        from {transform: translateY(-20px);}
+        to {opacity: 100%;}
+    }
+    
+    .clickables{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .section{
+        margin-top: 1.5%;
+    }
+    
+    .section > a > img{
+        width: 350px;
+    }
+    
+    .section > a > h2{
+        font-size: 35px;
+        opacity: 0;
+        transition: transform .3s ease-in-out, opacity .3s ease-in-out;
         color: rgba(25, 25, 48, 0.884);
+        text-align: center;
     }
     
     #first{
         margin-top: 1.5%;
-        opacity: 0%;
-        animation: first 1.5s forwards 2.4s;
     }
-    #second{
-        opacity: 0%;
-        animation: second 1.5s forwards 3s;
+}
+
+/* HEIGHT ISSUE */
+@media only screen and (min-width: 721px) and (max-width: 1209px) and (min-height: 700px) and (max-height: 5000px){
+    .clickables{
+        padding-top: 10%;
     }
-    #third{
-        opacity: 0%;
-        animation: third 1.5s forwards 3.4s;
+}
+@media only screen and (min-width: 1210px) and (max-width: 1400px) and (min-height: 700px) and (max-height: 5000px){
+    #judyzhang{
+        padding-top: 10%;
     }
-    
-    @keyframes first{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes second{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
-    }
-    @keyframes third{
-        from {transform:translateY(40px);}
-        to {opacity: 100%;}
+    .clickables{
+        padding-top: 10%;
     }
 }
