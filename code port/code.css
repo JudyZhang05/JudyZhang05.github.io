@@ -123,7 +123,7 @@ a{
     transition: .3s ease;
 }
 
-.evidence, .linkslide, .linkgit, .cgfslide, .cgfcode{
+.evidence, .linkslide, .linkgit, .cgfslide, .cgfcode, .gtview, .gtcode{
     position: relative;
     display: block;
 }
@@ -142,7 +142,7 @@ a{
 	filter: blur(1.5px) grayscale(100%);
 }
 
-.linkslide .text, .linkgit .text, .cgfslide .text, .cgfcode .text{    
+.linkslide .text, .linkgit .text, .cgfslide .text, .cgfcode .text, .gtview .text, .gtcode .text{    
     position: absolute;
     top: 50%;
     left: 50%;  
@@ -157,11 +157,11 @@ a{
     transition: .5s ease; 
 }
  
-.cgfcode .text, .linkgit .text{
+.cgfcode .text, .linkgit .text, .gtcode .text{
     padding: 1% 5%;
 }
 
-.linkslide:hover .text, .linkgit:hover .text, .cgfslide:hover .text, .cgfcode:hover .text{
+.linkslide:hover .text, .linkgit:hover .text, .cgfslide:hover .text, .cgfcode:hover .text, .gtview:hover .text, .gtcode:hover .text{
     opacity: 100%;
 }
 
@@ -174,6 +174,10 @@ a{
 
 .cgfslide .text:hover, .cgfcode .text:hover{
     background-color: mediumaquamarine;
+}
+
+.gtview .text:hover, .gtcode .text:hover{
+    background-color: rgba(252, 180, 114, 0.87);
 }
 
 .explain{
