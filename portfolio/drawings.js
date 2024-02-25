@@ -50,14 +50,14 @@ const allDetails = [
     title: "Granted",
     software: "Figma",
     date: "March 2023",
-    link: "https://www.figma.com/file/sCQhQaf3LQ5B2hulXQC0Nb/Granted?type=design&node-id=0%3A1&t=93jyY9FluiX3rxTw-1",
+    link: "https://www.figma.com/file/M9MvJdaK19Hvd9Vbf0Zown/Judy-Zhang-Figma-Design?type=design&node-id=304-80&mode=design&t=WUH5InBS7fVuw8cu-0",
     description: "The 'Granted' design was meant to stimulate the transaction between charities and sponsors. This piece was illustrated with a very minimalistic aesthetic in mind. The reason for this is to represent the humbleness of its sponsors and their charity work. The goal behind this practice piece was to obtain and maintain legitimate charities all in one website. In retrospect, this website would over time generate enough money to provide more substantial enough funds to the charities themselves. The concept of this website is unique in its way. The introduction to the webpage is unlike others, whereas the scroll wheel will be inverted and viewers see through the perspective of a paper airplane sent from an envelope."
   },  
   details8 = {
     title: "Jolly",
     software: "Figma",
     date: "June 2022",
-    link: "https://www.figma.com/file/M9MvJdaK19Hvd9Vbf0Zown/Jolly-Design-Prototype?type=design&node-id=0%3A1&t=qx9VoE17ZlJoMMMC-1",
+    link: "https://www.figma.com/file/M9MvJdaK19Hvd9Vbf0Zown/Judy-Zhang-Figma-Design?type=design&node-id=0-1&mode=design&t=lZg2p9PiVPNvJovM-0",
     description: "The 'Jolly' design was created for a potential family start-up company temporarily named 'Jolly'.  The layout has yet to be finalized, however, it incorporates a homepage, game selection, game demo page, shop site, and socials page. The color palette applies a warm pastel hue to the website bringing forth a cozy and comfortable visualization to the audience. This color scheme is designed with smooth transitions between each section. These aspects give the illusion of a more modern yet intriguing aura. Additionally, animated backgrounds and images are implemented within the format for a more active interaction for the viewers."
   },
   details9 = {
