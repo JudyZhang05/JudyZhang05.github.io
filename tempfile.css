@@ -46,7 +46,7 @@
     width: 350px;
     opacity: 0%;
     animation: judy 1.5s forwards 2s;
-}
+} 
 
 @keyframes judy {
     from {transform: translateY(-40px);}
