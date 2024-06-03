@@ -186,6 +186,26 @@ span{
     transform: scale(105%);
 }
 
+.break{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(247,75,91);
+    height: 5vh;
+    color: white;
+}
+.break a:hover{
+    text-decoration: underline;
+}
+#blank, .break small{
+    width: 50%;
+}
+.break small{
+    font-weight: 200;
+    text-align: center;
+}
+
 /* socials */
 .social{
     height: 90vh;
@@ -193,7 +213,6 @@ span{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-top: rgb(247,75,91) solid 5vh;
 
     background-image: url("../00_assets/svgs/sbg.svg");
     background-size: cover;
@@ -247,25 +266,25 @@ footer{
     to {}
 }
 @keyframes t1{
-    from {transform: translateY(0px)}
-    10% {transform: translateY(-10px)}
-    20% {transform: translateY(0px)}
+    from {transform: translateY(0px)};
+    10% {transform: translateY(-10px);}
+    20% {transform: translateY(0px);}
     30% {}
     to {}
 }
 @keyframes t2{
     from {}
-    10% {transform: translateY(0px)}
-    20% {transform: translateY(-10px)}
-    30% {transform: translateY(0px)}
+    10% {transform: translateY(0px);}
+    20% {transform: translateY(-10px);}
+    30% {transform: translateY(0px);}
     to {}
 }
 @keyframes t3{
     from {}
     10% {}
-    20% {transform: translateY(0px)}
-    30% {transform: translateY(-10px)}
-    40% {transform: translateY(0px)}
+    20% {transform: translateY(0px);}
+    30% {transform: translateY(-10px);}
+    40% {transform: translateY(0px);}
 }
 
 /* responsive design */
@@ -300,6 +319,9 @@ footer{
     
     .follow img{
         width: 8em;
+    }
+    #blank{
+        width: 0%;
     }
 }
 @media screen and (max-width: 600px){
