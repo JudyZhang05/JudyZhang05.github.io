@@ -1,0 +1,319 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Work Sans', sans-serif;
+    transition: .3s ease;
+}
+body{
+    font-weight: 400;
+    margin: 0;
+}
+a, li{
+    all: unset;
+    cursor: pointer;
+}
+
+/*NAVBAR*/
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(247,75,91);
+    color: white;
+}
+#me_index{
+    margin-left: 5%;
+    transition: .3s ease;
+}
+#me_index:hover, .web a:hover{
+    letter-spacing: 0.5px;
+}
+.web{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+}
+.web a{
+    padding: 2%;
+    border-bottom: white solid 2px;
+    transition: .3s ease;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
+}
+.web a:hover, #active, .web:hover #active:hover{
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)) 1;
+}
+.web:hover #active{
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
+}
+.mob{
+    display: none;
+}
+.mobNav{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    left: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: -1;
+    padding-top: 200px;
+    display: none;
+    background-color: rgb(247,75,91);
+}
+.mobNav a{
+    width: 30vh;
+    padding: 2%;
+    border: solid 2px;
+    transition: .3s ease;
+    background-color: white;
+}
+
+/* nav animations */
+@keyframes expand{
+    from {}
+    to {transform: translateY(-200px)}
+}
+@keyframes close{
+    from {transform: translateY(-200px)}
+    to {transform: translateY(-700px)}
+}
+/* nav responsive */
+@media screen and (max-width:858px){
+    .web{
+        justify-content: end;
+    }
+    .web a{
+        display: none;
+    }
+    .mob{
+        display: block;
+        margin: 3%;
+    }
+    #me_index{
+        width: 800px;
+        font-size: 1.5rem;
+    }
+    #mobIcon{
+        cursor: pointer;
+    }
+    .mobNav{
+        display: flex;
+        transform: translateY(-710px);
+        color: black;
+    }
+    .mobNav:hover #mobActive{
+        background-color:white;
+        color: black;
+    }
+    .mobNav a:hover, #mobActive, .mobNav:hover #mobActive:hover{
+        background-color:black;
+        border-color: black;
+        color: white;
+    }
+    #me_index:hover, .web a:hover{
+        letter-spacing: 0px;
+    }
+}
+/* NAVBAR */
+
+.intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whoDat{
+    width: 50%;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url(../00_assets/svgs/wframe.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease;
+    text-align: left;
+    background-color: #ffe1e1;
+}
+.whoDat:hover{
+    background-color: white;
+}
+.datWho{
+    text-align: center;
+}
+#meet, #more{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+#meet{
+    align-items: flex-end;
+    justify-content: center;
+}
+#meet h1, #followUp{
+    font-weight: 500;
+}
+#more{
+    align-items: start;
+    line-height: 200%;
+}
+span{
+    animation: wiu 2s ease;
+}
+.whoImg{
+    width: 50%; 
+    height: 100%;
+    overflow: hidden;
+}
+.imageZoom{
+    width: 100%; 
+    height: 100%;
+    background-image: url(../00_assets/me/jzt.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: .3s ease;
+}
+.imageZoom:hover{
+    transform: scale(105%);
+}
+
+/* socials */
+.social{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: rgb(247,75,91) solid 5vh;
+
+    background-image: url("../00_assets/svgs/sbg.svg");
+    background-size: cover;
+    background-position: center;
+}
+span{
+    user-select: none;
+}
+#followUp{
+    margin-top: 10%;
+    border-right: solid 2px;
+    text-align: center;
+    animation: type 1s infinite;
+}
+.follow{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.follow a{
+    transition: .3s ease;
+}
+.follow a:hover{
+    transform: scale(110%);
+}
+.follow img{
+    width: 10em;
+}
+#up1{
+    animation: t1 5s infinite ease-in-out;
+} 
+#up2{
+    animation: t2 5s infinite ease-in-out;
+}
+#up3{
+    animation: t3 5s infinite ease-in-out;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    color: white;
+    width: 100%;
+    border-top: solid 2px;
+}
+/* animations */
+@keyframes type{
+    from {}
+    50% {border-color: rgba(0,0,0,0);}
+    to {}
+}
+@keyframes t1{
+    from {transform: translateY(0px)}
+    10% {transform: translateY(-10px)}
+    20% {transform: translateY(0px)}
+    30% {}
+    to {}
+}
+@keyframes t2{
+    from {}
+    10% {transform: translateY(0px)}
+    20% {transform: translateY(-10px)}
+    30% {transform: translateY(0px)}
+    to {}
+}
+@keyframes t3{
+    from {}
+    10% {}
+    20% {transform: translateY(0px)}
+    30% {transform: translateY(-10px)}
+    40% {transform: translateY(0px)}
+}
+
+/* responsive design */
+@media screen and (max-width: 1270px){
+    #meet{
+        height: 40%;
+    }
+    #more{
+        height: 60%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:858px){
+    .intro{
+        flex-direction: column;
+    }
+    .whoImg, .whoDat{
+        width: 100%;
+        height: 50%;
+    }
+    .whoDat{
+        padding: 0px;
+        padding-top: 5%;
+        background-image: url(../00_assets/svgs/mframe.svg);
+    }
+    .datWho p{
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow-y: auto;
+        height: 85%;
+    }
+    
+    .follow img{
+        width: 8em;
+    }
+}
+@media screen and (max-width: 600px){
+    .follow{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 425px){
+    #followUp{
+        margin-top: 5%;
+    }
+    .follow img{
+        width: 6.5em;
+    }
+}
