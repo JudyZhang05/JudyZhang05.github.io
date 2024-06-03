@@ -1,70 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Judy Zhang</title>
-  <link href="design.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judy Zhang About</title>
+    <link href="./01_about/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body class="back">
-  <!-- <div class="order">
-    <div class="welcome">
-      <h1>Hello! Welcome! はじめまして！</h1>
-    </div>
-  </div> -->
-  <div class="order">
-    <div class="judy">
-      <img src="./portfolio/instagram/2piece.png" alt="Judy" width="300">
-    </div>
-    <div class="zhang">
-      <div class="greetings">
-        <h2>Welcome to my Portfolio!</h2>
-        <p>This is Judy Zhang, an Artist and aspiring UI/UX Designer!</p>
-      </div>
-    </div>
-  </div>
-    <div class="order">
-      <div class="subtitle">
-        <h2>Explore</h2>
-      </div>
-      <div class="clickables">
-        <div class="section">
-          <a href="./portfolio/drawings.html" target="_blank"> <img src="./portfolio/other/temp cover.png" width="200" alt="Artwork Showcase"></a>
-          <a href="./portfolio/drawings.html" target="_blank"> <h3>Artwork Showcase</h3> </a>
+    <nav>
+        <p id="me_index">Judy Zhang</p>
+        <div class="web">            
+            <a href="#" id="active">About</a>
+            <a href="../02_projects/index.html" >Projects</a>
+            <a href="../00_assets/me/Judy Zhang Resume.pdf" target="_blank">Resume</a>
         </div>
-        <div class="section">
-          <img src="./portfolio/other/temp cover.png" width="200" alt="Code Showcase">
-          <h3>Code Showcase</h3>
+        <div class="mob">
+            <div id="mobIcon"><img src="../00_assets/svgs/hmg.svg" width="60vh" height="60vh"></div>
+            <ul class="mobNav">
+                <a href="#" id="mobActive"><li>About</li></a>
+                <a href="../02_projects/index.html"><li >Projects</li></a>
+                <a href="../00_assets/me/Judy Zhang Resume.pdf" target="_blank"><li>Resume</li></a>
+            </ul>
         </div>
-        <div class="section">
-          <img src="./portfolio/other/temp cover.png" width="200" alt="TBD">
-          <h3>TBD</h3>
-        </div>
-      </div>
-    </div>
-    <div class="order">
-      <div class="subtitle" id="last_subtitle">
-        <h2>Learn More</h2>
-      </div> 
-      <div class="socials">
-        <div class="link">
-          <a href="https://www.instagram.com/judy.zha/" target="_blank"><img src="./assests/instagram.png" alt="Instagram" width="100"></a>
-        </div>
-        <div class="link">
-          <a href="https://www.linkedin.com/in/judy-zhang-/" target="_blank"><img src="./assests/linkedin.png" alt="LinkedIn" width="100"></a>
-        </div>
-        <div class="link">
-          <a href="https://github.com/JudyZhang05" target="_blank"><img src="./assests/github.png" alt="Github" width="100"></a>
-        </div>
-      </div>
-    </div>
+    </nav>        
 
-
-
-  <script src="script.js"></script>
-
+    <div class="intro">
+        <div class="whoDat">
+            <div class="datWho" id="meet">
+                <h1>Meet Judy Zhang</h1>
+            </div>
+            <div class="datWho" id="more">
+                <p> What's up!
+                    Currently, I am a Hunter College Undergraduate majoring in Emerging Media and minoring in Computer Science. 
+                    I've got a burning passion for UI/UX Design and Front-end Web Development with an unquenchable thrist for knowledge. 
+                    Majoring in fine arts all throughout my persuit for higher education, I continue to incorporate my skills and creativity to further my technical designs. 
+                    Got an interesting project to work on? Sign me up. now. Expand your horizons with me and aim for the stars!
+                </p>    
+            </div>
+        </div>
+        <div class="whoImg">
+            <div class="imageZoom"></div>
+        </div>
+    </div>
+    <div class="social">
+        <h1 id="followUp"></h1>
+        <div class="follow">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=judyz1594@gmail.com" target="_blank"><img src="./00_assets/svgs/gm.svg" id="up1"></a>
+            <a href="https://www.linkedin.com/in/judy-zhang-/" target="_blank"><img src="./00_assets/svgs/lk.svg" id="up2"></a>
+            <a href="https://github.com/JudyZhang05" target="_blank"><img src="./00_assets/svgs/gh.svg" id="up3"></a>
+        </div>
+        <footer>All Rights Reserved &copy; Judy Zhang <small>(judyz1594@gmail.com)</small> </footer>
+    </div>
+    <script src="./01_about/script.js"></script>
 </body>
-
 </html>
