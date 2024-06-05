@@ -32,24 +32,24 @@ mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`
 addEventListener("scroll" , () => {
     // Pink: 247,75,91 
     // Blue: 77,176,244 
-    if(window.scrollY >= 4500){
-        if(r < 247){
-            r+=10
-        }if(g > 75){
-            g-=10
-        }if(b > 91){
-            b-=10
-        }
-    }
-    else{
-        if(r > 77){
-            r-=10
-        }if(g < 176){
-            g+=10
-        }if(b < 244){
-            b+=10
-        }
-    }
+    // if(window.scrollY >= 4500){
+    //     if(r < 247){
+    //         r+=10
+    //     }if(g > 75){
+    //         g-=10
+    //     }if(b > 91){
+    //         b-=10
+    //     }
+    // }
+    // else{
+    //     if(r > 77){
+    //         r-=10
+    //     }if(g < 176){
+    //         g+=10
+    //     }if(b < 244){
+    //         b+=10
+    //     }
+    // }
     navbar.style.backgroundColor = `rgba(${r},${g},${b},${window.scrollY/500})` 
     mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`
     // navbar.style.color = `rgb(${window.scrollY/2},${window.scrollY/2},${window.scrollY/2})`

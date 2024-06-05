@@ -27,8 +27,10 @@ nav{
     color: white;
 }
 #me_index{
-    margin-left: 5%;
-    transition: .3s ease;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
+
+    /* margin-left: 5%;
+    transition: .3s ease; */
 }
 #me_index:hover, .web a:hover{
     letter-spacing: 0.5px;
@@ -98,10 +100,10 @@ nav{
         display: block;
         margin: 3%;
     }
-    #me_index{
+    /* #me_index{
         width: 800px;
         font-size: 1.5rem;
-    }
+    } */
     #mobIcon{
         filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
         cursor: pointer;
@@ -165,9 +167,6 @@ nav{
 #more{
     align-items: start;
     line-height: 200%;
-}
-span{
-    animation: wiu 2s ease;
 }
 .whoImg{
     width: 50%; 
