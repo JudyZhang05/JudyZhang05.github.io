@@ -28,9 +28,6 @@ nav{
 }
 #me_index{
     filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
-
-    /* margin-left: 5%;
-    transition: .3s ease; */
 }
 #me_index:hover, .web a:hover{
     letter-spacing: 0.5px;
@@ -100,10 +97,6 @@ nav{
         display: block;
         margin: 3%;
     }
-    /* #me_index{
-        width: 800px;
-        font-size: 1.5rem;
-    } */
     #mobIcon{
         filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
         cursor: pointer;
@@ -308,7 +301,7 @@ footer{
     .whoDat{
         padding: 0px;
         padding-top: 5%;
-        background-image: url(../00_assets/svgs/mframe.svg);
+        background-image: url(../00_assets/svgs/wframe.svg);
     }
     .whoImg{
         height: 100vh;
@@ -316,8 +309,6 @@ footer{
     .datWho p{
         margin-left: 5%;
         margin-right: 5%;
-        /* overflow-y: auto;
-        height: 85%; */
     }
     
     .follow img{
@@ -336,6 +327,9 @@ footer{
         align-items: center;
         justify-content: space-between;
         height: 75%;
+    }
+    .whoDat{
+        background-image: url(../00_assets/svgs/mframe.svg);
     }
 }
 @media screen and (max-width: 425px){
