@@ -119,6 +119,14 @@ const sections = ["role","overview","problem","solution","design","develop","fig
 const allCases = ["Stellar","Portfolio Website","MEDP285 Website","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
 
 function setData(){
+    // BackgroundImage
+    if(allCases.indexOf(project) %2 == 0){
+        $(".topContainer").css("backgroundImage", "url(../../00_assets/svgs/detsign1.svg)");
+    }else{
+        $(".topContainer").css("backgroundImage", "url(../../00_assets/svgs/detsign2.svg)");
+    }
+
+
     //Title
     $("#projectTitle").text(`Judy's Project - ${project}`);
     $("#projectHead").text(project);

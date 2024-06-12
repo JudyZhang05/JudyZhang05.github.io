@@ -13,6 +13,10 @@ a, li{
     all: unset;
     cursor: pointer;
 }
+::selection {
+    color: white;
+    background: rgb(247,75,91);
+}
 
 /*NAVBAR*/
 nav{

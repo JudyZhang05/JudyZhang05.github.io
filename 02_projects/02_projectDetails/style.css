@@ -16,6 +16,11 @@ a, li{
     all: unset;
     cursor: pointer;
 }
+::selection {
+    color: white;
+    background: rgb(77,176,244);
+}
+
 /*NAVBAR*/
 nav{
     top:0px;
@@ -138,8 +143,8 @@ nav{
     padding: 5%;
     padding-left: 15vw;
     padding-right: 15vw;
-    border-bottom: solid 1px;
-    background-color: white;
+    border-bottom: white solid .5em;
+    background-size: cover;
 }
 .brief{
     text-align: center;
@@ -233,7 +238,8 @@ nav{
 #nextProject{
     display: flex;
     justify-content: center;
-    margin: 10vh;
+    padding: 10vh;
+    background-color: aliceblue;
 }
 #nextProject button{
     all: unset;
@@ -259,4 +265,12 @@ footer{
     color: black;
     width: 100%;
     border-top: solid 2px;
+}
+
+@media screen and (max-width:858px) {
+    #nextProject{
+        padding: 0px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
 }
