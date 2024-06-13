@@ -147,18 +147,30 @@ function setData(){
     }
 
     //Next
-    let nextCase = ""
+    let nextCase, prevCase;
     if(allCases.indexOf(project)+1 >= allCases.length){
         nextCase = allCases[0]
-    }else{
+    }
+    else{
         nextCase =  allCases[allCases.indexOf(project)+1];
     }
+    if(allCases.indexOf(project) == 0){
+        prevCase = allCases[allCases.length-1]
+    }else{
+        prevCase =  allCases[allCases.indexOf(project)-1];
+    }
     $("#nextCase").html(`See Next &#8640; <span>${nextCase}</span>`)
+    $("#prevCase").html(`See Previous &#8636; <span>${prevCase}</span>`)
     $("#nextCase").click(() => {
         sessionStorage.clear()
         sessionStorage.setItem("project", nextCase)
         window.location.href = "./index.html";
-    })
+    });
+    $("#prevCase").click(() => {
+        sessionStorage.clear()
+        sessionStorage.setItem("project", prevCase)
+        window.location.href = "./index.html";
+    });
 }
 
 setData();
