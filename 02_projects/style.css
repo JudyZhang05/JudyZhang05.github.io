@@ -232,15 +232,6 @@ nav{
     padding: 4%;    
     padding-bottom: 5%;
 }
-#elink{
-    all: unset;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: .3s ease;
-}
-#elink:hover{
-    color: red;
-}
 /* Footer */
 footer{
     background-color: rgb(77,176,244);

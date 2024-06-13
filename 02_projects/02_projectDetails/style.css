@@ -161,7 +161,8 @@ nav{
     padding: 20vh 15vw;
 }
 .projectPurpose{
-    padding-top: 10vh;
+    /* padding-top: 10vh; */    /*progressbar*/
+    padding-bottom: 5vh;
 }
 .solutionSection{
     padding-top: 10vh;
@@ -256,7 +257,17 @@ nav{
     background-color: rgb(77,176,244);
     color: black;
 }
-
+/* Embedded Links */
+#elink{
+    all: unset;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s ease;
+    color: rgb(77,176,244);
+}
+#elink:hover{
+    color: red;
+}
 /* Footer */
 footer{
     text-align: center;
