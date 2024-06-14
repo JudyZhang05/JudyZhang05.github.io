@@ -262,7 +262,7 @@ footer{
     to {}
 }
 @keyframes t1{
-    from {transform: translateY(0px)};
+    from {transform: translateY(0px);}
     10% {transform: translateY(-10px);}
     20% {transform: translateY(0px);}
     30% {}

@@ -270,6 +270,10 @@ nav{
 #elink:hover{
     color: red;
 }
+.disabled{
+    pointer-events: none;
+}
+
 /* Footer */
 footer{
     text-align: center;

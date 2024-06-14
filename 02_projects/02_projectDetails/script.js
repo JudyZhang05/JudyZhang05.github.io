@@ -42,11 +42,11 @@ const projectData = {
         ,develop: "For this project, I was given the task of utilizing a mix of grid templates and Flexbox to develop and format the page. So with the GitHub deployment page feature, I developed an introduction page where the assignment details would be displayed to the user followed by the actual completed assignment. The navbar fixed to the top acts to shift through every assignment without having to click back and forth everywhere. <br/><br/>*Note: Only the CSS page has this design fully developed, as this was for show purposes only and not a long-term website."
         ,images: {
             figma: "../../00_assets/projects/design/figma/webprod.png" 
-            ,website: ""
+            ,website: "none"
         }
         ,links: {
             figma: "https://www.figma.com/design/LA4v57EIlJcTeaXRIAcz1E/Judy-Zhang---MEDP285-Wireframe?node-id=1669-162202&t=w3atCSs0xSEv3rgd-0" 
-            ,website: ""
+            ,website: "none"
         }
     }
     ,"Stephen King Villain API":{
@@ -54,31 +54,31 @@ const projectData = {
         ,overview: "The Stephen King Villain API is a node.js executable webpage. Complete with both Front-End and Back-End development, you can run it on your local machine to see what kind of Stephen King Villain you are. "
         ,problem: "Are you a horror addict? Ever watched \"IT\" or \"The Boogeyman\"? Well, you probably heard of Stephen King then. Reading his horror novels and watching their adapted horror movies are great and all, but like a true horror addict, if you were in these horrific narratives and story retellings, you'd want to know which character you were, but more intriguing, which villain you are.  "
         ,solution: "Well, look no further! Utilizing an open-source Application Programming Interface (API) on Stephen King's Villains and some magic in the Back-End, you can pinpoint exactly which villain you would be portrayed as in the Stephen King universe. The results may surprise, horrify, or intrigue you. Just a click of a button or 2 and this webpage will satisfy your curiosity in the best way possible!"
-        ,design: "The design for this is relatively short, sweet, and simple. The background is pure black to set the atmosphere, the font color is red because of blood, and the font style is this childlike marker handwriting but in all caps to convey some sense of false urgency. To interact with the webpage and get the results, all the users would need to input is their first and last names and their year of birth. After submitting their input, it should bring the user to a different page that displays the resulting Villain name, and other available details regarding that Villain from the API."
+        ,design: "The design for this is relatively short, sweet, and simple. The background is pure black to set the atmosphere, the font color is red because of blood, and the font style is this childlike marker handwriting but in all caps to convey some sense of false urgency. To interact with the webpage and get the results, all the users would need to input is their first and last names and their year of birth. After submitting their input, it should bring the user to a different page that displays the resulting villain name, and other available details regarding that villain from the API."
         ,develop: "The development is where all the magic happens. The Stephen King Villain website utilizes node.js, express, body-parser (as the middleware), Axios, and embedded javascript to function. Through its client-server architectural programming allows the user to receive a computed response from the fetched RESTful Stephen King API found <a href=\"https://stephen-king-api.onrender.com\" target=\"_blank\" id=\"elink\">here</a>. The express server then uses event handlers to retrieve data from the API and computes and filters them through a specific set of conditional statements to display a particular villain to the user. To display the computed data, this webpage utilizes embedded javascript to translate the information onto the webpage, showing a different result if the output comes out empty. To run this for yourself, follow the instructions in the GitHub Repository README (found below)!"
         ,images: {
-            figma: "" 
-            ,website: ""
+            figma: "../../00_assets/projects/design/figma/skapi.gif" 
+            ,website: "../../00_assets/projects/design/website/skapi.png"
         }
         ,links: {
-            figma: "" 
+            figma: "none" 
             ,website: "https://github.com/JudyZhang05/JudyZhang_CSCI39548/tree/main/final"
         }
     }
     ,"An Unlucky Day":{
         role: "Sole UI Designer & Front-End Developer"
-        ,overview: ""
-        ,problem: ""
-        ,solution: ""
-        ,design: ""
-        ,develop: ""
+        ,overview: "The \"An Unlucky Day\" project is a multi-paged interactive story complete with animated illustrations and multiple story endings. This interactive story is operated by users in a simple interface where there are only ever 2 options to choose from. Both of these options could alter the endings and there is no way to backtrack to the scene before, making for a more exciting experience.  "
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "The interactive story appears in a window-like view with a solid black background to immerse the audience in the story. I wanted to fully convey my vision of the scenes to the audience without having the imagery too distracting to focus on the dialogue, thus I designed everything else rather simple and in a stark white color to contrast against the black background and elaborate paintings. The rounded borders of the story options and window screen illude to a more playful style. The dialogue is typed out letter by letter at a slow pace to give the audience time to read and analyze the evolving plot. I made sure to have the dialogue play one at a time from top to bottom to prevent confusion between them and the context."
+        ,develop: "This interactive story is built within the online integrated development environment known as \"GLITCH\". You can visit the repository <a href=\"https://glitch.com/edit/#!/judy-zhang-medp-website?path=index.html%3A1%3A0\" target=\"_blank\" id=\"elink\">here</a>. There, you will find multiple HTML and CSS pages to build each scene of the story, some basic HTML and CSS with simple Document Object Model (DOM) programming in JavaScript utilizing their built-in functions to slowly output the dialogue and automatically lead the viewer to the next scene after a certain amount of time has passed on one screen, creating an autoplay feature of the sort."
         ,images: {
-            figma: "" 
-            ,website: ""
+            figma: "none" 
+            ,website: "../../00_assets/projects/design/website/unlucky.gif"
         }
         ,links: {
-            figma: "" 
-            ,website: ""
+            figma: "none" 
+            ,website: "https://judy-zhang-medp-website.glitch.me/lab10.html"
         }
     }
     ,"Feel ReLeaf":{
@@ -123,9 +123,8 @@ function setData(){
     if(allCases.indexOf(project) %2 == 0){
         $(".topContainer").css("backgroundImage", "url(../../00_assets/svgs/detsign1.svg)");
     }else{
-        $(".topContainer").css("backgroundImage", "url(../../00_assets/svgs/detsign2.svg)");
+        $(".topContainer").css("backgroundImage", "url(../../00_assets/svgs/detsign3.svg)");
     }
-
 
     //Title
     $("#projectTitle").text(`Judy's Project - ${project}`);
@@ -135,8 +134,16 @@ function setData(){
     const projectCase = projectData[project];
     for(let info of sections){
         if(info == "figma" || info == "website"){
-            $(`#${info}`).attr("src",projectCase.images[info]);
-            $(`#visit${info}`).attr("href",projectCase.links[info]);
+            if(projectCase.links[info] == "none"){      //No available link is provided
+                $(`#${info}Arrow`).css("display","none");
+                $(`#visit${info}`).css("pointer-events","none");
+            }
+            if(projectCase.images[info] == "none"){     //No available image is provided
+                $(`#${info}`).css("display","none");
+            }else{
+                $(`#${info}`).attr("src",projectCase.images[info]);
+                $(`#visit${info}`).attr("href",projectCase.links[info]);
+            }
         }else{
             $(`#${info}`).html(projectCase[info]);
         }
