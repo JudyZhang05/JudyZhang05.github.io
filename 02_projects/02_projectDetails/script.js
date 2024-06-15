@@ -83,34 +83,34 @@ const projectData = {
     }
     ,"Feel ReLeaf":{
         role: "Sole UI Designer & Front-End Developer"
-        ,overview: ""
-        ,problem: ""
-        ,solution: ""
-        ,design: ""
-        ,develop: ""
+        ,overview: "Feel ReLeaf is a mental health awareness and support website concept that allows user to anonymously log their deepest darkest secret to relieve them of the burden. This website is aimed to assist people who tend to bottle up their emotions in an unhealthy manner or those who simply don't have anyone to confide in but would like others to hear. Additionally, there would be an option for those who would like to seek professional help.  "
+        ,problem: "The act of keeping a secret has been well studied and research shows that they have a direct negative impact on one's mental, emotional, physical, and spiritual health. Burdening yourself with a secret, especially negative ones, has proven to cause anxiety and distress from an increase in stress hormones. Additionally, there could be circumstances that may prohibit someone's physical access to professional help.  "
+        ,solution: "Feel ReLeaf, offers a free alternative to help those who are seeking to confide in a larger community or professional aid remotely. No one deserves to suffer in solitude and isolation, and sometimes simply talking about it could help significantly. Even possibly clearing their headspace and relieving them of a much too heavy burden that was placed on them inadvertently. Mental health is a critical underlying issue that does not constrain itself to one state or one culture. This happens worldwide and for that reason, I knew I had to incorporate a translation option, to reach a global audience. Feel ReLeaf is a website that focuses on becoming a reliable and supportive place for those who need it."
+        ,design: "For this design, I needed to recreate a space that resembled somewhere one would feel liberated. Free of all their ongoing burdens and struggles. For a moment, I wanted the user to be in a headspace where they wouldn't feel obligated to talk or take action, but more like they were accepting a warm embrace of acceptance, understanding, and being generously welcomed. Thus, I picked out some open fields peaceful nature scenes, surrounded by flowers and clear open skies. The duo nature theme worked perfectly to achieve the sentiment that I was going for on both the write and read secret pages. Along with the bright pastels and fancy script-like font provides the professional edge that I wanted to maintain. <br/><br/> *Note: This was my graduating project that I presented for a summer course with Code First Girls. Check out my presentation below!"
+        ,develop: "Ultizing the integrated programming environment called \"Codepen\", I developed a website that is separated into two sections. A write a secret section and a read a secret section. You would not be able to access the read a secret without inputting a secret of your own. There are some placeholder secrets in the read-a-secret section collected by anonymous people online. Additionally, I implemented a leave another button so you could write another secret and read another button so that you can shuffle through the secrets, perhaps even finding yours in the mix. The translation option stays between the write and read secret pages, while the background images and color pallet slowly transition from a pastel green to a lilac purple. The website is complete with some smooth animations in the beginning to welcome the users and the transition between the two separate sections. I purposefully animated the transition to seem like flipping a page over to invoke an emotion as if they've turned a new page or started a new chapter having relieved themselves of this secret. <br/><br/> *Note: The translations are no longer functional."
         ,images: {
-            figma: "" 
-            ,website: ""
+            figma: "../../00_assets/projects/design/figma/releaf.png" 
+            ,website: "../../00_assets/projects/design/website/releaf.gif"
         }
         ,links: {
-            figma: "" 
-            ,website: ""
+            figma: "https://docs.google.com/presentation/d/1hiWcLpxnhXlikmNwbDribheqNQfGNtTrIN6si_JSe48/edit#slide=id.g157cf677799_0_0" 
+            ,website: "https://codepen.io/Judy-Zhang-the-styleful/pen/wvQQYmy?editors=1000"
         }
     }
     ,"Klicky":{
         role: "UI Designer & Co Front-End Developer"
-        ,overview: ""
-        ,problem: ""
-        ,solution: ""
-        ,design: ""
-        ,develop: ""
+        ,overview: "The Klicky project is a website that was designed and developed to be a LinkedIn clone while keeping track of what and where on screen the user's interaction was most popular. The user's interface and content reflected LinkedIn's image and professionalism while collecting and sending the user's interactions into a Firebase database. With this quantitive data, my team and I decided to create a heat map to visualize this."
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "Taking into consideration LinkedIn's image and professionalism, I paid careful attention to the LinkedIn clone's style and layout. I thoroughly planned out what aspects of the original design I would make the clone inherit while adding some creative liberty to generate more diversity.  Some of these liberties that I created were the comical advertisement displayed on the right sidebar and the hearted follow element on the top right of each post. The placeholder content and reactions I supplied to the clone reflect the lively and uplifting community that LinkedIn has produced over the years. All these elements pieced together create an enjoyable and inviting experience for new and revisiting users. <br/><br/> *Note: This was my graduating project that I presented for a sprinternship with BreakThroughTech and LinkedIn. Check out my presentation below!"
+        ,develop: "Throughout the development of Klicky, we split into 2 different groups dedicated to various areas of the project. I was tasked with HTML/CSS and the Firebase Database Team. In HTML/CSS, I utilized my knowledge and focused primarily on the presentation of the website, some tasks I completed were adding new sections to the website to diversify the interactions available to the user, manipulating the scale of individual sections, adding posts to replicate an active platform, creating mouse effects for a more engaging experience, and more. In the Firebase Database team, I focused on collecting and keeping track of user's interaction with the webpage and adding them to a Firebase database. When the user clicks on a button or anywhere on the screen, it automatically appends itself to the database instantly. <br/><br/>*Note: To run this for yourself, follow the instructions in the GitHub Repository README (found below)!"
         ,images: {
-            figma: "" 
-            ,website: ""
+            figma: "../../00_assets/projects/design/figma/klicky.png" 
+            ,website: "../../00_assets/projects/design/website/klicky.gif"
         }
         ,links: {
-            figma: "" 
-            ,website: ""
+            figma: "https://docs.google.com/presentation/d/1Zzm7Qs5_9GTFmAKwpQTvHf3G5OM4vOT1EWolWaOZswM/edit" 
+            ,website: "https://github.com/gschultz49/klicky"
         }
     }
 }
@@ -143,6 +143,14 @@ function setData(){
             }else{
                 $(`#${info}`).attr("src",projectCase.images[info]);
                 $(`#visit${info}`).attr("href",projectCase.links[info]);
+
+                if(project == "Feel ReLeaf" || project == "Klicky"){          //presentation in one case study
+                    $(`#visitfigma`).attr("title","Visit Presentation");
+                    if(project == "Klicky"){
+                        $(`#visitwebsite`).attr("title","Visit Github");
+                    }
+                }
+                
             }
         }else{
             $(`#${info}`).html(projectCase[info]);

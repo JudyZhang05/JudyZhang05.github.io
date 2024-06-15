@@ -154,6 +154,20 @@ nav{
 }
 
 /* Content */
+h1{
+    font-weight: 500;
+    font-size: 1.5em;
+    color: gray;
+    letter-spacing: 2px;
+}
+#projectHead{
+    font-size: 4em;
+    color: black;
+    text-align: center;
+}
+small{
+    color: gray;
+}
 .container p{
     line-height: 200%;
 }
