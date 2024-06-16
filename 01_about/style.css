@@ -13,6 +13,10 @@ a, li{
     all: unset;
     cursor: pointer;
 }
+::selection {
+    color: white;
+    background: rgb(247,75,91);
+}
 
 /*NAVBAR*/
 nav{
@@ -27,8 +31,7 @@ nav{
     color: white;
 }
 #me_index{
-    margin-left: 5%;
-    transition: .3s ease;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
 }
 #me_index:hover, .web a:hover{
     letter-spacing: 0.5px;
@@ -98,10 +101,6 @@ nav{
         display: block;
         margin: 3%;
     }
-    #me_index{
-        width: 800px;
-        font-size: 1.5rem;
-    }
     #mobIcon{
         filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
         cursor: pointer;
@@ -166,9 +165,6 @@ nav{
     align-items: start;
     line-height: 200%;
 }
-span{
-    animation: wiu 2s ease;
-}
 .whoImg{
     width: 50%; 
     height: 100%;
@@ -186,6 +182,26 @@ span{
     transform: scale(105%);
 }
 
+.break{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(247,75,91);
+    height: 5vh;
+    color: white;
+}
+.break a:hover{
+    text-decoration: underline;
+}
+#blank, .break small{
+    width: 50%;
+}
+.break small{
+    font-weight: 200;
+    text-align: center;
+}
+
 /* socials */
 .social{
     height: 90vh;
@@ -193,7 +209,6 @@ span{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-top: rgb(247,75,91) solid 5vh;
 
     background-image: url("../00_assets/svgs/sbg.svg");
     background-size: cover;
@@ -247,25 +262,25 @@ footer{
     to {}
 }
 @keyframes t1{
-    from {transform: translateY(0px)}
-    10% {transform: translateY(-10px)}
-    20% {transform: translateY(0px)}
+    from {transform: translateY(0px);}
+    10% {transform: translateY(-10px);}
+    20% {transform: translateY(0px);}
     30% {}
     to {}
 }
 @keyframes t2{
     from {}
-    10% {transform: translateY(0px)}
-    20% {transform: translateY(-10px)}
-    30% {transform: translateY(0px)}
+    10% {transform: translateY(0px);}
+    20% {transform: translateY(-10px);}
+    30% {transform: translateY(0px);}
     to {}
 }
 @keyframes t3{
     from {}
     10% {}
-    20% {transform: translateY(0px)}
-    30% {transform: translateY(-10px)}
-    40% {transform: translateY(0px)}
+    20% {transform: translateY(0px);}
+    30% {transform: translateY(-10px);}
+    40% {transform: translateY(0px);}
 }
 
 /* responsive design */
@@ -281,36 +296,50 @@ footer{
 @media screen and (max-width:858px){
     .intro{
         flex-direction: column;
+        height: 200vh;
     }
     .whoImg, .whoDat{
         width: 100%;
-        height: 50%;
+        height: 100vh;
     }
     .whoDat{
         padding: 0px;
         padding-top: 5%;
-        background-image: url(../00_assets/svgs/mframe.svg);
+        background-image: url(../00_assets/svgs/wframe.svg);
+    }
+    .whoImg{
+        height: 100vh;
     }
     .datWho p{
         margin-left: 5%;
         margin-right: 5%;
-        overflow-y: auto;
-        height: 85%;
     }
     
     .follow img{
         width: 8em;
     }
+    #blank{
+        width: 0%;
+    }
 }
 @media screen and (max-width: 600px){
+    #meet{
+        height: 30%;
+    }
     .follow{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 75%;
     }
+    .whoDat{
+        background-image: url(../00_assets/svgs/mframe.svg);
+    }
 }
 @media screen and (max-width: 425px){
+    #meet{
+        height: 25%;
+    }
     #followUp{
         margin-top: 5%;
     }

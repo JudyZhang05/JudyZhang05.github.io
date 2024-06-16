@@ -1,28 +1,19 @@
 /* NAV BEGIN */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-  }
-  
-  .navwrap{
+.navwrap{
     z-index: 50;
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #fff;
-  }
-    
-  .navbar{
+}
+.navbar{
     background-color: whitesmoke;
     overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 50;
-  
+
     display:flex;
     justify-content: space-evenly;
     color: black;
@@ -30,26 +21,26 @@
     text-decoration: none;
     top: -100px;
     transition: top 0.3s;
-  }
+}
   
-  .myname a, .navbar a:not(.skip){
+.myname a, .navbar a:not(.skip){
     font-size: 18px;
     cursor: pointer;
     padding: 1%;
-  }
+}
   
-  .navbar a:not(.myname){
+.navbar a:not(.myname){
     padding-left: 7%;
     padding-right: 7%;
     transition: background-color 0.3s ease-out;
-  }
-  
-  .navbar a:hover:not(.myname,.skip){
+}
+
+.navbar a:hover:not(.myname,.skip){
     color: whitesmoke;
     background-color: black;
-  }
+}
 
-  @media only screen and (min-width: 53px) and (max-width: 540px){
+@media only screen and (min-width: 53px) and (max-width: 540px){
     .skip {
         display: none;
     }
@@ -66,15 +57,26 @@
     .myname a, .navbar a:not(.skip){
         padding-top: 3%;
         padding-bottom: 2%;
-      }
-  }
-  @media only screen and (min-width: 1440px) and (max-width: 5000px){
+        }
+    }
+    @media only screen and (min-width: 1440px) and (max-width: 5000px){
     .myname a, .navbar a:not(.skip){
         font-size: 20px;
-      }
-  }
+        }
+}
+/* NAV END */
 
-  /* NAV END */
+::selection {
+    background: rgb(247,75,91);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
 
 a{
     all: unset;

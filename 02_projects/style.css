@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *{
     font-family: 'Work Sans', sans-serif;
@@ -15,6 +16,10 @@ b{
 a, li{
     all: unset;
     cursor: pointer;
+}
+::selection {
+    color: white;
+    background: rgb(77,176,244);
 }
 
 /*NAVBAR*/
@@ -127,24 +132,23 @@ nav{
 
 /*PROJECT HEADING*/
 .topContainer{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    height:100vh;
-    margin: 0;
-
-    /* why does this look so good >:C */
     background-image: url(../00_assets/svgs/abstract.svg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95vh;
+    margin: 0;
 }
 .show{
     user-select: none;
     font-size: 5rem;
     transition: .3s ease-in-out;
-    box-shadow: black 5px 5px;
+    box-shadow: black 0px 5px;
+    cursor: default;
 }
 #cShow:hover{
     color: rgb(77,176,244);
@@ -164,134 +168,83 @@ nav{
     font-weight: 400;
 }
 /*PROJECT CONTENT*/
-.codeContainer{
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.title{
-    text-align: center;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
-    padding: 1%;
-    transition: .3s ease-in-out;
-    position: sticky;
-    top: 10vh;
+.pull{
+    height:5vh;
     background-color: black;
-    color: white;
-    border-color: black;
-    margin: 0px;
 }
-.project{                           /*Per every project*/
+.pull img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.projectContainer{
     display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+#projecTop,.skip{
+    height: 10vh;
+}
+.projectLeft, .projectRight{        /*Per every project*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    width: 100%;
+    display: flex;    
     justify-content: space-evenly;
     align-items: center;
-
-}
-.codeContainer > .project{
-    margin-bottom: 5%;
-    background-image: url(../00_assets/svgs/bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.designContainer > .project{
-    background-image: url(../00_assets/svgs/dg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.projectPreview, .projectInfo{      /*Space between project preview and project content*/
-    padding: 1%;
-}
-
-.projectPreview img{                /*GIF*/
-    width: 40em;
-}
-.projectInfo{                       /*Project description*/           
-    text-align: center;
-    min-width: 400px;
-    max-width: 1000px;
-}
-.projectInfo p{
-    border: solid 2px;
-    padding: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.projectInfo a{                     /*Project links*/
-    display: flex;
-    padding: 1%;
-    justify-content: center;
-    transition: .3s ease-in-out;
-    background-color: black;
-    color: white;
-}
-.projectLinks a:not(.pjbottom, .pjtop){
-    border-bottom: 0px;
-    border-color: black;
-}
-.pjbottom{
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.pjtop{
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-.pjbottom:hover, .projectLinks a:not(.pjbottom, .pjtop):hover{
-    background-color: rgb(77,176,244);
-    color: black;
-}
-.pjtop:hover{
-    background-color: rgb(247,75,91);
-}
-#elink{
-    all: unset;
-    text-decoration: underline;
     cursor: pointer;
+}
+.projectLeft{
+    background-image: url(../00_assets/svgs/bg.svg);
+}
+.projectLeft, .projectRight{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: white solid 2rem;
+    border-bottom: white solid 2rem;
+}
+.projectRight{
+    background-image: url(../00_assets/svgs/dg.svg);
+    flex-direction: row-reverse;
+}
+.projectImg{
+    height: 100%;
+    width: 40vw;
     transition: .3s ease;
 }
-#elink:hover{
-    color: red;
+.projectLeft:hover .projectImg{
+    transform: translateX(10px) scale(105%);
+    box-shadow: rgba(0, 0, 0, 0.158) 5px 5px 5px 5px;
+}
+.projectRight:hover .projectImg{
+    transform: translateX(-10px) scale(105%);
+    box-shadow: rgba(0, 0, 0, 0.158) -5px 5px 5px 5px;
+}
+.projectTitle{
+    font-size: 6vw;
+}
+.projectDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 4%;    
+    padding-bottom: 5%;
 }
 /* Footer */
 footer{
+    background-color: rgb(77,176,244);
     text-align: center;
     padding-top: .5%;
     padding-bottom: .5%;
-    color: black;
+    color: white;
     width: 100%;
     border-top: solid 2px;
 }
-/* bigger */
-@media only screen and (min-width:1440px){
-    /* GIF */
-    .projectPreview img{
-        width: 80vh;
-    }
-    
-}
-/* mid */
-@media only screen and (max-width:1024px) {
-    /* content template */
-    b:not(#and){
-        text-decoration: underline;
-    }
-    .project{
-        display: block;
-        justify-content: center; 
-        text-align: center;
-    }
-    .projectInfo{
-        width: auto;
-        padding-left: 4%;
-        padding-right: 4%;
-    }
-}
 /* Smaller */
 @media only screen and (max-width:858px){
-    /* selection */
+    /* top */
     .topContainer{
         flex-direction: column-reverse;
         background-position: center;
@@ -300,16 +253,27 @@ footer{
         font-size: 8.5vh;
         background-color:white;
     }
-    .title{
-        top: 0px;
-        position: relative;
+    /* content */
+    .projectLeft,.projectRight{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-top: white solid 1rem;
+        border-bottom: white solid 1rem;
     }
-    .projectPreview img{
+    .projectImg{
+        width: 90vw
+    }
+    .projectDetails{
         width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.781);
     }
-    .projectInfo{
-        padding-left: 1%;
-        padding-right: 1%;
+    .projectLeft:hover .projectImg, .projectRight:hover .projectImg{
+        transform: scale(101%);
+        box-shadow: none;
     }
-    
+    .projectLeft:hover .projectDetails, .projectRight:hover .projectDetails{
+        box-shadow: rgba(0, 0, 0, 0.158) 0px 5px 5px 5px;
+    }
 }
