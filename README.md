@@ -1,5 +1,3 @@
-#### Published Website: [judyzhang05.github.io](https://judyzhang05.github.io)
-
 # Meet Judy Zhang
 Hello There! I am currently a Hunter College Undergraduate majoring in Emerging Media and minoring in Computer Science. 
 With a strong fondation in fine arts and a burning passion for UI/UX Design and Front-end Web Development, I've designed and developed captivating and intuitive webpages for a variety of audiences. 
