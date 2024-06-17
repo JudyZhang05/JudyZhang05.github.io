@@ -1,4 +1,4 @@
-#### Published Website: https://github.com/JudyZhang05/JudyZhang05.github.io
+#### Published Website: [judyzhang05.github.io](https://judyzhang05.github.io)
 
 # Meet Judy Zhang
 Hello There! I am currently a Hunter College Undergraduate majoring in Emerging Media and minoring in Computer Science. 
