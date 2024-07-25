@@ -18,7 +18,7 @@ a, li{
 }
 ::selection {
     color: white;
-    background: rgb(77,176,244);
+    background: rgb(247,75,91);
 }
 
 /*NAVBAR*/
@@ -31,7 +31,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: rgb(77,176,244);;
+    color: white;
+    background-color: rgb(247,75,91);;
 }
 #me_index{
     margin-left: 5%;
@@ -49,10 +50,10 @@ nav{
     padding: 2%;
     border-bottom: white solid 2px;
     transition: .3s ease;
-    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(211, 198, 198, 0)) 1;
 }
 .web a:hover, #active, .web:hover #active:hover{
-    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), black, rgba(255, 255, 255, 0)) 1;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)) 1;
 }
 .web:hover #active{
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
@@ -270,7 +271,7 @@ small{
     transition: .3s ease;
 }
 #nextProject button:hover{
-    background-color: rgb(77,176,244);
+    background-color: rgb(247,75,91);
     color: black;
 }
 /* Embedded Links */
@@ -279,7 +280,7 @@ small{
     text-decoration: underline;
     cursor: pointer;
     transition: .3s ease;
-    color: rgb(77,176,244);
+    color: rgb(247,75,91);
 }
 #elink:hover{
     color: red;

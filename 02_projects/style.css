@@ -19,7 +19,7 @@ a, li{
 }
 ::selection {
     color: white;
-    background: rgb(77,176,244);
+    background: rgb(247,75,91);
 }
 
 /*NAVBAR*/
@@ -51,7 +51,7 @@ nav{
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
 }
 .web a:hover, #active, .web:hover #active:hover{
-    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), black, rgba(255, 255, 255, 0)) 1;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)) 1;
 }
 .web:hover #active{
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 1;
@@ -151,8 +151,8 @@ nav{
     cursor: default;
 }
 #cShow:hover{
-    color: rgb(77,176,244);
-    box-shadow: rgb(77,176,244) 5px 5px;
+    color: rgb(247,75,91);
+    box-shadow: rgb(247,75,91) 5px 5px;
 }
 #dShow:hover{
     color: rgb(247,75,91);
@@ -234,7 +234,7 @@ nav{
 }
 /* Footer */
 footer{
-    background-color: rgb(77,176,244);
+    background-color: rgb(247,75,91);
     text-align: center;
     padding-top: .5%;
     padding-bottom: .5%;

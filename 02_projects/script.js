@@ -23,17 +23,17 @@ function mobileExpand(){
 }
 mobIcon.addEventListener("click", mobileExpand);
 
-//Navbar scroll events
-let r = 77;
-let g = 176;
-let b = 244;
+//Navbar scroll events 
+let r = 247;
+let g = 75;
+let b = 91;
 mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`;
 addEventListener("scroll" , () => {
     // Pink: 247,75,91 
     // Blue: 77,176,244 
     navbar.style.backgroundColor = `rgba(${r},${g},${b},${window.scrollY/500})` ;
     mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`;
-    // navbar.style.color = `rgb(${window.scrollY/2},${window.scrollY/2},${window.scrollY/2})`
+    navbar.style.color = `rgb(${window.scrollY/2},${window.scrollY/2},${window.scrollY/2})`
 });
 
 
