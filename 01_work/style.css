@@ -196,8 +196,6 @@ nav{
 .imageZoom:hover{
     transform: scale(105%);
 }
-
-
 #joy{
     display: flex;
     width: 100%;
@@ -244,16 +242,19 @@ nav{
     padding-bottom: 10%;
 }
 .caseStudies h1{
-    /* font-family: "Marcellus SC", serif; */
-    font-family: "work sans", serif;
-    font-size: 2em;
+    font-family: "Marcellus SC", serif;
+    margin-top:0%;
+    margin-bottom: 10%;
+    font-size: 3em;
     font-weight: 400;
     text-align: center;
 }
 .case{
     text-align: center;
-    padding-bottom: 10%;
+    margin-bottom: 10%;
     transition: .3s ease;
+
+    position: relative;
 }
 .caseCover{
     width: 100%;
@@ -262,12 +263,38 @@ nav{
 .caseCover:hover{
     transform: scale(102%);
 }
+.viewImage{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.856);
+    color: black;
+    visibility: hidden;
+    opacity: 0%;
+    padding: 5% 0%;
+    transition: .3s ease;
+    display: flex;
+    width: 10%;
+    align-self: center;
+}
+.coverSymb{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    animation: go 1.5s infinite;
+}
+.case:hover .viewImage{
+    visibility: visible;
+    opacity: 100%;
+    box-shadow: rgba(0, 0, 0, 0.116) 0px 5px 5px;
+}
 
+/* footer */
 footer{
-    width: auto;
     background-color: #C33948;
     color: white;
-    font-weight: 200;
+    font-family: "Work Sans", "serif";
     height: fit-content;
     padding-top: 2%;
     padding-left: 2%;
@@ -278,29 +305,19 @@ footer{
 #foot img{
     filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(7498%) hue-rotate(180deg) brightness(104%) contrast(116%);
 }
+#email{
+    margin-top: 0%;
+    font-weight: 200;
+}
 #cr{
     text-align: right;
     padding-right: 2%;
+    font-weight: 200;
 }
-/* socials */
-/* .social{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    background-image: url("../00_assets/svgs/sbg.svg");
-    background-size: cover;
-    background-position: center;
-}
-span{
-    user-select: none;
-} */
 #followUp{
+    font-size: 1.5em;
     text-align: left;
-    animation: type 1s infinite;
-    border-right: white solid 2px;
+    font-weight: 300;
 }
 .follow{
     padding-top: 1%;
@@ -326,16 +343,29 @@ span{
 #up3{
     animation: t3 5s infinite ease-in-out;
 } 
-/* Footer */
-/* footer{
-    text-align: center;
-    padding-top: .5%;
-    padding-bottom: .5%;
-    color: white;
-    width: 100%;
-    border-top: solid 2px;
-}
+
 /* animations */
+@keyframes t1{
+    from {transform: translateY(0px);}
+    10% {transform: translateY(-5px);}
+    20% {transform: translateY(0px);}
+    30% {}
+    to {}
+}
+@keyframes t2{
+    from {}
+    10% {transform: translateY(0px);}
+    20% {transform: translateY(-5px);}
+    30% {transform: translateY(0px);}
+    to {}
+}
+@keyframes t3{
+    from {}
+    10% {}
+    20% {transform: translateY(0px);}
+    30% {transform: translateY(-5px);}
+    40% {transform: translateY(0px);}
+}
 @keyframes in{
     from {transform:translateX(250px);}
     to {}
@@ -348,32 +378,7 @@ span{
     from {}
     to {transform:translateX(250px);}
 }
-@keyframes type{
-    from {}
-    50% {border-color: rgba(0,0,0,0);}
-    to {}
-}
-@keyframes t1{
-    from {transform: translateY(0px);}
-    10% {transform: translateY(-10px);}
-    20% {transform: translateY(0px);}
-    30% {}
-    to {}
-}
-@keyframes t2{
-    from {}
-    10% {transform: translateY(0px);}
-    20% {transform: translateY(-10px);}
-    30% {transform: translateY(0px);}
-    to {}
-}
-@keyframes t3{
-    from {}
-    10% {}
-    20% {transform: translateY(0px);}
-    30% {transform: translateY(-10px);}
-    40% {transform: translateY(0px);}
-}
+
 
 /* responsive design */
 @media screen and (max-width: 1270px){

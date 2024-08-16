@@ -169,3 +169,18 @@ function setData(){
 setData();
 
 // navbar
+
+
+// footer
+const set = ["Thanks For Visiting!","Questions? Say Hi!"]
+let quest = document.querySelector("#followUp")
+let day = new Date().getDay();
+function chat(){
+    if (day%2 == 0){
+        quest.textContent = set[0];
+    }else{
+        quest.textContent = set[1];
+    }
+    console.log(quest)
+}
+chat()

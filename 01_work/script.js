@@ -31,48 +31,61 @@ function mobileExpand(){
 mobIcon.addEventListener("click", mobileExpand);
 
 // , "\"If opportunity doesn't knock, build a door.\" - Milton Berle"
-const set = ["Thanks For Visiting!","Questions?","Comments?", "Say Hi!"]
+// const set = ["Thanks For Visiting!","Questions?","Comments?", "Say Hi!"]
+const set = ["Thanks For Visiting!","Questions? Say Hi!"]
 let quest = document.querySelector("#followUp")
-let sent = 0;
-let letter = 0;
-quest.innerHTML = "<span style=\"color:rgba(0,0,0,0);\">|</span>";
+// let sent = 0;
+// let letter = 0;
+// quest.innerHTML = "<span style=\"color:rgba(0,0,0,0);\">|</span>";
 
-function pause(){
-    let say = setInterval(() => {
-        quest.innerHTML += set[sent][letter]
-        letter += 1;
-        if(letter >= set[sent].length){
-            setTimeout(() => {
-                erase()
-            },5000)
-            clearInterval(say);    
-        }
-    }, 150);
-}
+// function pause(){
+//     let say = setInterval(() => {
+//         quest.innerHTML += set[sent][letter]
+//         letter += 1;
+//         if(letter >= set[sent].length){
+//             setTimeout(() => {
+//                 erase()
+//             },5000)
+//             clearInterval(say);    
+//         }
+//     }, 150);
+// }
 
-function erase(){
-    let stop = setInterval(() => {
-        quest.innerHTML = "<span style=\"color:rgba(0,0,0,0);\">|</span>" + set[sent].slice(0,letter)
-        letter -= 1;
-        if (letter < 0){
-            restate()
-            clearInterval(stop)
-        }
-    }, 150)
-}
+// function erase(){
+//     let stop = setInterval(() => {
+//         quest.innerHTML = "<span style=\"color:rgba(0,0,0,0);\">|</span>" + set[sent].slice(0,letter)
+//         letter -= 1;
+//         if (letter < 0){
+//             restate()
+//             clearInterval(stop)
+//         }
+//     }, 150)
+// }
 
-pause()
-function restate(){
-    if(sent == 2){
-        sent = 0;
+// pause()
+// function restate(){
+//     if(sent == 2){
+//         sent = 0;
+//     }else{
+//         sent += 1;
+//     }
+//     letter = 0;
+//     pause()
+// }
+
+// footer
+let day = new Date().getDay();
+function chat(){
+    if (day%2 == 0){
+        quest.textContent = set[0];
     }else{
-        sent += 1;
+        quest.textContent = set[1];
     }
-    letter = 0;
-    pause()
+    console.log(quest)
 }
+chat()
 
-
+// credit to my sister <3
 joyce.style.display = "none";
 info.addEventListener("click", () => {
     if (joyce.style.display == "none"){
