@@ -81,7 +81,6 @@ function chat(){
     }else{
         quest.textContent = set[1];
     }
-    console.log(quest)
 }
 chat()
 

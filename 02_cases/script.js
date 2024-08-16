@@ -1,6 +1,7 @@
 const navbar = document.querySelector("nav");
 const mobNavbar = document.querySelector(".mobNav");
 let mobIcon = document.querySelector("#mobIcon");
+let logo = document.querySelector("me_index");
 
 //Mobile Navbar 
 let span;
@@ -78,3 +79,28 @@ function restate(){
     letter = 0;
     pause()
 }
+
+//Navbar scroll events 
+// let r = 195;
+// let g = 57;
+// let b = 72;
+// mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`;
+// addEventListener("scroll" , () => {
+    // navbar.style.backgroundColor = `rgba(${r},${g},${b},${window.scrollY/500})` ;
+    // mobNavbar.style.backgroundColor = `rgb(${r},${g},${b})`;
+    // navbar.style.color = `rgb(${window.scrollY/2},${window.scrollY/2},${window.scrollY/2})`
+    // logo.style.filter = "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);";
+// });
+
+// Footer
+const set2 = ["Thanks For Visiting!","Questions? Say Hi!"];
+let quest2 = document.querySelector("#followUp");
+let day = new Date().getDay();
+function chat(){
+    if (day%2 == 0){
+        quest2.textContent = set2[0];
+    }else{
+        quest2.textContent = set2[1];
+    }
+}
+chat();

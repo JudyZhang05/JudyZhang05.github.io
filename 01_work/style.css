@@ -251,9 +251,8 @@ nav{
 }
 .case{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     transition: .3s ease;
-
     position: relative;
 }
 .caseCover{
@@ -425,6 +424,9 @@ footer{
     }
     #cr{
         text-align: center;
+    }
+    .case, .caseStudies h1{
+        margin-bottom: 30%;
     }
 }
 @media screen and (max-width: 600px){
