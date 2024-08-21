@@ -134,7 +134,7 @@ nav{
 /* NAVBAR */
 
 .intro{
-    height: 80vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ nav{
     position: absolute;
     justify-content: end;
     padding: .5% 1.5%;
-    bottom: 20vh;
+    bottom: 5vh;
     right: 0;
     z-index: 99;
 }
@@ -239,6 +239,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     padding: 15%;
+    padding-top: 10%;
     padding-bottom: 10%;
 }
 .caseStudies h1{

@@ -1,13 +1,29 @@
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
+//navbar
+const navbar = document.querySelector("nav");
+const mobNavbar = document.querySelector(".mobNav");
+let mobIcon = document.querySelector("#mobIcon");
+
+let span;
+let tick = false;
+function mobileExpand(){
+    if(tick == false){
+        mobNavbar.style.display = "flex"
+        mobNavbar.style.animation = "expand 1s forwards";
+        mobIcon.innerHTML = "<img src=\"../00_assets/svgs/close.svg\" width=\"60vh\" height=\"60vh\">"
+        tick = true;
+        clearTimeout(span);
+    }else{
+        mobNavbar.style.animation = "close 1s forwards";
+        mobIcon.innerHTML = "<img src=\"../00_assets/svgs/hmg.svg\" width=\"60vh\" height=\"60vh\">"
+        tick = false;
+        span = setTimeout(() => {
+            mobNavbar.style.display = "none";
+        }, 1000)
+    }
 }
-
+mobIcon.addEventListener("click", mobileExpand);
 // Artwork Details
 const allDetails = [
   details1 = {
@@ -196,3 +212,16 @@ for (let piece of images){
     
   })
 }
+
+//footer
+const set = ["Thanks For Visiting!","Questions? Say Hi!"];
+let quest = document.querySelector("#followUp");
+let day = new Date().getDay();
+function chat(){
+    if (day%2 == 0){
+        quest.textContent = set[0];
+    }else{
+        quest.textContent = set[1];
+    }
+}
+chat();
