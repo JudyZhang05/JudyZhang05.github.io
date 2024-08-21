@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7e2c9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-6 {
+        opacity: .71;
+      }
+
+      .cls-2 {
+        fill: #bfe8c1;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #daefdc;
+        opacity: .4;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: #aed6ae;
+      }
+
+      .cls-6 {
+        fill: #b3e0b3;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="-22" y="-117" width="1963" height="1102"/>
+    </clipPath>
+  </defs>
+  <g class="cls-7">
+    <image width="4480" height="6720" transform="translate(-9 -917) scale(.43)" xlink:href="../../../../../../../../Downloads/nappy-ty86ci2_iCc-unsplash.jpg"/>
+    <rect class="cls-4" x="-22" y="-137" width="1963" height="1132"/>
+  </g>
+  <path class="cls-5" d="M2168.85,985.08s-93.79-277.93-285.69-214.28c-191.91,63.64-281.38,94.49-410.59,66.07-108.56-23.88-156.56-20.88-214.56,6.12-48.91,22.77-112.52,74.46-198,64-85.48-10.46-144.53-13.6-204,13-59.47,26.6-297,375-297,375l1608-63.77,1.85-246.15Z"/>
+  <path class="cls-6" d="M-126,1043s250-272,354-220,346,10,423-29,225-1,299,51,184,149,336,125,295-21,341-7,211,143,211,143l-29,189L-57,1223l-69-180Z"/>
+  <path class="cls-2" d="M-104,584c385-53,419,53,521,108s193,27,297,88,62,162,139,200,187.44,78.32,206,99c79,88,11,119,11,119l-1105-14-69-600Z"/>
+  <path class="cls-1" d="M1139,1126s-17-172,123-150,335-34,376-96,97-165,200-165,165-73,165-73l-22,512-842-28Z"/>
+</svg>

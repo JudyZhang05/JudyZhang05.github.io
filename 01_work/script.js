@@ -4,11 +4,11 @@
 //     }
 // });
 
+let info = document.querySelector("#info");
+let joyce = document.querySelector("#joyce");
 const navbar = document.querySelector("nav");
 const mobNavbar = document.querySelector(".mobNav");
 let mobIcon = document.querySelector("#mobIcon");
-let info = document.querySelector("#info");
-let joyce = document.querySelector("#joyce");
 
 let span;
 let tick = false;

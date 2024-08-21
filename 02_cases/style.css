@@ -316,7 +316,7 @@ footer{
         background-position: center;
     }
     #welcome{
-        font-size: 5vh;
+        font-size: 10vw;
     }
     .show:not(#and){
         font-size: 8.5vh;
@@ -340,9 +340,5 @@ footer{
     }
     .projectLeft:hover .projectImg, .projectRight:hover .projectImg{
         transform: scale(101%);
-        box-shadow: none;
-    }
-    .projectLeft:hover .projectDetails, .projectRight:hover .projectDetails{
-        box-shadow: rgba(0, 0, 0, 0.158) 0px 5px 5px 5px;
     }
 }

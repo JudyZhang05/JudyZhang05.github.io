@@ -388,7 +388,6 @@ footer{
     #more{
         text-align: center;
     }
-    
 }
 @media screen and (max-width:858px){
     .intro{
@@ -432,6 +431,9 @@ footer{
 @media screen and (max-width: 600px){
     #meet{
         height: 30%;
+    }
+    #more{
+        font-size: 1.1em;
     }
     .follow{
         width: 30%;
