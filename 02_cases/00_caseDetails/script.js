@@ -27,7 +27,55 @@ mobIcon.addEventListener("click", mobileExpand);
 const project = sessionStorage.getItem("project")
 
 const projectData = {
-    "Stephen King Villain API":{
+    "More Digital Designs":{
+        role: "Designer and 3D Sculptor"
+        ,overview: "More creative digital design work displayed on Webflow."
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "I utilized a webflow template and configured the components and settings a little bit to give it a more personalized touch while also streamlining the design process."
+        ,develop: "Everything is hosted on Webflow, where there are limitations to the interaction and technical aspects. However, it works well displaying my work for the two courses."
+        ,images: {
+            figma: "none" 
+            ,website: "../../00_assets/projects/design/website/ddu3dSite.png"
+        }
+        ,links: {
+            figma: "none" 
+            ,website: "https://judy-zhangs-digital-design-usability-po.webflow.io"
+        }
+    }
+    ,"PlaneTree":{
+        role: "Sole UI Designer, Front-End & Back-End Developer"
+        ,overview: "PlaneTree is an interactive webpage of plant entries. Complete with both Front-End and Back-End implementation, you can run it on your local machine or quickly view it through it's host on Glitch. "
+        ,problem: "In today's day and age, air pollution like the greenhouse gases has been at it's highest ever in history. At this rate, our state of living will become exponentially unsustainable and unstable. Now more than ever, every bit of contribution from us, earth's inhabitant, counts! One way to tackle this issue is by growing more greeneries, but getting started might be difficult and even intimdating."
+        ,solution: "What is the solution for starting anything intimating? Doing it with friends in a welcoming community! It is never too late to start your planting journey and what better way to share this passion with others than with a dedicated platform filled with planter enthusiast and veterans. Complete with it's very own digital plant, you can reenact even the feeling of growing your own plant sharing foundation in a digital environment called PlaneTree by interacting and engaging with other peoples plant entries and journies!"
+        ,design: "For the design process, the most difficult part was coming up with the concpet. For that I had composited together an inspiration board filled with bright and lively themes of food, entries, and artistry. Once I perfected the idea enough, I moved on to lo-fi wireframing. Making sure to focus on quantity and not quality to produce as many layouts and compositions as possible to figure out the best possible approach that will fit the intended purpose while enhancing the user experience. The first couple iterations went smoothly and I swiftly moved onto high fidelity mockups. At this point I had been working non-stop and when I took a step back it became clear, half-way through, I had lost the vision. Thus I started over. Redesigned the plain ordered grid layouut to a more artistic approach that encouraged users engagement. From there I seamlessly moved on to considering color-pallete, font choices, and even some custom visuals to accompany the artistic layout. You can view the figma page <a href=\"https://www.figma.com/design/bbmSmSHDFp9uXzHssmW2Ey/MEDP331?node-id=184-2&p=f&t=r0OCbradZW4RA90q-0\" target=\"_blank\" id=\"elink\">here</a>."
+        ,develop: "For the development process, I had a harder time bringing the layout to life than I imagined I would. After several experimentations with trial and error, I was able to achieve the desire look intuitively. PlaneTree utilizies Glitch as the host, NodeJs Express Server to run the program, MongoDB to store plant and user data, Cloudinary to store and upload photos, and GSAP library for accompanying interaction animations to top it all off. You can learn more about the resources and materials that went into building this project <a href=\"https://github.com/JudyZhang05/medp-33100-final\" target=\"_blank\" id=\"elink\">here</a>."
+        ,images: {
+            figma: "../../00_assets/projects/design/website/planettSlide.png" 
+            ,website: "../../00_assets/projects/design/website/planettSite.png"
+        }
+        ,links: {
+            figma: "https://docs.google.com/presentation/d/1rpGtvjdqdR2G92c4zEz60Dg9Qz19rctljeLmW-zXKTk/edit?usp=sharing" 
+            ,website: "https://judyzhang05.github.io/P1_MEDP280/"
+        }
+    }
+    ,"Daedalus and Icarus":{
+        role: "Sole UI Designer & Front-End Developer"
+        ,overview: "The Daedalus and Icarus is an interactive storytelling of the popular greek tradegy."
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "The design and it's process is a simple, concise, and straightforward. I knew from the start that I wanted to add many imaagery and text. Thus, I planned accordingly so as to not later face the trouble of each component becoming cluttered or conflicting with another for attention. For accessibility considerations, I used a ratio of 21:1 with the black background and white text color. (Note* The final product features some variations to the original design). Here is the <a href=\"https://www.figma.com/design/bbmSmSHDFp9uXzHssmW2Ey/MEDP331?node-id=0-1&p=f&t=la94faDVFxQKvcOl-0\" target=\"_blank\" id=\"elink\">link</a> to the Figma design of the webpage."
+        ,develop: "The development was even simplier. Hosted on Github like the majority of my projects, the Daedalus and Icarus website utilizes simple HTML/CSS, JavaScript, and a robust library called GSAP that performs all the animation with quick efficiency. The most challenging part was organizing the storyline to convey the original story justice, illustrating all the imagery, and finding the perfect dramatic ensambles to go with the piece. All the credits and resources used can be found in the readme of my github repository <a href=\"https://github.com/JudyZhang05/P1_MEDP280\" target=\"_blank\" id=\"elink\">here</a>."
+        ,images: {
+            figma: "none" 
+            ,website: "../../00_assets/projects/design/website/d&iSite.png"
+        }
+        ,links: {
+            figma: "none" 
+            ,website: "https://judyzhang05.github.io/P1_MEDP280/"
+        }
+    }
+    ,"Stephen King Villain API":{
         role: "Sole UI Designer, Front-End & Back-End Developer"
         ,overview: "The Stephen King Villain API is a node.js executable webpage. Complete with both Front-End and Back-End development, you can run it on your local machine to see what kind of Stephen King Villain you are. "
         ,problem: "Are you a horror addict? Ever watched \"IT\" or \"The Boogeyman\"? Well, you probably heard of Stephen King then. Reading his horror novels and watching their adapted horror movies are great and all, but like a true horror addict, if you were in these horrific narratives and story retellings, you'd want to know which character you were, but more intriguing, which villain you are.  "
@@ -94,7 +142,7 @@ const projectData = {
 }
 
 const sections = ["role","overview","problem","solution","design","develop","figma","website"]
-const allCases = ["Stellar","Portfolio Website","MEDP285 Website","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
+const allCases = ["More Digital Designs","PlaneTree","Daedalus and Icarus","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
 
 function setData(){
     // BackgroundImage
@@ -122,7 +170,7 @@ function setData(){
                 $(`#${info}`).attr("src",projectCase.images[info]);
                 $(`#visit${info}`).attr("href",projectCase.links[info]);
 
-                if(project == "Feel ReLeaf" || project == "Klicky"){          //presentation in one case study
+                if(project == "Feel ReLeaf" || project == "Klicky" || project == "PlaneTree"){          //Alter mouse hover text to respective label 
                     $(`#visitfigma`).attr("title","Visit Presentation");
                     if(project == "Klicky"){
                         $(`#visitwebsite`).attr("title","Visit Github");
