@@ -45,7 +45,12 @@ $('.show').click(function() {
         $("#zoom").css("height", "80vh");
         $("#zoom").css("width", "auto");
         $("#zoom").css("border-radius", "50px");
-    }else{
+    }else if(processImg[$(this).index('.show')] == "../../00_assets/projects/cases/evidence/precisely/cA.png"){ //hardcode vertical img scale
+        $("#zoom").css("width", "50%");
+        $("#zoom").css("height", "auto");
+        $("#zoom").css("border-radius", "0px");
+    }
+    else{
         $("#zoom").css("width", "85vw");
         $("#zoom").css("height", "auto");
         $("#zoom").css("border-radius", "0px");

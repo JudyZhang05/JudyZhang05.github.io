@@ -149,6 +149,10 @@ nav{
 #complHero{
     background-image: url("../../00_assets/projects/cases/heroImage/compl.svg")
 }
+#preciseHero{
+    background-image: url('../../00_assets/projects/cases/heroImage/precise.svg');
+    background-position: bottom;
+}
 #csTitle{
     font-size: 4em;
     font-family: "Marcellus SC", serif;
@@ -233,6 +237,7 @@ ul{
 #zoom{
     align-self: center;
     width: 85vw;
+    width: 100%;
 }
 
 .show{
@@ -256,6 +261,10 @@ ul{
 .gifshow{
     width: 20%;
     border-radius: 20px;
+}
+
+.verticalShow{
+    width: 50%;
 }
 
 

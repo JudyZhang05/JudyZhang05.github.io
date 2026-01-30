@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judy Zhang</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="../../00_assets/svgs/meIcon.svg">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html"><img draggable="false" src="../../00_assets/svgs/meMe.svg" id="me_index" width="100px"></a>
+        <div class="web">            
+            <a href="../../index.html">Work</a>
+            <a href="../../02_cases/index.html">Artwork</a>
+            <a href="../../00_assets/me/Judy Zhang UX Resume.pdf" target="_blank">Resumé</a>
+        </div>
+        <div class="mob">
+            <div id="mobIcon"><img src="../../00_assets/svgs/hmg.svg" width="60vh" height="60vh"></div>
+            <ul class="mobNav">
+                <a href="../../index.html"><li>Work</li></a>
+                <a href="../../02_cases/index.html"><li >Artwork</li></a>
+                <a href="../00_assets/me/Judy Zhang UX Resume.pdf" target="_blank"><li>Resumé</li></a>
+            </ul>
+        </div>
+    </nav>        
+
+    <span id="tp"></span>
+
+    <div class="viewing">
+        <img id="zoom" draggable="false" src="">
+    </div>
+
+    <ul class="process">
+        <a class="goTo" href="#ow"><li>Overview</li></a>
+        <a class="goTo" href="#rs"><li>Research</li></a>
+        <a class="goTo" href="#id"><li>Ideate</li></a>
+        <a class="goTo" href="#fp"><li>Deliverables</li></a>
+        <a class="goTo" href="#rf"><li>Reflection</li></a>
+        <a id="top" href="#tp"><li >Back to Top</li></a>
+    </ul>
+
+    <div class="heroImg" id="preciseHero">
+        <h1 id="csTitle">Precisely</h1>
+        <small class="subhead">Role</small>
+        <p id="role">UX Designer</p>      
+        <small class="subhead">Tool</small>
+        <p id="tool">Figma, Miro, Powerpoint</p>  
+        <small class="subhead">Duration</small>  
+        <p id="duration">June 2025 to August 2025</p>        
+    </div>
+
+    <span id="ow"></span>
+    <div class="stage">
+        <div class="label">Overview</div>
+        <div class="desc">
+            <span class="subhead"><p>The Goal</p></span>
+            <p>
+                Precisely is a data-empowered communication service platform that enriches a 
+                large quantity of information with context and security, ensuring trusted and 
+                accurate data to all users. One of the primary tasks I was assigned during my 
+                internship was to develop and refine the style guide for cross-platform modal 
+                consistency.
+            </p>
+            <div class="quotes">
+            <p>
+                <b>Problem Statement:</b>
+                Style and copy consistency help build trust with our users. We’ve noticed a bit 
+                of inconsistency and want to verify alignment of the message copy with the 
+                establishment of our Tone of Voice.
+            </p>
+            <p>
+                <b>Client Challenges:</b>
+                Distrust in product reliability, confusion, and loss in efficiency when unreliable
+                 modals cause friction for users completing their task.
+            </p>
+            <p>
+                <b>Client Benefits:</b>
+                Adhering to standards enables users to know what to expect, increase learnability, 
+                reduce confusion, and increase trust in our product.
+            </p>
+            <p>
+                <b>Objective:</b>
+                Building trust with users by increasing product consistency.
+            </p>
+            </div>
+        </div>
+        <!-- <img class="show" draggable="false" src="../../00_assets/projects/cases/covers/compl.png" alt=""> -->
+        <span id="rs"></span>
+    </div>
+
+    <div class="stage">
+        <div class="label">Research</div>
+        <div class="desc">
+
+            <span class="subhead"><p>Secondary Research</p></span>
+            <p>
+                Gathered and organized all the modals that were currently in use and analyzed their inconsistent layout, size, behavior, and message copy. 
+            </p>
+            <img class="show" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/res1.png" alt="screenshot of compiled desk research">
+
+            <br/>
+            <br/>
+            <span class="subhead"><p>Heuristic Review</p></span>
+            <p>
+                Dived straight into doing secondary research on best modal usage and guidelines, highlighting advice from reputable and insightful sources like NNG and Uxel. 
+            </p>
+            <img class="show" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/cE.png" alt="screenshot of compiled list of modals">
+
+            <br/>
+            <br/>
+            <span class="subhead"><p>Competitive Analysis</p></span>
+            <p>
+                Spearheaded a competitive analysis on Precisely’s indirect and direct competitors and examined what they were doing well or not to make more informed design decisions when improving our modals.
+            </p>
+            <div style="display:flex; justify-content: center;">
+                <img class="show verticalShow" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/cA.png" alt="screenshot of competitor analysis">
+            </div>
+
+            <br/>
+            <br/>
+            <span class="subhead"><p>Key Takeaways</p></span>
+            <p>
+                <b>1. Areas of focus</b> around the patterns of inconsistent modals are found primarily in position aligment, button states, case usage & punctuation, and input area width sizes.
+                <br/><b>2. Competitive analysis results</b> share that most modals handle the state of overflowing content as extending the modal vertically, NOT horizontally.
+                <br/><b>3. Analysis uncovers modal compoenents</b> to differ, especially with case usage and alignment of call-to-action buttons.
+            </p>
+        </div>
+        <span id="id"></span>
+    </div>
+
+    <div class="stage">
+        <div class="label">Ideating Solutions</div>
+        <div class="desc">
+            <span class="subhead"><p>Journey Mapping</p></span>
+            <p>Developed and presented a consumer journey map on problematic modals to the team and encouraged feedback to gain more perspectives on current and new solutions.</p>
+            <img class="show" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/journey.png" alt="screenshot of journey map of the persona Joey">
+
+
+            <br/>
+            <br/>
+            <span class="subhead"><p>Userflows</p></span>
+            <p>Created userflows to better convey user pain points to the team while offering a more effective and time-efficient path.</p>
+            <img class="show" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/userfl.png" alt="screenshot of before and after revised user flow">
+
+        </div>
+        <img class="show" draggable="false" src="" alt="">
+        <span id="fp"></span>
+    </div>
+
+
+    <div class="stage">
+        <div class="label">Deliverables</div>
+        <div class="desc">
+            <p>After touching base with my manager to align all the modal style consistency considerations, I was ready to hand off 
+                to the engineers. I had prepared several detailed documents of modal style guidelines and usage for all current and 
+                future modals.</p>
+            <div class="mshow">
+                <img class="show subshow" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/deliver1.png" alt="screenshot of documented usage guidelines">
+                <span class="space"></span>
+                <img class="show subshow" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/style.png" alt="screenshot of detailed style guidelines">
+            </div>
+
+            <p>I also delved into Figma and delivered over 40 pixel-perfect revisions and laid a strong foundation 
+                for other modals that were deemed out of scope and offered solutions to specific edge cases that future modals could
+                 potentially encounter.  By the time of my departure, some of the revisions I had handed off to the engineers had 
+                 already been implemented, and many others were in progress.</p>
+            <div class="mshow">
+                <img class="show subshow" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/d1.png" alt="edited modal message copy">
+                <span class="space"></span>
+                <img class="show subshow" draggable="false" src="../../00_assets/projects/cases/evidence/precisely/d2.png" alt="revised modal style copy">
+            </div>
+                <small class="caption">*Note: Left side shows current modals and right side shows them with implemented revisions</small>
+        </div>
+        
+        <span id="rf"></span>
+    </div>
+
+    <div class="stage">
+        <div class="label">Takeaways</div>
+        <div class="desc">
+            <p>
+                The three months I had the privilege of learning at Precisely and collaborating with their talented UX team was the 
+                most productive summer I had ever spent. With the encouragement and support of my team, I was able to learn a lot 
+                of professionalism simply through watching how others presented their cases and collaborated with engineers and 
+                product managers.
+                <br/> 
+                <br/> 
+                Some of the biggest takeaways I learned were how important and useful <b>proper and intentional documentation</b> of 
+                one’s work can be. Not only does it help organize your project, but it also cuts down on the time spent explaining 
+                everything you’ve done to other collaborators who will inevitably be added to the project. 
+                <br/> 
+                <br/> 
+                Another takeaway I 
+                learned was how crucially essential it is to be on top of your project scope. Being excited is all good and all, 
+                but it is even better to <b>set appropriate goals and milestones</b>, especially if it is as easy for you as it was for 
+                me to get blindsighted into researching and ideating solutions that were not part of my original task. However, 
+                I was able to turn this around by gaining and exercising another crucial skill to have, <b>allowing flexibility while 
+                remaining adapatibile</b> in a time-constrained situation. 
+                <br/> 
+                <br/> 
+                Lastly, communication, there really is a difference in how much 
+                of an impact one’s public speaking and ability to <b>convey their design decisions to others</b> plays in getting through 
+                to the shareholders why a design decision is worth implementing. I strive to grow and refine these skills as I 
+                continue taking on new and exciting challenges in my future work. 
+            </p>
+        </div>
+    </div>
+
+    <div class="more">
+        <a href="" class="check" id="checked">Complementary</a>
+        <p>&bull;</p>
+        <a href="./tha.html" class="check">True Healthcare Assistance</a>
+        <!-- <p>&bull;</p>
+        <a href="./stellar.html" class="check">Stellar 2024</a> -->
+    </div>
+
+    <footer>
+        <p id="followUp"></p>
+        <p id="email">Reach me <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=judyz1594@gmail.com" target="_blank">@judyz1594@gmail.com</a></p>
+        <div class="follow">
+            <a href="https://www.upwork.com/freelancers/~012b4bcc0ee9eb2b47" target="_blank"><img src="../../00_assets/svgs/uw.svg" id="up1" alt="connect with me at upwork"></a>
+            <a href="https://www.linkedin.com/in/judy-zhang-/" target="_blank"><img src="../../00_assets/svgs/lk.svg" id="up2" alt="connect with me at linkedin"></a>
+            <a href="https://github.com/JudyZhang05" target="_blank"><img src="../../00_assets/svgs/gh.svg" id="up3" alt="follow me at github"></a>
+        </div>
+        <br/>
+        <small id="cr">&copy; 2024. All rights reserved to Judy Zhang</small>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
