@@ -35,7 +35,7 @@ function push(){
     const projectName = this.value;
 
     sessionStorage.setItem("project", projectName);
-    window.location.href = "./00_caseDetails/index.html";
+    window.location.href = "./00_artDetails/index.html";
 }
 
 //Typing animation

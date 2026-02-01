@@ -27,7 +27,23 @@ mobIcon.addEventListener("click", mobileExpand);
 const project = sessionStorage.getItem("project")
 
 const projectData = {
-    "More Digital Designs":{
+    "2D Animation":{
+        role: "Illustrator and Animator"
+        ,overview: ""
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "The concept behind my 2D animation, “The Festival,” is based on a game called “Onmyoji.” More specifically, a popular character named “Shiranui”. Onmyoji produces high-quality music and story animation alongside each new character. I referenced the story of “Shiranui” and incorporated symbolic elements from it into my own animation, giving it more meaning and depth not only for the project but for fans like myself. <br><br> The concept behind \"Dreaming Stars\" is a romantic representation of the Korean drama \"When Life Gives You Tangerines,\" paired with the iconic song from La La Land called \"City of Stars,\" but specifically covered by the talented artist Wang Ok."
+        ,develop: "I utilized primarily Adobe After Effects for both these projects, but for the Dreaming Stars piece, I illustrated the visuals using Adobe Photoshop. <br><br> You can check out my animations on youtube!"
+        ,images: {
+            figma: "../../00_assets/projects/design/figma/fest.svg" 
+            ,website: "../../00_assets/projects/design/website/dreaming.svg"
+        }
+        ,links: {
+            figma: "https://www.youtube.com/watch?v=NIWQ7PnAkas" 
+            ,website: "https://www.youtube.com/watch?v=B3BDictQ8E4"
+        }
+    }
+    ,"More Digital Designs":{
         role: "Designer and 3D Sculptor"
         ,overview: "More creative digital design work displayed on Webflow."
         ,problem: "none"
@@ -142,7 +158,7 @@ const projectData = {
 }
 
 const sections = ["role","overview","problem","solution","design","develop","figma","website"]
-const allCases = ["More Digital Designs","PlaneTree","Daedalus and Icarus","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
+const allCases = ["2D Animation", "More Digital Designs","PlaneTree","Daedalus and Icarus","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
 
 function setData(){
     // BackgroundImage
