@@ -35,6 +35,7 @@ function push(){
     const projectName = this.value;
 
     sessionStorage.setItem("project", projectName);
+    localStorage.setItem("project", projectName);
     window.location.href = "./00_artDetails/index.html";
 }
 

@@ -23,8 +23,11 @@ function mobileExpand(){
 }
 mobIcon.addEventListener("click", mobileExpand);
 
-
-const project = sessionStorage.getItem("project")
+let mobileProject = 0;
+window.addEventListener('unload', () => {
+    mobileProject = localStorage.getItem("project")
+});
+const project = mobileProject != 0 ? mobileProject : sessionStorage.getItem("project")
 
 const projectData = {
     "2D Animation":{
@@ -219,13 +222,17 @@ function setData(){
     $("#nextCase").html(`See Next &#8640; <span>${nextCase}</span>`)
     $("#prevCase").html(`See Previous &#8636; <span>${prevCase}</span>`)
     $("#nextCase").click(() => {
+        localStorage.clear()
         sessionStorage.clear()
         sessionStorage.setItem("project", nextCase)
+        localStorage.setItem("project", nextCase)
         window.location.href = "./index.html";
     });
     $("#prevCase").click(() => {
+        localStorage.clear()
         sessionStorage.clear()
         sessionStorage.setItem("project", prevCase)
+        localStorage.setItem("project", prevCase)
         window.location.href = "./index.html";
     });
 }
