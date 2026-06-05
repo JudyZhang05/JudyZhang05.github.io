@@ -32,7 +32,7 @@ const project = mobileProject != 0 ? mobileProject : sessionStorage.getItem("pro
 const projectData = {
     "2D Animation":{
         role: "Illustrator and Animator"
-        ,overview: ""
+        ,overview: "2D animation illustrated and composed on Adobe After effects and Adobe Photoshop."
         ,problem: "none"
         ,solution: "none"
         ,design: "The concept behind my 2D animation, “The Festival,” is based on a game called “Onmyoji.” More specifically, a popular character named “Shiranui”. Onmyoji produces high-quality music and story animation alongside each new character. I referenced the story of “Shiranui” and incorporated symbolic elements from it into my own animation, giving it more meaning and depth not only for the project but for fans like myself. <br><br> The concept behind \"Dreaming Stars\" is a romantic representation of the Korean drama \"When Life Gives You Tangerines,\" paired with the iconic song from La La Land called \"City of Stars,\" but specifically covered by the talented artist Wang Ok."
@@ -68,14 +68,14 @@ const projectData = {
         ,problem: "In today's day and age, air pollution like the greenhouse gases has been at it's highest ever in history. At this rate, our state of living will become exponentially unsustainable and unstable. Now more than ever, every bit of contribution from us, earth's inhabitant, counts! One way to tackle this issue is by growing more greeneries, but getting started might be difficult and even intimdating."
         ,solution: "What is the solution for starting anything intimating? Doing it with friends in a welcoming community! It is never too late to start your planting journey and what better way to share this passion with others than with a dedicated platform filled with planter enthusiast and veterans. Complete with it's very own digital plant, you can reenact even the feeling of growing your own plant sharing foundation in a digital environment called PlaneTree by interacting and engaging with other peoples plant entries and journies!"
         ,design: "For the design process, the most difficult part was coming up with the concpet. For that I had composited together an inspiration board filled with bright and lively themes of food, entries, and artistry. Once I perfected the idea enough, I moved on to lo-fi wireframing. Making sure to focus on quantity and not quality to produce as many layouts and compositions as possible to figure out the best possible approach that will fit the intended purpose while enhancing the user experience. The first couple iterations went smoothly and I swiftly moved onto high fidelity mockups. At this point I had been working non-stop and when I took a step back it became clear, half-way through, I had lost the vision. Thus I started over. Redesigned the plain ordered grid layouut to a more artistic approach that encouraged users engagement. From there I seamlessly moved on to considering color-pallete, font choices, and even some custom visuals to accompany the artistic layout. You can view the figma page <a href=\"https://www.figma.com/design/bbmSmSHDFp9uXzHssmW2Ey/MEDP331?node-id=184-2&p=f&t=r0OCbradZW4RA90q-0\" target=\"_blank\" id=\"elink\">here</a>."
-        ,develop: "For the development process, I had a harder time bringing the layout to life than I imagined I would. After several experimentations with trial and error, I was able to achieve the desire look intuitively. PlaneTree utilizies Glitch as the host, NodeJs Express Server to run the program, MongoDB to store plant and user data, Cloudinary to store and upload photos, and GSAP library for accompanying interaction animations to top it all off. You can learn more about the resources and materials that went into building this project <a href=\"https://github.com/JudyZhang05/medp-33100-final\" target=\"_blank\" id=\"elink\">here</a>."
+        ,develop: "For the development process, I had a harder time bringing the layout to life than I imagined I would. After several experimentations with trial and error, I was able to achieve the desire look intuitively. PlaneTree originally utilized Glitch as the host but since the update on Glitch's hosting policies it is now hosted by digtial ocean, NodeJs Express Server to run the program, MongoDB to store plant and user data, Cloudinary to store and upload photos, and GSAP library for accompanying interaction animations to top it all off. You can learn more about the resources and materials that went into building this project <a href=\"https://github.com/JudyZhang05/medp-33100-final\" target=\"_blank\" id=\"elink\">here</a>."
         ,images: {
             figma: "../../00_assets/projects/design/website/planettSlide.png" 
             ,website: "../../00_assets/projects/design/website/planettSite.png"
         }
         ,links: {
             figma: "https://docs.google.com/presentation/d/1rpGtvjdqdR2G92c4zEz60Dg9Qz19rctljeLmW-zXKTk/edit?usp=sharing" 
-            ,website: "https://judyzhang05.github.io/P1_MEDP280/"
+            ,website: "http://167.172.146.126:7000"
         }
     }
     ,"Daedalus and Icarus":{
