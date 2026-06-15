@@ -30,6 +30,22 @@ window.addEventListener('unload', () => {
 const project = mobileProject != 0 ? mobileProject : sessionStorage.getItem("project")
 
 const projectData = {
+    "Nova":{
+        role: "UI Designer, Front-End & Back-End Developer"
+        ,overview: "Nova is an interactive 3D website emulating a futuristic method of communication which encourages users to talk about their wishes."
+        ,problem: "none"
+        ,solution: "none"
+        ,design: "This was a collaborative project with a team of four, including me and being the strong illustrator within the team. I was originally tasked with asset creation and user interface design. We started the whole design process after aligning on what the theme of the project would be. It was settled that we would be creating a tree and explore ways to incorporate the communication goal into it in a creative manner. Thus getting media inspiration on popular trees like the Avatar movie or Attack on Titan show. After coming to a consensus we swiftly moved on to hi-fi mocks but decided to further challenge ourselves by elevating the project into a 3D enviornment with three.js."
+        ,develop: "I worked primarily on the frontend of this project, spearheading the implementation of three.js and the core designs. When exploring three.js’s capabilities on my local, I took a particular fascination to the orbit controls and camera positioning. Thus when I figured that the difficulty of our original concept to be unrealistic, I began reworking the concept and designs around what was doable with the time constraints we had. For the 3D objects, I found them online on Sketchfab, which hosted a plethora of free to use and downloadable 3D object files. I played around with a few selections that caught my eye and finally settled on the tree_statue_land, angel_statue, duck, and cat objects. After rendering them and positioning them with three.js I started fine tuning the main user experience. I wanted to minimize the amount of breakage as much as possible thus I put many limitations on the orbit controls: from disabling the pan functionality to resticting the perceievable angles and zoom. When I was happy with the camera position and angle placement I started working on the layouts for the core chat functionality. At first I had just laid out the foundational structure for it, but decided to challenge myself and implement the chat functionality as well. It went pretty smoothly, but I ran into some issues with socket.io on displaying and updating the accurate amount of current active users. But when I got that done, I shifted gears and started analyzing the nitty gritty. The last thing I implemented was a loading screen that waits for the largest model to finish loading to start the experience, then all that was left was ensuring that the website was as pixel perfect as can be for the final presentation."
+        ,images: {
+            figma: "../../00_assets/projects/design/figma/nova.svg" 
+            ,website: "../../00_assets/projects/design/website/nova.svg"
+        }
+        ,links: {
+            figma: "https://www.figma.com/design/KfMqug1fz7ez696eTkmd3F/MEDP345?node-id=238-2&p=f&t=A19JlNQwaqLX79qp-0" 
+            ,website: "http://167.172.146.126:4000/"
+        }
+    },
     "2D Animation":{
         role: "Illustrator and Animator"
         ,overview: "2D animation illustrated and composed on Adobe After effects and Adobe Photoshop."
@@ -161,7 +177,7 @@ const projectData = {
 }
 
 const sections = ["role","overview","problem","solution","design","develop","figma","website"]
-const allCases = ["2D Animation", "More Digital Designs","PlaneTree","Daedalus and Icarus","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
+const allCases = ["Nova","2D Animation", "More Digital Designs","PlaneTree","Daedalus and Icarus","Stephen King Villain API","An Unlucky Day","Feel ReLeaf","Klicky"]
 
 function setData(){
     // BackgroundImage
